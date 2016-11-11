@@ -31,13 +31,12 @@ In order to answer these questions we’ll first select just those cities which 
 Now we will add the table containing population by state which we will join to the state polygons. *QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .csv file (note QGIS cannot read .xlsx files).*
 
 1. Upload Tabular Data
+
 	1. Click on the Add Vector Layer button 
 
-	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source -- later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
-
+	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
-
-	3. state_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
+	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
 	4. Open its attribute table to see the fields that it contains before we join it to our state polygons. 
 	5. Make a note of the columns (or fields) it contains 
 	6. This dataset has been pre-cleaned, and the column names have been reformatted. See the tutorial on DATACLEANING for more details.
@@ -47,19 +46,18 @@ Now we will add the table containing population by state which we will join to t
 *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
 	
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.tiff)
-
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
-* STATEFP
-* STATENS
-* AFFGEOID
-* GEOID
-* STUSPS
-* NAME
-* LSAD
-* ALAND
-* AWATER
+		* STATEFP
+		* STATENS
+		* AFFGEOID
+		* GEOID
+		* STUSPS
+		* NAME
+		* LSAD
+		* ALAND
+		* AWATER
 
 **Note that NAME is identical to stateName, and each is unique -- no two states have the same name. This unique field common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
 
@@ -70,7 +68,7 @@ We always start the join on the file that we are joining to. We are joining the 
 3. Click the “+” icon. 
 4. Make the following selections in the dialogue box.
 
-![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.tiff)
+![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
 	1. join layer = state_pop
 	2. join field = stateName
 	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
@@ -94,11 +92,11 @@ There are multiple routes to select features within a dataset. We will follow on
 
 1. Open the stateboundaries_pop attribute table and select `select features using an expression` 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeature.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeature.png)
 
 2. Make sure the header is correct - we want to select features from the stateboundaries_pop layer
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.png)
 
 *If you click on any of the terms in the central box a description of it will appear on the right. We will combine the field name with other operators to build an expression on the left side.*
 
@@ -106,15 +104,15 @@ There are multiple routes to select features within a dataset. We will follow on
  
 3. Expand 'Fields and Values` and select `state_pop`. 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.png)
 
 4. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 5. Open `Operators` and double-click on the greater than symbol (>). Type in 2000000. Your expression should now look like the following:
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greaterthan.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greaterthan.png)
 
 5. **Click** `Select`. Some of the populated_places points should turn yellow. At the bottom left corner of your QGIS project the footer will show how many features were selected (36).
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selected.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selected.png)
 
 We will now save those 36 states as a separate shapefile, just like we did for the cb_2014_us_state layer after we joined the population estimates to it. 
 
@@ -134,11 +132,11 @@ Now we need to create a layer that will tell us how many refugees went to each s
 1. Select the stateboundaries_pop layer
 2. Select Vector > Data Management Tools > Join Attributes by Location
 
-![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinbylocation.tiff)
+![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinbylocation.png)
 
 3. In the Dialogue box, select the following options
 
-![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinlocation_attributes.tiff)
+![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinlocation_attributes.png)
 
 4. Save as citystaterefugees.shp and click 'OK'
 5. Open the attribute table for the citystaterefugees layer. You should see a SUMIndividuals column. This represents the sum of individuals across all the cities in that state. (Don't worry about the NULL values - it just means there aren't any cities in that state where refugees are settled). 
@@ -148,7 +146,7 @@ Now we need to create a layer that will tell us how many refugees went to each s
 8. Click on that row (by clicking on the number on the far left). Move the attribute table out of the way so you can see the map again. That state should be highlighted. You can select multiple rows by holding the "Command" button and clicking on the rows you are interested in.
 9. Close the attribute table and Deselect Features from All layers
 
-![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.tiff)
+![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.png)
 
 10. Select the `select features using an expression` tool. We will again select by expression in order to select the states with greater than 300 refugees. Use the expression builder as we did above to select the states. Your expression should read:  `"SUMIndividuals"  > 300`
 
@@ -168,7 +166,7 @@ We will create a choropleth map for refugee population by state, where each stat
 1. **Open** the properties for the citystaterefugees layer and navigate to the Style tab.
 2. Select Graduated Symbols from the dropdown at the top
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/graduated.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/graduated.png)
 
 3. Select SUMIndividuals as the Column on which we will color the map. 
 4. To change the color of the entire state polygon, we need to change the symbol from an outline to a filled polygon.
@@ -177,7 +175,7 @@ We will create a choropleth map for refugee population by state, where each stat
 	1. Change the mode to Natural Breaks (jenks), and the number of classes to 8.
 	2. **Click** `Classify`. Your properties menu will now look like the one below. 
 
-![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.tiff)
+![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.png)
 
 	3. Click `Apply`. The country polygons will change on the map. 
 	
@@ -190,46 +188,46 @@ In order to present this map, we will now compose a map layout and become famili
 
 1. Open a new map composer 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composer.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composer.png)
 
 2. To add a new map to the composer select the add new map button. 
 3. Then click once and drag a rectangle over the area on the page that you would like the map to occupy. *Whatever is showing in your QGIS map project window is what will appear in the new map.*
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composenewmap.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composenewmap.png)
 
 4. Add a legend. 
 	1. Select Add new legend. 
 	
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
 
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
 	4. Select the 'Item Properties Tab
 	5. Unselect 'Auto Update'
 	
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
 
 	6. Remove Unnecessary layers with the '-' button
 	7. Change the layer names by clicking the “legend item properties” button
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.png)
 
 5. Add a scale bar. 
 	1. Select Add new scale bar button. 
 	2. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
 
 6. Add text boxes
 	1. Add a title for the map 
 	2. Add abbreviated citations for our data sources. 
 	3. Click the add new label button then use the Main properties field to add the text, and use the Font button to change the text size and font. 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/textlabel.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/textlabel.png)
 
 Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.tiff)
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.png)
 
 ______________________________________________________________________________________________________________
 
