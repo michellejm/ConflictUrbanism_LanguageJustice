@@ -62,8 +62,11 @@ First we will add a basemap of the United States.
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.tiff)
 
 4.  We need to remove these.	
+
 	1. Right click on the map layer and select "Show Feature Count"
+	
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featurecount.tiff)
+
 	2. The number of polygons will appear next to the layer name.
 	3. It should show 56 features, we want 51 polygons (the US plus Washington DC).
 	4. Select the layer (so it is highlighted blue).
@@ -71,7 +74,9 @@ First we will add a basemap of the United States.
 	6. Zoom in to Puerto Rico (using the Magnifying Glass with a + on it)
 	7. Select the 'Select Features by area or single click' button
 	8. Click on Puerto Rico to select it - it will change color
-	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featuresbyarea.tiff)
+	
+![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featuresbyarea.tiff)
+
 	9. Click on the Trash can on the left side of the toolbar to delete it.
 	10. Repeat for the US Virgin Islands, American Samoa, Guam, and Northern Mariana Islands.
 	11. Recenter the map using the Zoom Full Magnifying Glass (the one with the arrows going out of it) 
@@ -91,18 +96,18 @@ First we will add a basemap of the United States.
 	4. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
 
 7. Moving Layers
+
 	1. Click and drag the states layer on top of the cities layer. The cities points are no longer visible because they are behind the states polygons. 
 
 ![order](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/03_Adding_Layers.png)
 
 8. It might be easier to look at if we use state outlines rather than filled polygons. To do this, we must change the **style** of the data layer. 
+
 	1. Double click on the layer name.
 	2. The properties box will appear, select the 'Style' tab on the left
 	3. Click on Fill > Simple Fill
 	4. Select Fill > Transparent and Border > Solid Line
 	5. Select 'OK' to exit the menu
-
-![style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/transfill.tiff)
 
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project Refugee_Cities.qgs and save it in the folder you are using for these tutorials. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
