@@ -37,35 +37,35 @@ First we will add a basemap of the United States.
 	1. You'll notice a number of different file extensions. Do NOT delete, move or rename these files.
 	2. These **files must stay together** in the same folder otherwise QGIS will not be able to load the layer.
 
-* .shp - The main file that stores the feature geometry (required).
-* .shx - The index file that stores the index of the feature geometry (required).
-* .dbf - The dBASE table that stores the attribute information of features (required).
-* .sbn and .sbx - The files that store the spatial index of features (these might get corrupted, see note at the end of this tutorial).
-* .prj - The file that stores the coordinate system information.
-* For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
+		* .shp - The main file that stores the feature geometry (required).
+		* .shx - The index file that stores the index of the feature geometry (required).
+		* .dbf - The dBASE table that stores the attribute information of features (required).
+		* .sbn and .sbx - The files that store the spatial index of features (these might get corrupted, see note at the end of this tutorial).
+		* .prj - The file that stores the coordinate system information.
+		* For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
 
 2. Click on the `Add Vector Layer` button to add the data. 
 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 
 	1. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj). 
-	
-	The selected layer will be added in default colors. 
+		1. The selected layer will be added in default colors. 
 
 3. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
+
 	1. Double click on the layer to change to CRS. We want "North America Lambert Conformal Conic (EPSG: 102009)" (North America Albert would have been OK, too)
 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.tiff)
 
 	2. Click on the Render box in the lower right hand. Also change this to "North America Lambert Conformal Conic (EPSG: 102009)"
 	
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.tiff)
 
 4.  We need to remove these.	
 
 	1. Right click on the map layer and select "Show Feature Count"
 	
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featurecount.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featurecount.tiff)
 
 	2. The number of polygons will appear next to the layer name.
 	3. It should show 56 features, we want 51 polygons (the US plus Washington DC).
