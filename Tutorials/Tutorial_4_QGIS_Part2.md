@@ -41,7 +41,7 @@ Now we will add the table containing population by state which we will join to t
 1. Upload Tabular Data
 	1. Click on the Add Vector Layer button 
 	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
-	
+<br>
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 <br>
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
@@ -53,7 +53,9 @@ Now we will add the table containing population by state which we will join to t
 <br>
 *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
+	<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
+<br>
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
 		* STATEFP
@@ -74,7 +76,7 @@ We always start the join on the file that we are joining to. We are joining the 
 2. navigate to “Joins” in the left hand menu. 
 3. Click the “+” icon. 
 4. Make the following selections in the dialogue box.
-
+<br>
 ![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
 <br>
 	1. join layer = state_pop
@@ -84,10 +86,10 @@ We always start the join on the file that we are joining to. We are joining the 
 	5. **Click** `OK` to close the layer properties menu. 
 	<br>
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
-
+<br>
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
 <br>
-6. **Right-click** on the cb_2014_us_state layer and select `Save.` 
+6. **Right-click** on the cb_2014_us_state layer and select Save.
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
 
 
