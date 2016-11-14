@@ -1,4 +1,4 @@
-#Analyzing Data with QGIS - QGIS Part 2
+# Analyzing Data with QGIS - QGIS Part 2
 
 By the end of this tutorial you will be able to:
 
@@ -8,7 +8,7 @@ By the end of this tutorial you will be able to:
 * Query a dataset based on a feature
 * Create a choropleth map
 
-##Premise 
+## Premise 
 
 We will work with the basemap we made in Tutorial 3 (QGIS Part 1) and add new data to it in order to examine various demographic features of the cities and states where refugees are resettled. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. 
 
@@ -19,7 +19,7 @@ We will answer a few questions in this tutorial:
 * How many states received more than 300 refugees in 2014? 
 * How many states with fewer than ten million people received greater than 300 refugees in 2014?
 
-##Set Up
+## Set Up
 
 Open your Refugee_Cities.qgs map project.
 
@@ -28,27 +28,29 @@ We already mapped the locations of refugee resettlement in the United States as 
 
 In order to answer these questions we’ll first select just those cities which have populations of more than two million. Then we will export that as a separate layer. 
 
-###Setting up QGIS
+### Setting up QGIS
 <br>
 1. Open your MappingData_Population.qgs file. 
-<br>
 	1. It should still contain the states polygons and cities points we added previously.
 	2. If these layers are not immediately visible then **right click** on the name of either layer in the `Layer` menu and click `Zoom To Layer`.
 
-###Import population information
+### Import population information
 
 Now we will add the table containing population by state which we will join to the state polygons. *QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .csv file (note QGIS cannot read .xlsx files).*
+<br>
 1. Upload Tabular Data
 	1. Click on the Add Vector Layer button 
 	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
 	
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
+<br>
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
 	4. Open its attribute table to see the fields that it contains before we join it to our state polygons. 
 	5. Make a note of the columns (or fields) it contains 
 	6. This dataset has been pre-cleaned, and the column names have been reformatted. See the tutorial on DATACLEANING for more details.
-	
+<br>	
 2. Perform a Table Join
+<br>
 *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
@@ -67,25 +69,31 @@ Now we will add the table containing population by state which we will join to t
 **Note that NAME is identical to stateName, and each is unique -- no two states have the same name. This unique field common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
 
 We always start the join on the file that we are joining to. We are joining the population estimates table to the state boundary shapefile. 
+<br>
 1. Open the Properties for the cb_2014_us_state layer.
 2. navigate to “Joins” in the left hand menu. 
 3. Click the “+” icon. 
 4. Make the following selections in the dialogue box.
+
 ![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
+<br>
 	1. join layer = state_pop
 	2. join field = stateName
 	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
 	4. **Click** `OK` to close the join dialogue. 
 	5. **Click** `OK` to close the layer properties menu. 
+	<br>
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
 
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
+<br>
 6. **Right-click** on the cb_2014_us_state layer and select `Save.` 
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
 
+
 This new layer will then be added to the map and will contain the  joined data.
 
-##Attribute Tables and Data Querying
+## Attribute Tables and Data Querying
 
 Now that we have assembled these data layers we can begin to ask a few simple questions about the data. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using  Select by Attributes. 
 
