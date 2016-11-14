@@ -41,19 +41,22 @@ Now we will add the table containing population by state which we will join to t
 
 
 1. Upload Tabular Data
+	
 	1. Click on the Add Vector Layer button 
 	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
-![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
+	![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
 	4. Open its attribute table to see the fields that it contains before we join it to our state polygons. 
 	5. Make a note of the columns (or fields) it contains 
 	6. This dataset has been pre-cleaned, and the column names have been reformatted. See the tutorial on DATACLEANING for more details.
 
 2. Perform a Table Join *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
+
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
+	
 		* STATEFP
 		* STATENS
 		* AFFGEOID
@@ -80,6 +83,7 @@ We always start the join on the file that we are joining to. We are joining the 
 	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
 	4. **Click** `OK` to close the join dialogue. 
 	5. **Click** `OK` to close the layer properties menu. 
+	
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
 
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
@@ -117,7 +121,6 @@ We will now save those 36 states as a separate shapefile, just like we did for t
 10. To see the new layer, clear your selection by clicking the Deselect features from all layers button.
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/18_Deselect.png)
-
 
 ## Refugees per state
 
@@ -164,7 +167,7 @@ We will create a choropleth map for refugee population by state, where each stat
 
 	1. Change the mode to Natural Breaks (jenks), and the number of classes to 8.
 	2. **Click** `Classify`. Your properties menu will now look like the one below. 
-![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.png)
+	![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.png)
 
 	3. Click `Apply`. The country polygons will change on the map. 
 	
@@ -172,7 +175,7 @@ We will create a choropleth map for refugee population by state, where each stat
 
 
 
-####Designing a map
+## Designing a map
 In order to present this map, we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF. 
 
 1. Open a new map composer 
@@ -185,13 +188,13 @@ In order to present this map, we will now compose a map layout and become famili
 4. Add a legend. 
 
 	1. Select Add new legend. 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
+	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
 
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
 	4. Select the 'Item Properties Tab
 	5. Unselect 'Auto Update'
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
+	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
 
 	6. Remove Unnecessary layers with the '-' button
 	7. Change the layer names by clicking the “legend item properties” button
@@ -201,7 +204,7 @@ In order to present this map, we will now compose a map layout and become famili
 
 	1. Select Add new scale bar button. 
 	2. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
+	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
 
 6. Add text boxes
 
