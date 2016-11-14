@@ -88,7 +88,6 @@ We always start the join on the file that we are joining to. We are joining the 
 3. Click the “+” icon. 
 
 4. Make the following selections in the dialogue box.
-
 	![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
 
 	1. join layer = state_pop
@@ -102,7 +101,6 @@ We always start the join on the file that we are joining to. We are joining the 
 	5. **Click** `OK` to close the layer properties menu. 
 	
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
-
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
 
 6. **Right-click** on the cb_2014_us_state layer and select Save.
@@ -171,9 +169,7 @@ Now we need to create a layer that will tell us how many refugees went to each s
 ![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.png)
 
 10. Select the `select features using an expression` tool. We will again select by expression in order to select the states with greater than 300 refugees. Use the expression builder as we did above to select the states. Your expression should read:  `"SUMIndividuals"  > 300`
-
 The footer bar of the map will indicate that 14 features were selected. 
-
 Use this selection to identify which states of greater than 300 refugees are within countries with fewer than ten million people. Use the expression builder to figure out which 6 states have these two characteristics. *Hint: You will need to use 'AND'*
 
 11. SAVE your project
@@ -187,7 +183,6 @@ We will create a choropleth map for refugee population by state, where each stat
 1. **Open** the properties for the citystaterefugees layer and navigate to the Style tab.
 
 2. Select Graduated Symbols from the dropdown at the top.
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/graduated.png)
 
 3. Select SUMIndividuals as the Column on which we will color the map. 
