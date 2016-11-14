@@ -67,27 +67,26 @@ Now we will add the table containing population by state which we will join to t
 **Note that NAME is identical to stateName, and each is unique -- no two states have the same name. This unique field common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
 
 We always start the join on the file that we are joining to. We are joining the population estimates table to the state boundary shapefile. 
-<br>
+
+
 1. Open the Properties for the cb_2014_us_state layer.
 2. navigate to “Joins” in the left hand menu. 
 3. Click the “+” icon. 
 4. Make the following selections in the dialogue box.
-<br>
 ![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
-<br>
+
 	1. join layer = state_pop
 	2. join field = stateName
 	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
 	4. **Click** `OK` to close the join dialogue. 
 	5. **Click** `OK` to close the layer properties menu. 
-	<br>
+	
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
-<br>
+
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
-<br>
+
 6. **Right-click** on the cb_2014_us_state layer and select Save.
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
-
 
 This new layer will then be added to the map and will contain the  joined data.
 
