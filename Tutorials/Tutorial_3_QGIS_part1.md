@@ -72,6 +72,7 @@ First we will add a basemap of the United States.
 	4. Select the layer (so it is highlighted blue).
 	
 	5. Click on the Edit pencil near the top.
+	![pencil](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/editpencil.png)
 	
 	6. Zoom in to Puerto Rico (using the Magnifying Glass with a + on it)
 	
@@ -95,11 +96,12 @@ First we will add a basemap of the United States.
 	1. Add Delimited Text layer
 	![Delimited](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Delimited.png)
 
-	2. Select the city_latlong.csv file
+	2. Find the city_latlong.csv file
+	
 	3. Select the 'csv' button and make sure that the latitude and longitude columns are the correct ones.
 	
-	3. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
-	4. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
+	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
+	5. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
 
 7. Moving Layers
 
