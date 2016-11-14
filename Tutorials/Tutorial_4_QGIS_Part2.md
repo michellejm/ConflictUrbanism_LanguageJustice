@@ -58,15 +58,16 @@ Now we will add the table containing population by state which we will join to t
 <br>
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
-		* STATEFP
-		* STATENS
-		* AFFGEOID
-		* GEOID
-		* STUSPS
-		* NAME
-		* LSAD
-		* ALAND
-		* AWATER
+	<br>
+* STATEFP
+* STATENS
+* AFFGEOID
+* GEOID
+* STUSPS
+* NAME
+* LSAD
+* ALAND
+* AWATER
 
 **Note that NAME is identical to stateName, and each is unique -- no two states have the same name. This unique field common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
 
@@ -100,35 +101,51 @@ This new layer will then be added to the map and will contain the  joined data.
 Now that we have assembled these data layers we can begin to ask a few simple questions about the data. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using  Select by Attributes. 
 
 There are multiple routes to select features within a dataset. We will follow one, but you may see other ways. We want to select just those states with an estimated population of greater than two million.
-1. Open the stateboundaries_pop attribute table and select `select features using an expression` 
-
+<br>
+1. Open the stateboundaries_pop attribute table and select select features using an expression
+<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeature.png)
+<br>
 2. Make sure the header is correct - we want to select features from the stateboundaries_pop layer
+<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.png)
+<br>
 *If you click on any of the terms in the central box a description of it will appear on the right. We will combine the field name with other operators to build an expression on the left side.*
+<br>
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/15_SelectExpressionMenu_opt.png)
+<br>
 3. Expand 'Fields and Values and select state_pop
+<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.png)
-4. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 5. Open `Operators` and double-click on the greater than symbol (>). Type in 2000000. Your expression should now look like the following:
+<br>
+4. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 5. Open Operators and double-click on the greater than symbol (>). Type in 2000000. Your expression should now look like the following:
+<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greaterthan.png)
+<br>
 5. **Click** `Select`. Some of the populated_places points should turn yellow. At the bottom left corner of your QGIS project the footer will show how many features were selected (36).
+<br>
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selected.png)
+<br>
 We will now save those 36 states as a separate shapefile, just like we did for the cb_2014_us_state layer after we joined the population estimates to it. 
-6. **Right-Click** in on the stateboundaries_pop layer, **select** `Save As`. 
-7. Select `Save only selected features`, and save the shapefile as selectedlayers.shp. This will then be added to our map as a new layer. 
-8. To see the new layer, clear your selection by clicking the `Deselect features from all layers button.`
+<br>
+6. **Right-Click** in on the stateboundaries_pop layer, **select** Save As. 
+7. Select Save only selected features, and save the shapefile as selectedlayers.shp. This will then be added to our map as a new layer. 
+8. To see the new layer, clear your selection by clicking the Deselect features from all layers button.
+<br>
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/18_Deselect.png)
 
 
 ##Refugees per state
 
-Now we need to create a layer that will tell us how many refugees went to each state. our city_latlong file has the number of individuals in it. To count the number of individuals per state, we will join the city_latlong to stateboundaries_pop based on their shared location, and then sum the 'Individuals' column
+Now we need to create a layer that will tell us how many refugees went to each state. our city_latlong file has the number of individuals in it. To count the number of individuals per state, we will join the city_latlong to stateboundaries_pop based on their shared location, and then sum the 'Individuals' column.
+<br>
 1. Select the stateboundaries_pop layer
 2. Select Vector > Data Management Tools > Join Attributes by Location
-
+<br>
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinbylocation.png)
+<br>
 3. In the Dialogue box, select the following options
-
+<br>
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinlocation_attributes.png)
 4. Save as citystaterefugees.shp and click 'OK'
 5. Open the attribute table for the citystaterefugees layer. You should see a SUMIndividuals column. This represents the sum of individuals across all the cities in that state. (Don't worry about the NULL values - it just means there aren't any cities in that state where refugees are settled). 
