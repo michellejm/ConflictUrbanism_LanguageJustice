@@ -29,16 +29,17 @@ We already mapped the locations of refugee resettlement in the United States as 
 In order to answer these questions we’ll first select just those cities which have populations of more than two million. Then we will export that as a separate layer. 
 
 ### Setting up QGIS
-<br>
+
+
 1. Open your MappingData_Population.qgs file. 
-<br>
 	1. It should still contain the states polygons and cities points we added previously.
 	2. If these layers are not immediately visible then **right click** on the name of either layer in the Layer menu and click Zoom To Layer.
 
 ### Import population information
 
 Now we will add the table containing population by state which we will join to the state polygons. *QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .csv file (note QGIS cannot read .xlsx files).*
-<br>
+
+
 1. Upload Tabular Data
 	1. Click on the Add Vector Layer button 
 	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
