@@ -32,6 +32,7 @@ In order to answer these questions we’ll first select just those cities which 
 
 
 1. Open your MappingData_Population.qgs file. 
+
 	1. It should still contain the states polygons and cities points we added previously.
 	2. If these layers are not immediately visible then **right click** on the name of either layer in the Layer menu and click Zoom To Layer.
 
@@ -53,7 +54,7 @@ Now we will add the table containing population by state which we will join to t
 2. Perform a Table Join *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
 
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
-![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
+	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
 	
@@ -87,6 +88,7 @@ We always start the join on the file that we are joining to. We are joining the 
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
 
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
+
 6. **Right-click** on the cb_2014_us_state layer and select Save.
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
 
@@ -94,7 +96,7 @@ This new layer will then be added to the map and will contain the  joined data.
 
 ## Attribute Tables and Data Querying
 
-Now that we have assembled these data layers we can begin to ask a few simple questions about the data. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using  Select by Attributes. 
+Now that we have assembled these data layers we can begin to ask a few simple questions about the data. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using Select by Attributes. 
 
 There are multiple routes to select features within a dataset. We will follow one, but you may see other ways. We want to select just those states with an estimated population of greater than two million.
 
@@ -153,7 +155,6 @@ Use this selection to identify which states of greater than 300 refugees are wit
 
 Now that we have calculated information about the number refugees in each state, we can represent that in different ways in the map. We will make a chloropleth map to represent refugees by state. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
-
 We will create a choropleth map for refugee population by state, where each state will be colored according to the number of refugees who settled there in 2014. 
 
 1. **Open** the properties for the citystaterefugees layer and navigate to the Style tab.
@@ -191,18 +192,23 @@ In order to present this map, we will now compose a map layout and become famili
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
 
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
+	
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
+	
 	4. Select the 'Item Properties Tab
+	
 	5. Unselect 'Auto Update'
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
 
 	6. Remove Unnecessary layers with the '-' button
+	
 	7. Change the layer names by clicking the “legend item properties” button
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.png)
 
 5. Add a scale bar
 
 	1. Select Add new scale bar button. 
+	
 	2. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
 
