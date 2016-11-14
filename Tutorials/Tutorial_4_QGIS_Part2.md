@@ -125,21 +125,17 @@ There are multiple routes to select features within a dataset. We will follow on
 2. Make sure the header is correct - we want to select features from the stateboundaries_pop layer.
 
 3. If you click on any of the terms in the central box a description of it will appear on the right. We will combine the field name with other operators to build an expression on the left side.
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.png)
 
 4. Expand 'Fields and Values and select state_pop
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.png)
 
 5. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 
 
 6. Open Operators and double-click on the greater than symbol (>). Type in 2000000. Your expression should now look like the following:
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greaterthan.png)
 
 7. **Click** `Select`. Some of the populated_places points should turn yellow. At the bottom left corner of your QGIS project the footer will show how many features were selected (36).
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selected.png)
 
 8. Save those 36 states as a separate shapefile, just like we did for the cb_2014_us_state layer after we joined the population estimates to it. 
@@ -149,7 +145,6 @@ There are multiple routes to select features within a dataset. We will follow on
 10. Select Save only selected features, and save the shapefile as selectedlayers.shp. This will then be added to our map as a new layer. 
 
 11. To see the new layer, clear your selection by clicking the Deselect features from all layers button.
-
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/18_Deselect.png)
 
 ## Refugees per state
@@ -159,11 +154,9 @@ Now we need to create a layer that will tell us how many refugees went to each s
 1. Select the stateboundaries_pop layer
 
 2. Select Vector > Data Management Tools > Join Attributes by Location
-
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinbylocation.png)
 
 3. In the Dialogue box, select the following options
-
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinlocation_attributes.png)
 
 4. Save as citystaterefugees.shp and click 'OK'
@@ -177,7 +170,6 @@ Now we need to create a layer that will tell us how many refugees went to each s
 8. Click on that row (by clicking on the number on the far left). Move the attribute table out of the way so you can see the map again. That state should be highlighted. You can select multiple rows by holding the "Command" button and clicking on the rows you are interested in.
 
 9. Close the attribute table and Deselect Features from All layers
-
 ![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.png)
 
 10. Select the `select features using an expression` tool. We will again select by expression in order to select the states with greater than 300 refugees. Use the expression builder as we did above to select the states. Your expression should read:  `"SUMIndividuals"  > 300`
@@ -211,7 +203,6 @@ We will create a choropleth map for refugee population by state, where each stat
 	1. Change the mode to Natural Breaks (jenks), and the number of classes to 8.
 	
 	2. **Click** `Classify`. Your properties menu will now look like the one below. 
-	
 	![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.png)
 
 	3. Click `Apply`. The country polygons will change on the map. 
@@ -224,19 +215,16 @@ We will create a choropleth map for refugee population by state, where each stat
 In order to present this map, we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF. 
 
 1. Open a new map composer 
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composer.png)
 
 2. To add a new map to the composer select the add new map button. 
 
 3. Then click once and drag a rectangle over the area on the page that you would like the map to occupy. *Whatever is showing in your QGIS map project window is what will appear in the new map.*
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composenewmap.png)
 
 4. Add a legend. 
 
 	1. Select Add new legend. 
-	
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
 
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
@@ -246,13 +234,11 @@ In order to present this map, we will now compose a map layout and become famili
 	4. Select the 'Item Properties Tab
 	
 	5. Unselect 'Auto Update'
-	
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
 
 	6. Remove Unnecessary layers with the '-' button
 	
 	7. Change the layer names by clicking the “legend item properties” button
-	
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.png)
 
 5. Add a scale bar
@@ -269,11 +255,9 @@ In order to present this map, we will now compose a map layout and become famili
 	2. Add abbreviated citations for our data sources. 
 	
 	3. Click the add new label button then use the Main properties field to add the text, and use the Font button to change the text size and font. 
-	
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/textlabel.png)
 
 7. use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.png)
 
 ______________________________________________________________________________________________________________
