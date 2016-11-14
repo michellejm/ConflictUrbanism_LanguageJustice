@@ -1,6 +1,7 @@
 #Analyzing Data with QGIS - QGIS Part 2
 
 By the end of this tutorial you will be able to:
+
 * Upload a dataset to QGIS 
 * Join datasets based on a shared identifier
 * Join datasets based on a shared location
@@ -11,9 +12,6 @@ By the end of this tutorial you will be able to:
 
 We will work with the basemap we made in Tutorial 3 (QGIS Part 1) and add new data to it in order to examine various demographic features of the cities and states where refugees are resettled. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. 
 
-Open your Refugee_Cities.qgs map project.
-
-We have already mapped the locations of refugee resettlement in the United States as well as state polygons. We have tabular data available for population at the state level from the [United States Census](https://www.census.gov/) in the Data/state_pop.csv file. The city data also has the number of Refugees per city. We will use these two datasets to answer questions about population and refugee resettlement. In the next tutorial, we will use more detailed information about the cities, including income and infrastructure.
 
 We will answer a few questions in this tutorial: 
 
@@ -21,10 +19,19 @@ We will answer a few questions in this tutorial:
 * How many states received more than 300 refugees in 2014? 
 * How many states with fewer than ten million people received greater than 300 refugees in 2014?
 
+##Set Up
+
+Open your Refugee_Cities.qgs map project.
+
+We already mapped the locations of refugee resettlement in the United States as well as state polygons. We have tabular data available for population at the state level from the [United States Census](https://www.census.gov/) in the Data/state_pop.csv file. The city data also has the number of Refugees per city. We will use these two datasets to answer questions about population and refugee resettlement. In the next tutorial, we will use more detailed information about the cities, including income and infrastructure.
+
+
 In order to answer these questions we’ll first select just those cities which have populations of more than two million. Then we will export that as a separate layer. 
 
 ###Setting up QGIS
+<br>
 1. Open your MappingData_Population.qgs file. 
+<br>
 	1. It should still contain the states polygons and cities points we added previously.
 	2. If these layers are not immediately visible then **right click** on the name of either layer in the `Layer` menu and click `Zoom To Layer`.
 
