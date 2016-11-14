@@ -80,11 +80,9 @@ We always start the join on the file that we are joining to. We are joining the 
 	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
 	4. **Click** `OK` to close the join dialogue. 
 	5. **Click** `OK` to close the layer properties menu. 
-	
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
 
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
-
 6. **Right-click** on the cb_2014_us_state layer and select Save.
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
 
@@ -95,26 +93,19 @@ This new layer will then be added to the map and will contain the  joined data.
 Now that we have assembled these data layers we can begin to ask a few simple questions about the data. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using  Select by Attributes. 
 
 There are multiple routes to select features within a dataset. We will follow one, but you may see other ways. We want to select just those states with an estimated population of greater than two million.
-
 1. Open the stateboundaries_pop attribute table and select select features using an expression
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeature.png)
-
 2. Make sure the header is correct - we want to select features from the stateboundaries_pop layer
 3. If you click on any of the terms in the central box a description of it will appear on the right. We will combine the field name with other operators to build an expression on the left side.
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.png)
-
-
 4. Expand 'Fields and Values and select state_pop
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.png)
-
 5. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 5. Open Operators and double-click on the greater than symbol (>). Type in 2000000. Your expression should now look like the following:
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greaterthan.png)
-
 6. **Click** `Select`. Some of the populated_places points should turn yellow. At the bottom left corner of your QGIS project the footer will show how many features were selected (36).
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selected.png)
 We will now save those 36 states as a separate shapefile, just like we did for the cb_2014_us_state layer after we joined the population estimates to it. 
-
 6. **Right-Click** in on the stateboundaries_pop layer, **select** Save As. 
 7. Select Save only selected features, and save the shapefile as selectedlayers.shp. This will then be added to our map as a new layer. 
 8. To see the new layer, clear your selection by clicking the Deselect features from all layers button.
