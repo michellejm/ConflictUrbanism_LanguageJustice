@@ -186,42 +186,31 @@ In order to present this map, we will now compose a map layout and become famili
 1. Open a new map composer 
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composer.png)
-
 2. To add a new map to the composer select the add new map button. 
 3. Then click once and drag a rectangle over the area on the page that you would like the map to occupy. *Whatever is showing in your QGIS map project window is what will appear in the new map.*
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composenewmap.png)
-
 4. Add a legend. 
-
 	1. Select Add new legend. 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
-
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
 	4. Select the 'Item Properties Tab
 	5. Unselect 'Auto Update'
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
-
 	6. Remove Unnecessary layers with the '-' button
 	7. Change the layer names by clicking the “legend item properties” button
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.png)
-
 5. Add a scale bar
-
 	1. Select Add new scale bar button. 
 	2. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
 6. Add text boxes
-
 	1. Add a title for the map 
 	2. Add abbreviated citations for our data sources. 
 	3. Click the add new label button then use the Main properties field to add the text, and use the Font button to change the text size and font. 
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/textlabel.png)
-
 7. use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.png)
