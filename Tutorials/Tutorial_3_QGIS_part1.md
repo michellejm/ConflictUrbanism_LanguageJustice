@@ -1,5 +1,5 @@
 
-##Mapping Data Part 1
+# Mapping Data with QGIS - Part I
 
 The purpose of this tutorial is to introduce you to the mapping platform, QGIS, and help you become familiar with the interface and its features. By completing this tutorial, you will be able to:
 
@@ -10,10 +10,10 @@ The purpose of this tutorial is to introduce you to the mapping platform, QGIS, 
 4. Add a vector layer
 
 
-##Getting Started
+## Getting Started
 Download the GitHub repository for this tutorial. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder will then have all of the datasets needed for this tutorial. 
 
-##Mapping Refugee Destinations in the United States
+## Mapping Refugee Destinations in the United States
 
 This mapping project is based on recent [discussions](https://www.thisamericanlife.org/radio-archives/episode/600/will-i-know-anyone-at-this-party?act=1") about Refugees in the United States, research on language maintenance and English acquisition by refugees in the [Twin Cities Metropolitan Area](http://onlinelibrary.wiley.com/doi/10.1111/j.0020-7985.2003.00262.x/full) (Fennelley and Palasz, 2003) and the shift in the early 2000's away from refugees being resettled in larger cities towards smaller and mid-sized cities. We are interested in this topic because Refugees in the US tend to speak less common languages (i.e., not English, Spanish, or Chinese), and tend to settle in small enclaves. Unlike other immigrant groups, refugees tend to have less academic and linguistic preparation before arriving in the US and because of a variety of factors, rarely have the opportunity to, or other adult learning opportunities (for more about Refugees in the US, visit [Office of Refugee Services](http://www.acf.hhs.gov/orr).
 
