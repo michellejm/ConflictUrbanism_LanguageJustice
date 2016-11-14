@@ -91,7 +91,7 @@ We always start the join on the file that we are joining to. We are joining the 
 
 4. Make the following selections in the dialogue box.
 
-![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
+	![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorjoin.png)
 
 	1. join layer = state_pop
 	
