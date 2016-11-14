@@ -31,9 +31,9 @@ In order to answer these questions we’ll first select just those cities which 
 ### Setting up QGIS
 <br>
 1. Open your MappingData_Population.qgs file. 
-
+<br>
 	1. It should still contain the states polygons and cities points we added previously.
-	2. If these layers are not immediately visible then **right click** on the name of either layer in the `Layer` menu and click `Zoom To Layer`.
+	2. If these layers are not immediately visible then **right click** on the name of either layer in the Layer menu and click Zoom To Layer.
 
 ### Import population information
 
