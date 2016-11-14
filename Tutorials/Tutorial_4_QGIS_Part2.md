@@ -125,11 +125,9 @@ Now we need to create a layer that will tell us how many refugees went to each s
 
 1. Select the stateboundaries_pop layer
 2. Select Vector > Data Management Tools > Join Attributes by Location
-
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinbylocation.png)
 
 3. In the Dialogue box, select the following options
-
 ![Attributes](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/joinlocation_attributes.png)
 
 4. Save as citystaterefugees.shp and click 'OK'
@@ -138,7 +136,6 @@ Now we need to create a layer that will tell us how many refugees went to each s
 7. What state received the most refugees? 
 8. Click on that row (by clicking on the number on the far left). Move the attribute table out of the way so you can see the map again. That state should be highlighted. You can select multiple rows by holding the "Command" button and clicking on the rows you are interested in.
 9. Close the attribute table and Deselect Features from All layers
-
 ![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.png)
 
 10. Select the `select features using an expression` tool. We will again select by expression in order to select the states with greater than 300 refugees. Use the expression builder as we did above to select the states. Your expression should read:  `"SUMIndividuals"  > 300`
@@ -158,7 +155,6 @@ We will create a choropleth map for refugee population by state, where each stat
 
 1. **Open** the properties for the citystaterefugees layer and navigate to the Style tab.
 2. Select Graduated Symbols from the dropdown at the top
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/graduated.png)
 
 3. Select SUMIndividuals as the Column on which we will color the map. 
@@ -168,7 +164,6 @@ We will create a choropleth map for refugee population by state, where each stat
 
 	1. Change the mode to Natural Breaks (jenks), and the number of classes to 8.
 	2. **Click** `Classify`. Your properties menu will now look like the one below. 
-
 ![Attribute](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/jenks.png)
 
 	3. Click `Apply`. The country polygons will change on the map. 
@@ -181,33 +176,40 @@ We will create a choropleth map for refugee population by state, where each stat
 In order to present this map, we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF. 
 
 1. Open a new map composer 
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composer.png)
+
 2. To add a new map to the composer select the add new map button. 
 3. Then click once and drag a rectangle over the area on the page that you would like the map to occupy. *Whatever is showing in your QGIS map project window is what will appear in the new map.*
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/composenewmap.png)
+
 4. Add a legend. 
+
 	1. Select Add new legend. 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
+
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
 	4. Select the 'Item Properties Tab
 	5. Unselect 'Auto Update'
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
+
 	6. Remove Unnecessary layers with the '-' button
 	7. Change the layer names by clicking the “legend item properties” button
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/customlegend.png)
+
 5. Add a scale bar
+
 	1. Select Add new scale bar button. 
 	2. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/scalebar.png)
+
 6. Add text boxes
+
 	1. Add a title for the map 
 	2. Add abbreviated citations for our data sources. 
 	3. Click the add new label button then use the Main properties field to add the text, and use the Font button to change the text size and font. 
-
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/textlabel.png)
+
 7. use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.png)
