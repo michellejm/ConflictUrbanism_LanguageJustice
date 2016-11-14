@@ -46,8 +46,6 @@ Now we will add the table containing population by state which we will join to t
 
 
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
-
-
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
 	4. Open its attribute table to see the fields that it contains before we join it to our state polygons. 
 	5. Make a note of the columns (or fields) it contains 
@@ -57,15 +55,11 @@ Now we will add the table containing population by state which we will join to t
 2. Perform a Table Join
 
 *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
-
 	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
-
-
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
-	
 		* STATEFP
 		* STATENS
 		* AFFGEOID
