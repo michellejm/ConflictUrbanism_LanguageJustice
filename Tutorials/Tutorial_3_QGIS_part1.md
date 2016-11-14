@@ -58,7 +58,6 @@ First we will add a basemap of the United States.
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.png)
 
 	2. Click on the Render box in the lower right hand. Also change this to "North America Lambert Conformal Conic (EPSG: 102009)"
-	
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
 
 4.  We need to remove these.	
@@ -67,17 +66,26 @@ First we will add a basemap of the United States.
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featurecount.png)
 
 	2. The number of polygons will appear next to the layer name.
+	
 	3. It should show 56 features, we want 51 polygons (the US plus Washington DC).
+	
 	4. Select the layer (so it is highlighted blue).
+	
 	5. Click on the Edit pencil near the top.
+	
 	6. Zoom in to Puerto Rico (using the Magnifying Glass with a + on it)
+	
 	7. Select the 'Select Features by area or single click' button
+	
 	8. Click on Puerto Rico to select it - it will change color
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featuresbyarea.png)
 
 	9. Click on the Trash can on the left side of the toolbar to delete it.
+	
 	10. Repeat for the US Virgin Islands, American Samoa, Guam, and Northern Mariana Islands.
+	
 	11. Recenter the map using the Zoom Full Magnifying Glass (the one with the arrows going out of it) 
+	
 	12. SAVE!
 
 5. Moving Alaska and Hawaii is beyond the scope of this tutorial. 
@@ -96,7 +104,6 @@ First we will add a basemap of the United States.
 7. Moving Layers
 
 	1. Click and drag the states layer on top of the cities layer. The cities points are no longer visible because they are behind the states polygons. 
-	![order](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/03_Adding_Layers.png)
 
 8. It might be easier to look at if we use state outlines rather than filled polygons. To do this, we must change the **style** of the data layer. 
 
