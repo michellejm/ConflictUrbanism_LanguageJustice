@@ -7,6 +7,8 @@ By the end of this tutorial you will be able to:
 * Query a dataset based on a feature
 * Create a choropleth map
 
+##Premise 
+
 We will work with the basemap we made in Tutorial 3 (QGIS Part 1) and add new data to it in order to examine various demographic features of the cities and states where refugees are resettled. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. 
 
 Open your Refugee_Cities.qgs map project.
@@ -21,19 +23,22 @@ We will answer a few questions in this tutorial:
 
 In order to answer these questions we’ll first select just those cities which have populations of more than two million. Then we will export that as a separate layer. 
 
-####Setting up QGIS
+###Setting up QGIS
 1. Open your MappingData_Population.qgs file. 
 	1. It should still contain the states polygons and cities points we added previously.
 	2. If these layers are not immediately visible then **right click** on the name of either layer in the `Layer` menu and click `Zoom To Layer`.
 
-####Import population information
+###Import population information
 
 Now we will add the table containing population by state which we will join to the state polygons. *QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .csv file (note QGIS cannot read .xlsx files).*
 1. Upload Tabular Data
 	1. Click on the Add Vector Layer button 
 
 	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
+	
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
+
+
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
 	4. Open its attribute table to see the fields that it contains before we join it to our state polygons. 
 	5. Make a note of the columns (or fields) it contains 
