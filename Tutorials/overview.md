@@ -1,9 +1,10 @@
 # Tutorials for Conflict Urbanism: Language Justice 
 ##Spring 2017
 
-Students in the class must take at least *four* tutorials, though everyone is welcome and encouraged to take more. A brief description follows. Everyone *must take Tutorial 5* as it introduces the Template for the final projects. 
-* Students who are interested in a more technical approach to mapping should take, at a minimum, Tutorials 3, 4, 5, and 7 and optionally Tutorial 6, 8, or 9. 
-* Students who are interested in using maps as a supplement to a project, or in digital storytelling should take Tutorials 1, 2 and 5 in addition to Tutorial 6, 8, or 9.
+Students in the class must take at least **four** tutorials, though everyone is welcome and encouraged to take more. A brief description of each tutorial follows. **Everyone** must take **Tutorial 5** as it introduces the template for the final projects. 
+
+* Students who are interested in a more technical approach to mapping and centering their project around a map should take, minimally, Tutorials 3, 4, 5, and 7 and optionally Tutorials 6, 8, or 9. 
+* Students who are interested in using maps as a supplement to a project, or in digital storytelling should take Tutorials 1, 2 and 5 in addition to one or more of Tutorials 6, 8, or 9.
 
 ### Tutorials 1 & 2 Introduction to Mapping and Data with Carto 
 
