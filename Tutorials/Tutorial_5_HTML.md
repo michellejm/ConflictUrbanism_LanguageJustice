@@ -259,10 +259,11 @@ The code for the Case Study is pasted below. This is the same as the template.ht
 
 Every step is commented. More detailed comments follow this code block. You can follow the instructions in the code or go to the end if you want a more high-level introduction. Everytime you change the code in Sublime, `Save`. `Refresh` the web page and you should be able to see the changes. Note: Do not make any changes to the .css files. 
 
-```html
-<!-- Conflict Urbanism: Language Justice
+```
+<!-- Conflict Urbanism: Language Justics
      Center for Spatial Research
-     Michelle McSweeney (mam2518@columbia.edu)
+     Created by Madeeha Merchant (mym2107@columbia.edu)
+     Edited by Michelle McSweeney (mam2518@columbia.edu)
 
 ================================================================= -->
 <!DOCTYPE html>
@@ -284,7 +285,7 @@ Every step is commented. More detailed comments follow this code block. You can 
 
   <!--Do not change: css files required for case study -->
   <link href='css/conflict_main.css' rel='stylesheet' />
-  <link href='css/conflict_cthese.css' rel='stylesheet' />
+  <link href='css/conflict_course.css' rel='stylesheet' />
   
   <style>
   body {
@@ -293,14 +294,15 @@ Every step is commented. More detailed comments follow this code block. You can 
   </style>
   </head>
 
+
 <body>
 
   <div class="container main">
     <div class="row top-row">
       <div class="col-md-12">
 
-        <!--Do not change:Cthese : Title if working on Aleppo -->
-        <h5><a href="index.html">Conflict Urbanism Aleppo</a></h5>
+        <!--Do not change:Course : Title i -->
+        <h5><a href="index.html">Conflict Urbanism: Language Justice</a></h5>
 
         <!--Add: Case Study Title -->
         <h5>Case Study | Type Title Here </h5>
@@ -315,9 +317,7 @@ Every step is commented. More detailed comments follow this code block. You can 
       </div>
     </div>
 
-<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. 
-In this example, we have 7 sections. Below we set up a list for adding to the menu on left. 
-You could use chapter 1, chapter 2 or give text titles. --> 
+<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. In this example, we have 7 sections. Below we set up a list for adding to the menu on left. You could use chapter 1, chapter 2 or give text titles. --> 
 
 <div class="row">
   <div class="col-md-3 scrollspy">
@@ -335,24 +335,19 @@ You could use chapter 1, chapter 2 or give text titles. -->
     </div>
   </div>
 
-<!--Note: You can start with the first few paragraphs and keep adding. Each <item> above has a referenced paragraph below. 
-You can think of the above being a table of contents and below being the chapters, with actual text. 
-If you add a chapter, go back to the Table of Contents and add a tab for it. --> 
+<!--Note: You can start with the first few paragraphs and keep adding. Each <item> above has a referenced paragraph below. You can think of the above being a table of contents and below being the chapters, with actual text. If you add a chapter, go back to the Table of Contents and add a tab for it. --> 
 
   <!-- main -->
   <div class="col-md-6 body-text">
 
 <!--Add: Text Paragraph -->
      <!-- <h5 id="section_id">Section Title</h5> -->
-     <h5 id="Text1">Introduction to the cthese</h5>
+     <h5 id="Text1">Introduction to the course</h5>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
 
 <!--Add: Text Paragraph with Annotation. 
 
-We have designed annotations, so that they are responsive to where you are on the case study. 
-These appear on the right column next to the footnote. To add a footnote, insert the following line of code. 
-Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, 
-to add in the text and link.
+We have designed annotations, so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link.
 
 To add a footnote, insert: <div class="footnote footnote-1">1</div> 
 Starting from #1, change as you proceed-->
@@ -362,7 +357,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!--Add: Text Paragraph with PDF report. 
 To add a link to a PDF, save the file in the same folder and update link text 
-Insert the following code: <a href='filename.pdf'>Download Report</a> -->
+Insert the following code: <a href='sample_report.pdf'>Download Report</a> -->
     <h5 id="Text3">Text with PDF</h5><br/>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br>
 <a href='sample_report.pdf'>Download Report</a><br/><br/>
@@ -375,33 +370,49 @@ Insert the following code: <img src="img/filename.png" class="img-responsive"/> 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br/><br/>
 
 <!--Add: Text Paragraph with Video. 
-To add a Video, either upload to vimeo or use Youtube link 
-Insert the following code: 
+To add a Video, either upload from Vimeo or YouTube
+Insert this code:
 <div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="weblink_of_video"></iframe>
-</div>
+then include the iframe afterwards.
+Go to the Video and find the sharing options. Select 'embed.' it will return a long pirece of code starting with iframe. add this after the div class (see the example below)
+
 -->
 <h5 id="Text5">Text with Video</h5><br/>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/></br>
-<!-- Example: Vimeo -->
+<!-- Example: You Tube -->
 <div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/152612971"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/XuhT_UkDWKY" frameborder="0" allowfullscreen></iframe>
 </div>
 </br>
 
 <!--Add: Text with Interactive. 
-As part of the project, you might design an interactive website. If you would like to include that in the case study, 
-the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. 
-Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
+As part of the project, you might design an interactive website or use another site's tools to make an interactive component. If you would like to include that in the case study, the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
+
+1. Linking Interactive to html
+ 
+<a href="mymap/index.html"><img src="img/skyline.jpg" class="img-responsive"/></a>
+
+2. Embedding Interactive (This is ok if it's a couple of layers)
+This example was made with plotly
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~linguanne/12.embed"></iframe>
+
+
+3. Embedding an entire website (As case study is responsive, test ! test !)
+
+<iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
+<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
 -->
 
 <h5 id="Text6">Text with Interactive</h5><br/>
-<a href="Interactive.html" target='_blank' ><img src="img/Sample_Image_Interactive.png" class="img-responsive"/></a>
+<br>
+
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~linguanne/12.embed"></iframe>
 
 <br/>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
 
-<iframe width='100%' height='500px' frameBorder='0' src='interactive.html'></iframe>
+<a href="mymap/index.html"><img src="img/skyline.jpg" class="img-responsive"/></a>
 
 <br/><br/> 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
@@ -412,8 +423,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <br/>
 
 <!--Add: Text with Interactive Map. 
-You can bring any project from mapbox editor, using the iframe method. 
-In tutorial 4, we go over Mapbox basics, to make such an interactive map in mapbox editor.
+You can bring any project from Carto using the Embed (iFrame) method Just copy and paste the code from the Publish >> Embed option. 
+Or from Mapbox editor, using the iframe method (covered in tutorial 7)
+
+Following is the code that you copy/paste from CArto: 
+<iframe width="100%" height="520" frameborder="0" src="https://michellejm.carto.com/viz/f07c01f8-85b7-11e6-96f9-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
 
 Note: You can bring in any project, with the above code as long as you have your mapbox API key and map id
 -->
@@ -422,19 +437,15 @@ Note: You can bring in any project, with the above code as long as you have your
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br/><br/>
 </br>
 
-<!-- Copy iframe tab from Carto  -->
+<!-- Copy iframe tab form Carto-->
 </br>
-You can bring any project from Carto using the Embed (iFrame) method Just copy and paste the code from the Publish >> Embed option. 
-
-
-Following is an example of the code that you copy/paste from Carto editor: 
 <iframe width="100%" height="520" frameborder="0" src="https://michellejm.carto.com/viz/f07c01f8-85b7-11e6-96f9-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </br>
 
-<!--Add: your name and description as follows -->
+<!--Add: Your name and description as follows -->
 </br>
 <hr>
-your Name: <br/><br/>Description (Program, Year, Expertise)
+Your Name: <br/><br/>Description (Program, Year, Expertise)
 <hr>
 <br/><br/>
 </div>
@@ -503,130 +514,9 @@ $(document).ready(function() {
 });
 </script>
 
+
 </body>
 </html>
-```
-
-### Code Explained
-
-* Add Title
-```html
-<!--Add: Case Study Title -->
-<h5>Case Study | Type Title Here </h5>
-```
-
-*  Add Header Image
-Save your file as 'Header_image_1800x450.png in the <img> folder. Use the Illustrator Template in the Case Studies folder, if you require size setup.
-```html
-<div class="img-padding">
-<img src="img/Header_image_1800x450.png" class="img-responsive" />
-</div>
-```
-* Add Chapter Titles
-Add structure to your case study by dividing it into components, akin to chapters or sections in a paper. In this example, we have 7 sections. Below is a list for adding to the menu on the left. These titles are linked to positions in the text using the href attribute (href="#Text1" refers to id="Text1" in the remainder of the template)
-```html
-<div class="row">
-  <div class="col-md-3 scrollspy">
-    <div id="sticky-menu ">
-      <ul id="nav" class="nav c4sr-nav" data-spy="affix">
-        <!-- <li><a href="#section_id"><img src="img/dot-1.png" />Chapter_Name</a></li>-->
-        <li><a href="#Text1"><img src="img/dot-1.png" />Introduction</a></li>
-        <li><a href="#Text2"><img src="img/dot-1.png" />Text with Annotation</a></li>
-        <li><a href="#Text3"><img src="img/dot-1.png" />Text with PDF</a></li>
-        <li><a href="#Text4"><img src="img/dot-1.png" />Text with Image</a></li>
-        <li><a href="#Text5"><img src="img/dot-1.png" />Text with Video</a></li>
-        <li><a href="#Text6"><img src="img/dot-1.png" />Text with Interactive</a></li>
-        <li><a href="#Text7"><img src="img/dot-1.png" />Text with Map</a><li>
-      </ul>
-    </div>
-  </div>
-```
-
-* Add Chapter Text
-Add text paragraphs for each chapter. The title of your chapter can be different (longer) than the one you use for the Table of Contents. 
-```html
-     <!-- <h5 id="section_id">Section Title</h5> -->
-     <h5 id="Text1">Introduction to the course</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
-```
-
-* Add Text with Annotations
-We have designed annotations so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link. To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
-```html
-<div class="footnote footnote-1">1</div> 
-```
-Here's how it looks in the paragraph:
-```
-<h5 id="Text2">Text with Annotation</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <div class="footnote footnote-1">1</div> Add Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<div class="footnote footnote-2">2</div> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
-```
-Then add details to `Footnotes Section` at *end* of the code. 
-```html
-<div class="col-md-3">
-  <div class="footnotes">
-    <div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div>
-    <div class="footnote-ref footnote-ref-2"><sup>2</sup>Test2 <a href= "www.c4sr.columbia.edu"> “Description ”</a> Date </div>
-  </div>
-</div>
-</div>
-```
-
-* Add PDFs
-
-To add a link to a PDF, save the file in the same folder and update link text. Insert the following code: 
-```html
-<a href='sample_report.pdf'>Download Report</a><br/><br/>
-```
-
-* Add Images
-
-To add an Image, save the file in the <img> folder. Insert the following code:
-```html
-<img src="img/Sample_Image.png" class="img-responsive"/><br/>
-```
-* Add Video
-
-To add a Video, either upload to vimeo or use Youtube link. Insert the following code: 
-```html
-<div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/152612971"></iframe>
-</div>
-```
-* Add Interactive Features
-
-If you would like to include interactive features in the case study, the easiest way might be linking your built object to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
-
-1. Linking Image to an Interactive html:
-```html 
-<a href="filename.html"><img src="img/filename_interactive.png" class="img-responsive"/></a>
-```
-
-2. Embedding an Interactive html
-
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='interactive.html'></iframe>
-```
-
-3. Embedding an entire website (test this!)
-
-```html
-<iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
-```
-* Add a Map
-<br>You can bring any project from carto, using the embed method. In Tutorial 3, we go over how to use Carto to embed maps.
-
-Following is the code that you copy/paste from carto
-```html
-<iframe width="100%" height="520" frameborder="0" src="https://michellejm.carto.com/viz/f07c01f8-85b7-11e6-96f9-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-```
-
-
-* Add your Name
-```html
-<hr>
-your Name: <br/><br/>Description (Program, Year, Expertise)
-<hr>
 ```
 
 
