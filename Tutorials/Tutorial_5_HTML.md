@@ -260,7 +260,7 @@ The code for the Case Study is pasted below. This is the same as the template.ht
 Every step is commented. More detailed comments follow this code block. You can follow the instructions in the code or go to the end if you want a more high-level introduction. Everytime you change the code in Sublime, `Save`. `Refresh` the web page and you should be able to see the changes. Note: Do not make any changes to the .css files. 
 
 ```
-<!-- Conflict Urbanism: Language Justics
+<!-- Conflict Urbanism: Language Justice
      Center for Spatial Research
      Created by Madeeha Merchant (mym2107@columbia.edu)
      Edited by Michelle McSweeney (mam2518@columbia.edu)
