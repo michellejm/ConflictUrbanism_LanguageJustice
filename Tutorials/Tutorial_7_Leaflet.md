@@ -21,7 +21,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### Check which Python version you have (if any)
 
 1. Open a Terminal Window 
-![terminal](  INSERT LINK)
+![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 2. Type `python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
@@ -30,7 +30,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### Get Organized
 
 1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's in Dropbox, you might want to put it somewhere else.
-	2. Create folders in that folder. Call them:
+	1. Create folders in that folder. Call them:
 		1. css *put css files here*
 		2. data *put data files here*
 		3. images *put images files here*
