@@ -205,7 +205,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 		1. Pass the .addTo property, and give it the map variable.
 	
 
-```<body>
+	```<body>
 
   <div id="map"></div>
 
@@ -229,7 +229,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
   </script>
 </body>
 </html>
-```
+	```
 
 6. Let's go check it out on our website. Go back to the web browser at localhost:1010. A basic map of the US should appear. Congratulations!
 
