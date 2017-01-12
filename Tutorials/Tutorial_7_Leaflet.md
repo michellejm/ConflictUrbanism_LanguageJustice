@@ -242,14 +242,13 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	2. Tell jQuery where your file is located, and give the function a name (I'm going to use 'data'). 
 	3. Just like with the tiles, we want to add this element to the map.
 
-```// load GeoJSON file
+	```// load GeoJSON file
   $.getJSON("data/cll.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
- ```
+ 	```
 
 2. Inspect the map.
-
 3. We can do better than blue pins, we will change the icons
 
 	1. There are two options for using different icons.
@@ -263,7 +262,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	2. Call Leaflet with L and call the AwesomeMarkers.icon property. This syntax is from the Awesome Markers [documentation](https://github.com/lvoogdt/Leaflet.awesome-markers)
 	3. There are a few other icon sets, so we have to set the prefix as 'fa', find the icon you want (we're going to use 'home' to represent Refugee Homes), and tell it what color to make the icons (I think black is easiest to see).
 
-```  $.getJSON("data/cll.geojson",function(data){
+	```  $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
     	CONFLICT
        prefix: 'fa', //font awesome rather than bootstrap 
@@ -271,7 +270,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
        URBANISM
        iconColor: 'black',
     });
-    ```
+    	```
 
 5. Now add the marker to the map
 
