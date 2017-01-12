@@ -61,11 +61,11 @@ Your Terminal (on a Mac) has this icon:
 
 	* `$ sudo python -m SimpleHTTPServer`
 	
-![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
+	![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
 
 3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
 
-Set this stage aside.
+We will come back to this.
 	
 ### About Leaflet
 
