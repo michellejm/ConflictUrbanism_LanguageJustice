@@ -50,23 +50,24 @@ Your directory should look like this:
 
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 
-In my case it is in Dropbox > learnleaflet > public  so I type:
+In my case it is in Dropbox > learnleaflet > public so I type (don't type the $, that just indicates that you are in the Terminal):
 
-	* `cd Dropbox`
-	* `cd learnleaftlet` 
-	* `cd public`
+	* `$ cd Dropbox`
+	* `$ cd learnleaftlet` 
+	* `$ cd public`
 	
 2. Then if you have Python 3, type:
 
-	* `sudo python -m http.server 1010`  (you can pick your favorite 3 or 4 digit number)
+	* `$ sudo python -m http.server 1010`  (you can pick your favorite 3 or 4 digit number)
 2. If you have Python 2, type:
 
-	* `sudo python -m SimpleHTTPServer`
+	* `$ sudo python -m SimpleHTTPServer`
 	
 ![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
 
-3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty page. 
- 
+3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
+
+Set this stage aside.
 	
 ### About Leaflet
 
@@ -74,10 +75,13 @@ Leaflet is a library for Javascript. You don't have to download javascript becau
 If HTML is the structure of a website, and CSS is the style, JavaScript is the Functionality or the interaction. It's what makes websites DO things.
 
 jQuery and leaflet are libraries. You can think of libraries as a set of commands that javascript can draw on. I like to think of it as a book of commands that my program can reference. 
+
 Leaflet is specifically designed to create web maps. We expect certain things from our web maps:
+
 	1. We expect it to load quickly.
 	2. We expect to be able to view different layers of data.
 	3. We expect it to be customizable.
+	
 Leaflet handles all of this for us. 
 
 
