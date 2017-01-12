@@ -89,16 +89,20 @@ Web maps are maps on the web (duh). They are different from static maps because 
 
 Think of a web map as having a base map and layers of data added to it - just like we made in QGIS. The difference is that a web is based on tiles. Tiles are the key difference between static maps and webmaps. 
 What are tiles?
+
 1. Tiles are a bunch of images (usually 256x256 pixels each). These images are placed side-by-side to make it seem like you're looking at one big map, but really, it's a bunch of little squares.
 2. How many tiles you see is based on the Zoom Level.
+
 	1. Zoom level 0 : the whole world in 256x256
 	![world](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/zoom0.png)
 	2. Zoom level 1 : 4 tiles for the whole world
 	![world](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/zoom1.png)
 	3. The further you zoom in, the more tiles are used to make up the whole world.
 	4. You usually do not need to look at the whole world, so you only look at some of the tiles at that zoom level. 
+	
 		1. Most maps showing the continental United States are at zoom level 4.
 		2. Zoom level 4 requires 256 tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
+		
 	5. Tiles are images. We will use url's to get tiles. You could, in theory, make your own tiles. That is far beyond the scope of this tutorial.
 
 
