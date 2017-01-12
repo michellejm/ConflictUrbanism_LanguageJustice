@@ -51,9 +51,10 @@ Your directory should look like this:
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 
 In my case it is in Dropbox > learnleaflet > public so I type (don't type the $, that just indicates that you are in the Terminal):
-	* `$ cd Dropbox`
-	* `$ cd learnleaftlet` 
-	* `$ cd public`
+
+* `$ cd Dropbox`
+* `$ cd learnleaftlet` 
+* `$ cd public`
 	
 2. Then if you have Python 3, type:
 
