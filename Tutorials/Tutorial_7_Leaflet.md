@@ -242,7 +242,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	2. Tell jQuery where your file is located, and give the function a name (I'm going to use 'data'). 
 	3. Just like with the tiles, we want to add this element to the map.
 
-```      // load GeoJSON file
+```// load GeoJSON file
   $.getJSON("data/cll.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
