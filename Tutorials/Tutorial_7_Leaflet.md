@@ -76,9 +76,9 @@ jQuery and leaflet are libraries. You can think of libraries as a set of command
 
 Leaflet is specifically designed to create web maps. We expect certain things from our web maps:
 
-	* We expect it to load quickly.
-	* We expect to be able to view different layers of data.
-	* We expect it to be customizable.
+* We expect it to load quickly.
+* We expect to be able to view different layers of data.
+* We expect it to be customizable.
 	
 Leaflet handles all of this for us. 
 
