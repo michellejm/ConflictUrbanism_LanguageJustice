@@ -144,9 +144,9 @@ What are tiles?
 		2. jquery 
 		3. awesome_markers.js (We downloaded this one)
 		
-3. Set the size
+3. Set the size of the map
 
-	1. This works by indicating the style of the map
+	1. This works by indicating the style of the map in a way the browser can interpret
 	`<style> #map {width: SIZEpc; height: SIZEpx; } </style>`
 
 Type this into your document exactly (DO NOT copy/paste - I put errors in it. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short article on why you should ALWAYS type your code).
@@ -174,7 +174,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 
 1. Start the body
 2. Make a section (div) for the map, and call it map.
-3. Start a javascript command by writing `<script>
+3. Start a javascript command by writing `<script>`
 4. Initialize the map by creating a map variable
 
 	1. Javascript requires that all variable be labeled with 'var' we are going to create a map var and use leaflet to initialize it. We need to give out map two parameters. First, the latitude/longitude, and the zoom level. 
@@ -221,11 +221,11 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
       maxZoom: 12,
       minZoom: 1
     }).addTo(map URBANISM);
-    ```
 
 
-Be sure to keep these closing tags at the end of your document!!
-```
+
+// Be sure to keep these closing tags at the end of your document
+
   </script>
 </body>
 </html>
@@ -246,7 +246,7 @@ Be sure to keep these closing tags at the end of your document!!
   $.getJSON("data/cll.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
-    ```
+ ```
 
 2. Inspect the map.
 
@@ -255,7 +255,7 @@ Be sure to keep these closing tags at the end of your document!!
 	1. There are two options for using different icons.
 		1. You can upload a file to use as an icon with the iconUrl function.
 		2. You can use font awesome as a **plugin** to Leaflet to pull in all the [Font Awesome](http://fontawesome.io/get-started/) icons. 
-	2. We will use the font awesome package because it has so many options
+	2. We will use the font awesome package because it has so many options for different icoms
 	
 4. Define the marker
 
@@ -344,6 +344,7 @@ This should be a functional map that you can click on houses and get a popup abo
 	5. Pick your colors, we are going to use 5 different groups (plus a "no refugees" group). Color matters, lighter shades should be fewer people, darker should be more. Really, we should reserve chloropleths for density scales, but since we are focusing here on individuals rather than density, we will use the raw numbers [ColorBrewer](http://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=5) makes finding appropriate hex codes easier.
 
 8. This map is almost impossible to read with all of those houses clustered together. It would be much better if we grouped them together and they spread out when we zoomed in. There is a package for that, it's called [Marker Cluster](https://github.com/Leaflet/Leaflet.markercluster/blob/master/README.md). The power of Leaflet is that it is Open Source and there is a package for almost anything you could want to do. We are going to use the Marker Cluster package in our map.  
+
 	1. Download [Marker Cluster](https://github.com/leaflet/Leaflet.markercluster/downloads).
 	2. Move the MarkerCluster.css file to your css folder.
 	3. Move the MarkerCluster.Default.css to your css folder.
