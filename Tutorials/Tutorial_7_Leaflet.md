@@ -4,7 +4,11 @@ By the end of this tutorial, students will be able to:
 
 1. Decide if leaftlet or Carto is the right tool for the project
 2. Export GeoJSON files from QGIS
-3. Prepare 
+3. Prepare a map for display on the web
+4. Customize layers to hihglight different types of data
+5. Add interactivity
+6. Customize markers and the base layer to add style
+7. Create visual cues to convey information.
 
 
 ## Getting Started
