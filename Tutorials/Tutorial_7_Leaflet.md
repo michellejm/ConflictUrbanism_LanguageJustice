@@ -75,9 +75,10 @@ If HTML is the structure of a website, and CSS is the style, JavaScript is the F
 jQuery and leaflet are libraries. You can think of libraries as a set of commands that javascript can draw on. I like to think of it as a book of commands that my program can reference. 
 
 Leaflet is specifically designed to create web maps. We expect certain things from our web maps:
-	1. We expect it to load quickly.
-	2. We expect to be able to view different layers of data.
-	3. We expect it to be customizable.
+
+	* We expect it to load quickly.
+	* We expect to be able to view different layers of data.
+	* We expect it to be customizable.
 	
 Leaflet handles all of this for us. 
 
