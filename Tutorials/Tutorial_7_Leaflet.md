@@ -306,6 +306,7 @@ L.geoJson(data,{
 	
 		1. Use the feature.properties.COLUMN_NAME format
 		2. We want both City_state and Individuals the <br/> adds a line between the two rows.
+		3. This should be a functional map that you can click on houses and get a popup about that house. 
  
 ```
     L.geoJson(data,{
@@ -323,7 +324,7 @@ L.geoJson(data,{
 
 ```
 
-This should be a functional map that you can click on houses and get a popup about that house. 
+
 
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
@@ -353,7 +354,7 @@ This should be a functional map that you can click on houses and get a popup abo
 	
 		1. Use the same format as we did for the font awesome files. 
 	
-		```<head>
+```<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/MarkerCluster.css" LEAFLET>
@@ -368,7 +369,7 @@ This should be a functional map that you can click on houses and get a popup abo
   <script src="js/leaflet_awesome_markers.js"></script>
   
   <style>
-		```
+```
 
 	6. Include the groups
 	
