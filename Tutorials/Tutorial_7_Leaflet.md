@@ -1,6 +1,7 @@
 # Tutorial 7: Leaflet.js
 
 By the end of this tutorial, students will be able to:
+
 1. Decide if leaftlet or Carto is the right tool for the project
 2. Export GeoJSON files from QGIS
 3. Prepare 
