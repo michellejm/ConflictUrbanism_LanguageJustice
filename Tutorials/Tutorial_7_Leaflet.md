@@ -111,9 +111,11 @@ What are tiles?
 1. Open QGIS
 2. Reopen your saved project, Refugee_Cities
 3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a good idea to change it everywhere all at once.
+
 	1. Double click on each layer to open the attributes interface, and change CRS to 3857
 	2. Change the Project Projection by double clicking in the lower right corner
 	3. Recent the map by using the magnifying glass with the arrows pointing outward.
+	
 4. Right click on the layer that has the latitude/longitude of the cities in it. 
 5. Select Save As >> GeoJson *remember to save this layer into your leafletmap/data folder!* (I like to deselect `add layer to current project`)
 6. Right click on the layer with citystaterefugees in it and Select Save As >> GeoJson
@@ -127,7 +129,7 @@ What are tiles?
 
 1. Stylesheets
 
-	1. Format is `<link rel="stylesheet" href="STYLESHEET LOCATION">
+	1. Format is `<link rel="stylesheet" href="STYLESHEET LOCATION">`
 	2. We will use 3 stylesheets:
 	
 		1. leaflet.css  (connect to through cdn - this is the method for connecting to stylesheets through webpages)
@@ -135,7 +137,7 @@ What are tiles?
 		3. font_awesome_markers.css (We downloaded this one)
 2. Javascript
 
-	1. Format is `<script src="LOCATION"></script>
+	1. Format is `<script src="LOCATION"></script>`
 	2. We will use 3 javascript scripts:
 	
 		1. leaflet 
