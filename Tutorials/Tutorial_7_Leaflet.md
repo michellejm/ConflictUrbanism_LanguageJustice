@@ -47,6 +47,7 @@ Your directory should look like this:
 ### Set up a local server
 
 1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public so I type (don't type the $, that just indicates that you are in the Terminal):
+
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 
 	* `$ cd Dropbox`
