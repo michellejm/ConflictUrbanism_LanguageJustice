@@ -62,6 +62,7 @@ In my case it is in Dropbox > learnleaflet > public  so I type:
 2. If you have Python 2, type:
 
 	* `sudo python -m SimpleHTTPServer`
+	
 ![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
 
 3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty page. 
