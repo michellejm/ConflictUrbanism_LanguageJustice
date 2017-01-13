@@ -36,7 +36,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 		3. images *put images files here*
 		3. js *put javascript files here*
 	2. Creating this type of directory (aka file structure) is typical for anything done programmatically. You will be telling your webpage to go out and find another file to pull information from. It is easier for you if all the files are in the same place, then you only need to specify the file name (and you don't have to specify the "Path" (the file's location)).
-2. Download a stable version of [leaflet](http://leafletjs.com/download.html){:target="_blank"}, save it into the js folder
+2. Download a stable version of [leaflet](http://leafletjs.com/download.html), save it into the js folder
 3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). Either copy/paste this into a text editor and save it in the js folder as jquery-2.1.1.min.js or use your favorite method to save this file. If you'd prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 
 4. Make an empty html file and save it in the leafletmap folder. I like to call this file "index.html" because it is convention and the index file is loaded first from a directory.
@@ -48,19 +48,20 @@ Your directory should look like this:
 Your Terminal (on a Mac) has this icon:
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 
-1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public so I type (don't type the $, that just indicates that you are in the Terminal):
+1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
 
 	* `$ cd Dropbox`
 	* `$ cd learnleaftlet` 
 	* `$ cd public`
 	
-2. Then if you have Python 3, type:
+2. If you have Python 3, type:
 
 	* `$ sudo python -m http.server 1010`  (you can pick your favorite 3 or 4 digit number)
 2. If you have Python 2, type:
 
 	* `$ sudo python -m SimpleHTTPServer`
 	
+	It will look something like this:
 	![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
 
 3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
@@ -87,7 +88,7 @@ Leaflet handles all of this for us.
 
 Web maps are maps on the web (duh). They are different from static maps because while static maps are a complete image, web maps consist of layers and images that are only loaded when the user requests them. We're going to break that down. 
 
-Think of a web map as having a base map and layers of data added to it - just like we made in QGIS. The difference is that a web is based on tiles. Tiles are the key difference between static maps and webmaps. 
+Think of a web map as having a base map and layers of data added to it - just like we made in QGIS. The difference is that a web map is based on tiles. Tiles are the key difference between static maps and webmaps. 
 What are tiles?
 
 1. Tiles are a bunch of images (usually 256x256 pixels each). These images are placed side-by-side to make it seem like you're looking at one big map, but really, it's a bunch of little squares.
@@ -97,27 +98,28 @@ What are tiles?
 	![world](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/zoom0.png)
 	2. Zoom level 1 : 4 tiles for the whole world
 	![world](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/zoom1.png)
+	3. Zoom level 2 : 16 tiles for the whole world
 	3. The further you zoom in, the more tiles are used to make up the whole world.
 	4. You usually do not need to look at the whole world, so you only look at some of the tiles at that zoom level. 
 	
-		1. Most maps showing the continental United States are at zoom level 4.
-		2. Zoom level 4 requires 256 tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
+		1. Most maps showing the entire continental United States are at zoom level 4.
+		2. Zoom level 4 requires 256 (4^4) tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
 		
-	5. Tiles are images. We will use url's to get tiles. You could, in theory, make your own tiles. That is far beyond the scope of this tutorial.
+	5. Tiles are images. We will use url's to get tiles from other websites. You could, in theory, make your own tiles and pull them into your map from a static file. That is far beyond the scope of this tutorial.
 
 
 ### Collect the ingredients
 
 1. Open QGIS
-2. Reopen your saved project, Refugee_Cities
-3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a good idea to change it everywhere all at once.
+2. Reopen your saved project from the QGIS Tutorial (This may be called Refugee_Cities)
+3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a *good idea* to change it everywhere all at once.
 
 	1. Double click on each layer to open the attributes interface, and change CRS to 3857
 	2. Change the Project Projection by double clicking in the lower right corner
 	3. Recent the map by using the magnifying glass with the arrows pointing outward.
 	
 4. Right click on the layer that has the latitude/longitude of the cities in it. 
-5. Select Save As >> GeoJson *remember to save this layer into your leafletmap/data folder!* (I like to deselect `add layer to current project`)
+5. Select Save As >> GeoJson *remember to save this layer into your leafletmap/data folder!* (I like to deselect `add layer to current project` because I think it is confusing to have so many layers.)
 6. Right click on the layer with citystaterefugees in it and Select Save As >> GeoJson
 
 
@@ -125,19 +127,20 @@ What are tiles?
 
 ### Write the HTML Document
 
-*Header*
+We will begin with the *Header*
 
 1. Stylesheets
 
-	1. Format is `<link rel="stylesheet" href="STYLESHEET LOCATION">`
+	1. Import the stylesheet with this language: `<link rel="stylesheet" href="STYLESHEET LOCATION">`
 	2. We will use 3 stylesheets:
 	
 		1. leaflet.css  (connect to through cdn - this is the method for connecting to stylesheets through webpages)
 		2. font-awesome.min.css (also through cdn)
 		3. font_awesome_markers.css (We downloaded this one)
+		
 2. Javascript
 
-	1. Format is `<script src="LOCATION"></script>`
+	1. Import the Javascript with this language: `<script src="LOCATION"></script>`
 	2. We will use 3 javascript scripts:
 	
 		1. leaflet 
@@ -149,7 +152,7 @@ What are tiles?
 	1. This works by indicating the style of the map in a way the browser can interpret
 	`<style> #map {width: SIZEpc; height: SIZEpx; } </style>`
 
-Type this into your document exactly (DO NOT copy/paste - I put errors in it. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short article on why you should ALWAYS type your code).
+Type this into your document exactly (DO NOT copy/paste - I put errors in it. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
 
 ```<html>
 <head>
