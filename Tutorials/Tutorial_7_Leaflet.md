@@ -21,7 +21,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### Check which Python version you have (if any)
 
 1. Open a Terminal Window 
-![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.jpeg)
+![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 2. Type `python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
@@ -36,7 +36,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 		3. images *put images files here*
 		3. js *put javascript files here*
 	2. Creating this type of directory (aka file structure) is typical for anything done programmatically. You will be telling your webpage to go out and find another file to pull information from. It is easier for you if all the files are in the same place, then you only need to specify the file name (and you don't have to specify the "Path" (the file's location)).
-2. Download a stable version of [leaftlet](http://leafletjs.com/download.html), save it into the js folder
+2. Download a stable version of <a href="http://leafletjs.com/download.html" target="_blank">leaftlet</a>, save it into the js folder
 3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). Either copy/paste this into a text editor and save it in the js folder as jquery-2.1.1.min.js or use your favorite method to save this file. If you'd prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 
 4. Make an empty html file and save it in the leafletmap folder. I like to call this file "index.html" because it is convention and the index file is loaded first from a directory.
