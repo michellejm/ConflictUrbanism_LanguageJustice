@@ -105,7 +105,7 @@ What are tiles?
 		1. Most maps showing the entire continental United States are at zoom level 4.
 		2. Zoom level 4 requires 256 (4^4) tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
 		
-	5. Tiles are images. We will use url's to get tiles from other websites. You could, in theory, make your own tiles and pull them into your map from a static file. That is far beyond the scope of this tutorial.
+	5. Tiles are images. We will use url's to get tiles from other places on the internet. Essentially we will point the site to pull in information from other sites. You could, in theory, make your own tiles and pull them into your map from a static file. That is far beyond the scope of this tutorial.
 
 
 ### Collect the ingredients
@@ -116,7 +116,7 @@ What are tiles?
 
 	1. Double click on each layer to open the attributes interface, and change CRS to 3857
 	2. Change the Project Projection by double clicking in the lower right corner
-	3. Recent the map by using the magnifying glass with the arrows pointing outward.
+	3. Reset the map by using the magnifying glass with the arrows pointing outward.
 	
 4. Right click on the layer that has the latitude/longitude of the cities in it. 
 5. Select Save As >> GeoJson *remember to save this layer into your leafletmap/data folder!* (I like to deselect `add layer to current project` because I think it is confusing to have so many layers.)
