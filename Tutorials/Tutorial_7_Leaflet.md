@@ -7,7 +7,7 @@ By the end of this tutorial, students will be able to:
 3. Prepare a map for display on the web
 4. Use tiles to create a basemap
 5. Customize layers to highlight different types of data
-6. Add interactivity
+6. Add interactivity to a webmap
 7. Customize markers and the base layer to add style
 8. Create visual cues to convey information.
 
@@ -21,7 +21,6 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### Check which Python version you have (if any)
 
 1. Open a Terminal Window 
-![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 2. Type `python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
@@ -31,10 +30,10 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 
 1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's in Dropbox, you might want to put it somewhere else.
 	2. Create subfolders in that folder. Call them:
-		1. css *put css files here*
-		2. data *put data files here*
-		3. images *put images files here*
-		3. js *put javascript files here*
+		1. **css** *put css files here*
+		2. **data** *put data files here*
+		3. **images** *put images files here*
+		3. **js** *put javascript files here*
 	2. Creating this type of directory (aka file structure) is typical for anything done programmatically. You will be telling your webpage to go out and find another file to pull information from. It is easier for you if all the files are in the same place, then you only need to specify the file name (and you don't have to specify the "Path" (the file's location)).
 2. Download a stable version of [leaflet](http://leafletjs.com/download.html), save it into the js folder
 3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). Either copy/paste this into a text editor and save it in the js folder as jquery-2.1.1.min.js or use your favorite method to save this file. If you'd prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
