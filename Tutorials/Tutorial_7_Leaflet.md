@@ -16,12 +16,14 @@ By the end of this tutorial, students will be able to:
 
 We are going to make a web using the data we calculated in QGIS. 
 
-For this tutorial, you need to have Python installed. Check if you have Python installed and which version it is.
+You must have a text editor installed - we suggest [Sublime Text](https://www.sublimetext.com/)
+
+For this tutorial, you need to have Python installed. Check if you have Python installed and which version it is. We will be using Python to run a local server. If you do NOT have Python installed, please see me as there are many ways to run a local server.
 
 ### Check which Python version you have (if any)
 
 1. Open a Terminal Window 
-2. Type `python -V` hit 'Return'
+2. Type `$ python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
 4. Make a note of which Python version you have, you will need it later.
@@ -36,14 +38,16 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 		3. **js** *put javascript files here*
 	2. Creating this type of directory (aka file structure) is typical for anything done programmatically. You will be telling your webpage to go out and find another file to pull information from. It is easier for you if all the files are in the same place, then you only need to specify the file name (and you don't have to specify the "Path" (the file's location)).
 2. Download a stable version of [leaflet](http://leafletjs.com/download.html), save it into the js folder
-3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). Either copy/paste this into a text editor and save it in the js folder as jquery-2.1.1.min.js or use your favorite method to save this file. If you'd prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
+3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). (If using Firefox, copy/paste the code into a text editor and save it in the js folder as jquery-2.1.1.min.js). If using Safari or Chrome, just save the file in the js folder. If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 
-4. Make an empty html file and save it in the leafletmap folder. I like to call this file "index.html" because it is convention and the index file is loaded first from a directory.
+4. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
 ![directory](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/directory.png)
 
 ### Set up a local server
+
+We will run a local server from our computers. The details of this are far beyond this tutorial, for more on  the technical details, visit the [Mozilla Developer site](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Set_up_a_basic_working_environment). For more on how the web works the difference between a local and remote server, [read this](https://devdojo.com/blog/technology/local-vs-remote-servers)
 
 1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
 
@@ -54,6 +58,7 @@ Your directory should look like this:
 2. If you have Python 3, type:
 
 	* `$ sudo python -m http.server 1010`  (you can pick your favorite 3 or 4 digit number)
+	
 2. If you have Python 2, type:
 
 	* `$ sudo python -m SimpleHTTPServer`
