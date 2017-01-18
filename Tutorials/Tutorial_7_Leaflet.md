@@ -47,7 +47,7 @@ Your directory should look like this:
 
 ### Set up a local server
 
-We will run a local server from our computers. The details of this are far beyond this tutorial, for more on  the technical details, visit the [Mozilla Developer site](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Set_up_a_basic_working_environment). For more on how the web works the difference between a local and remote server, [read this](https://devdojo.com/blog/technology/local-vs-remote-servers)
+We will run a local server from our computers. The details of this are far beyond this tutorial, for more on  the technical details, visit the [Mozilla Developer site](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Set_up_a_basic_working_environment). For more on how the web works the difference between a local and remote server, [read this](https://devdojo.com/blog/technology/local-vs-remote-servers).
 
 1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
 
@@ -66,14 +66,14 @@ We will run a local server from our computers. The details of this are far beyon
 	It will look something like this:
 	![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
 
-3. Return to your browser window (Chrome or Firefox) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
+3. Return to your browser window (Chrome, Firefox, or Safari) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
 
 We will come back to this.
 	
 ### About Leaflet
 
 Leaflet is a library for Javascript. You don't have to download javascript because it (like HTML and CSS) is a language that all modern browsers are able to read (and instantly recognize). 
-If HTML is the structure of a website, and CSS is the style, JavaScript is the Functionality or the interaction. It's what makes websites DO things.
+If HTML is the structure of a website, and CSS is the style, JavaScript is the functionality or the interaction. It's what makes websites DO things.
 
 jQuery and leaflet are libraries. You can think of libraries as a set of commands that javascript can draw on. I like to think of it as a book of commands that my program can reference. 
 
