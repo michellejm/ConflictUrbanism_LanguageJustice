@@ -295,7 +295,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	4. Add it to the map.
 
 
-```  
+	```  
 $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
     	CONFLICT
@@ -312,7 +312,6 @@ L.geoJson(data,{
     }).addTo(map);
 });
 ```
-
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
 	1. After the point to layer function, we need to define another variable. I'm goign to call it 'marker'.
@@ -338,15 +337,11 @@ L.geoJson(data,{
   });
 
 ```
-
-
-
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
 	1. Add the state data in the exact same way you loaded the cities data. 
 	2. Call jQuery with the $, and pass it the location of the state data and add it to the map
-	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though 
-	
+	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
 
 ```
     $.getJSON("data/refugees_by_state.geojson",function(stateData){
