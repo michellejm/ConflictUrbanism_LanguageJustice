@@ -183,7 +183,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 </head>
 ```
 
-*Body - the map*
+### Body - start the map
 
 1. Start the body
 2. Make a section (div) for the map, and call it map.
@@ -243,11 +243,10 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 6. Let's go check it out on our website. Go back to the web browser at localhost:1010. A basic map of the US should appear. 
 
 
-Congratulations on getting your map up!
+Congratulations on starting your webmap!
 
 
 ### Body - make the map
-
 
 1. First we will add the locations of the cities
 
