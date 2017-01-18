@@ -245,7 +245,8 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 
 Congratulations on getting your map up!
 
-*Body - make the map*
+
+### Body - make the map
 
 
 1. First we will add the locations of the cities
