@@ -108,7 +108,7 @@ What are tiles?
 		2. Zoom level 4 requires 256 (4^4) tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
 		
 	5. Tiles are images. We will use url's to get tiles from other places on the internet. Essentially we will point to
-	the site to pull in information from other sites. You could, in theory, make your own tiles and load them into your map from a static file. That would be a very advanced use.
+	the site to load the tiles for us. These sites are very stable, so there is little concern that your tiles will disappear. You could, in theory, make your own tiles and load them into your map from a static file. That is a very advanced technique.
 
 
 ### Collect the ingredients
