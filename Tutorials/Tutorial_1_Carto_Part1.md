@@ -15,7 +15,7 @@ You will need to set up a (free) account on Carto at [www.carto.com](www.carto.c
 
 Once you set up an account, you will be taken to the page to Add Datasets. We are going to be working with Census Data about income and language in New York City. First we need to decide what kind of boundaries we are going to use. For this tutorial, we will use Census Tracts ([click here](http://www2.census.gov/geo/pdfs/reference/GARM/Ch1GARM.pdf) for more on the different types offered by the US Census Bureau). 
 
-This dataset comes from the [American Community Survey](www.factfinder.census.gov). For more on finding and cleaning datasets, visit ANOTHER GITPAGE. 
+This dataset comes from the [American Community Survey](www.factfinder.census.gov). For more on finding and cleaning datasets, visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
 
 ## Part II - Uploading Data
 
