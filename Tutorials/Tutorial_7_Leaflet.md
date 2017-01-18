@@ -322,7 +322,7 @@ L.geoJson(data,{
 		2. We want both City_state and Individuals the <br/> adds a line between the two rows.
 		3. This should be a functional map that you can click on houses and get a popup about that house. 
  
-```
+		```
     L.geoJson(data,{
     pointToLayer: function(feature,latlng){
     
@@ -343,13 +343,13 @@ L.geoJson(data,{
 	2. Call jQuery with the $, and pass it the location of the state data and add it to the map
 	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
 
-```
+	```
     $.getJSON("data/refugees_by_state.geojson",function(stateData){
   L.geoJson(stateData).addTo(map);
 });
 ```
 	4. Style the fill of each polygon based on the number of refugees in the area. Look to the data for natural breaks in the data. 
-	
+
 		1. For example, there are 404 individuals in Georgia, and 386 in North Carolina. Since the next closest number is 308 in Indiana, it makes more sense to group NC in with GA. It is important to get a feel for the data before assigning these breaks in order to accurately represent what the data can illustrate. 
 		
 	5. Pick your colors, we are going to use 5 different groups (plus a "no refugees" group). Color matters, lighter shades should be fewer people, darker should be more. Really, we should reserve chloropleths for density scales, but since we are focusing here on individuals rather than density, we will use the raw numbers [ColorBrewer](http://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=5) makes finding appropriate hex codes easier.
