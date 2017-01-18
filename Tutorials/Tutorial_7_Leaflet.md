@@ -31,17 +31,21 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### Get Organized
 
 1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's in Dropbox, you might want to put it somewhere else.
-	2. Create subfolders in that folder. Call them:
+	1. Create subfolders in that folder. Call them:
 		1. **css** *put css files here*
 		2. **data** *put data files here*
 		3. **images** *put images files here*
 		3. **js** *put javascript files here*
 	2. Creating this type of directory (aka file structure) is typical for anything done programmatically. You will be telling your webpage to go out and find another file to pull information from. It is easier for you if all the files are in the same place, then you only need to specify the file name (and you don't have to specify the "Path" (the file's location)).
-2. Download a stable version of [leaflet](http://leafletjs.com/download.html), save it into the js folder
+2. Download a stable version of [leaflet](http://leafletjs.com/download.html)
+
+	1. Take the css file out of this folder and put it in the css folder
+	2. Move the leaflet folder into the js folder
+	
 3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). (If using Firefox, copy/paste the code into a text editor and save it in the js folder as jquery-2.1.1.min.js). If using Safari or Chrome, just save the file in the js folder. If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome folder into your **css** folder.
-
-4. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
+5. Download the leaflet-font awesome extension files. You need BOTH the css and the js file (the js can be the min file or the regular one). Save these in their respective files (css and js). 
+6. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
 ![directory](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/directory.png)
