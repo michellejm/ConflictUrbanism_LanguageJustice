@@ -1,4 +1,4 @@
-# Tutorial 5: Data Cleaning
+# Tutorial 6: Data Cleaning
 
 By the end of this tutorial you will be able to:
 
