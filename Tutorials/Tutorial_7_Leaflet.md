@@ -138,28 +138,28 @@ What are tiles?
 
 We will begin with the *Header*
 
-1. Stylesheets
+1. Import the stylesheets
 
-	1. Import the stylesheet with this language: `<link rel="stylesheet" href="STYLESHEET LOCATION">`
+	1. Import the stylesheet with this language: `<link rel="stylesheet" href="css/STYLESHEET.css">`
 	2. We will use 3 stylesheets:
 	
-		1. leaflet.css  (connect to through cdn - this is the method for connecting to stylesheets through webpages)
-		2. font-awesome.min.css (also through cdn)
-		3. font_awesome_markers.css (We downloaded this one)
+		1. leaflet.css
+		2. font-awesome.min.css 
+		3. font_awesome_markers.css 
 		
 2. Javascript
 
-	1. Import the Javascript with this language: `<script src="LOCATION"></script>`
+	1. Import the Javascript files with this language: `<script src="js/NAME.js"></script>`
 	2. We will use 3 javascript scripts:
 	
-		1. leaflet 
-		2. jquery 
-		3. awesome_markers.js (We downloaded this one)
+		1. leaflet.js
+		2. jquery-2.1.1.js
+		3. awesome_markers.js
 		
 3. Set the size of the map
 
 	1. This works by indicating the style of the map in a way the browser can interpret
-	`<style> #map {width: SIZEpc; height: SIZEpx; } </style>`
+	`<style> #map {width: SIZEpx; height: SIZEpx; } </style>`
 
 Type this into your document exactly (DO NOT copy/paste - I put errors in it. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
 
