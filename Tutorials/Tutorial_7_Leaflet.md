@@ -117,8 +117,9 @@ What are tiles?
 2. Reopen your saved project from the QGIS Tutorial (This may be called Refugee_Cities)
 3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a *good idea* to change it everywhere all at once.
 
-	1. Double click on each layer to open the attributes interface, and change CRS to 3857
 	2. Change the Project Projection by double clicking in the lower right corner
+	2. Enable 'on the fly' CRS changes. This will allow you to change it for all the layers in the project. 
+	3. Double check to be sure all the layers changed by clicking on the layer and checking the CRS. 
 	3. Reset the map by using the magnifying glass with the arrows pointing outward.
 	
 4. Right click on the layer that has the latitude/longitude of the cities in it. 
