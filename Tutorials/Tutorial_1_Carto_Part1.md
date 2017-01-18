@@ -30,13 +30,13 @@ This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cb
 	5. Carto will show you the map view. It should look like New York City divided into census tracts.
 	6. Return to Data View (with the slider at the top)
 	
-![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
+	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
 
 	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
 
 2. Add more data from a file
 
-Now we are going to add language information to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/). It has been pre-cleaned for this tutorial. For more on data cleaning visit ANOTHER GITPAGE.
+Now we are going to add language information to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/). It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
 	2. Find "nhgis_language_percents_nyc.csv"
