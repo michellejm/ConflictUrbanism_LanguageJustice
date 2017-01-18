@@ -107,7 +107,8 @@ What are tiles?
 		1. Most maps showing the entire continental United States are at zoom level 4.
 		2. Zoom level 4 requires 256 (4^4) tiles to make up the whole world. But you don't need to look at all 256, you only care about a section of them, so you **zoom** in on the section.
 		
-	5. Tiles are images. We will use url's to get tiles from other places on the internet. Essentially we will point the site to pull in information from other sites. You could, in theory, make your own tiles and pull them into your map from a static file. That is far beyond the scope of this tutorial.
+	5. Tiles are images. We will use url's to get tiles from other places on the internet. Essentially we will point to
+	the site to pull in information from other sites. You could, in theory, make your own tiles and load them into your map from a static file. That would be a very advanced use.
 
 
 ### Collect the ingredients
