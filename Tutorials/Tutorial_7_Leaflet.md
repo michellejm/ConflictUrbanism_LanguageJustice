@@ -136,6 +136,7 @@ What are tiles?
 
 ### Write the HTML Document
 
+The code is explained and then provided in sections after each explanation. 
 We will begin with the *Header*
 
 1. Import the stylesheets
