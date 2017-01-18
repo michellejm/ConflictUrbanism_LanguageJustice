@@ -29,9 +29,7 @@ This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cb
 	4. Upload the file here
 	5. Carto will show you the map view. It should look like New York City divided into census tracts.
 	6. Return to Data View (with the slider at the top)
-	
 	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
-
 	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
 
 2. Add more data from a file
@@ -48,8 +46,7 @@ Now we are going to add language information to the census tracts. The data came
 	8. It should ask you to Georeference the dataset. DO NOT GEOREFERENCE IT! There is no geographic information in this dataset - only statistical information.
 	9. Return to DataSets
 	
-3. Combine Files
-Now we are going to align the language information to the census tracts.
+3. Combine Files - Now we are going to align the language information to the census tracts.
 	1. Open the "NYS_censustracts" dataset
 	2. Merge this dataset with another (Click Edit >> Merge with dataset) *This will create a new dataset*
 	3. Select 'Column Join'
