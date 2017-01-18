@@ -285,6 +285,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
        iconColor: 'black',
     });
     	```
+	
 
 5. Now add the marker to the map
 
@@ -292,6 +293,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	2. Give it the function of pointing to a layer feature at the lat/long. 
 	3. Tell it to return the marker we made at a given latitude and longitude. 
 	4. Add it to the map.
+
 
 ```  
 $.getJSON("data/cll.geojson",function(data){
