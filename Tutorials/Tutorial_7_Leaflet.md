@@ -331,7 +331,7 @@ L.geoJson(data,{
     
     }).addTo(map);
   });
-  	```
+  		```
 
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
@@ -377,7 +377,7 @@ L.geoJson(data,{
   <script src="js/leaflet_awesome_markers.js"></script>
   
   <style>
-	```
+		```
 
 	6. Include the groups
 	
@@ -404,7 +404,7 @@ L.geoJson(data,{
     map.addLayer(clusters);
   });
   *** END NEW***
-	```
+		```
 
 9. Those groups are awfully large and the colors don't match our blue. We'd like to limit the area covered by each grouping and change the marker colors. 
 
