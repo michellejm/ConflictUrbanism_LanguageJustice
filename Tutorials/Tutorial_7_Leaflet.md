@@ -274,7 +274,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	1. Specify a variable for our markerUse `var` to define the variable. In the beginning of the curly brackets, after function(data). I'm going to call this marker 'aMarker'
 	2. Call Leaflet with L and call the AwesomeMarkers.icon property. This syntax is from the Awesome Markers [documentation](https://github.com/lvoogdt/Leaflet.awesome-markers)
 	3. There are a few other icon sets, so we have to set the prefix as 'fa', find the icon you want (we're going to use 'home' to represent Refugee Homes), and tell it what color to make the icons (I think black is easiest to see).
-
+	
 	```  $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
     	CONFLICT
@@ -284,7 +284,6 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
        iconColor: 'black',
     });
     ```
-	
 
 5. Now add the marker to the map
 
@@ -310,7 +309,7 @@ L.geoJson(data,{
      }
     }).addTo(map);
 });
-	```
+```
 
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
@@ -365,12 +364,13 @@ L.geoJson(data,{
 	
 		1. Use the same format as we did for the font awesome files. 
 	
-		```<head>
+		```
+		<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/MarkerCluster.css" LEAFLET>
   <link rel="stylesheet" href="css/MarkerCluster.Default.css" IS SO>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css >
   <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
   
 
@@ -389,6 +389,7 @@ L.geoJson(data,{
 		3. Add the clusters layer with the new rfg ClusterLayer
 		4. Add it to the map
 		5. Remove the previous "add to map" function
+		
 		```
 	    ***NEW****
 	    var rfg = L.geoJson(data,{
