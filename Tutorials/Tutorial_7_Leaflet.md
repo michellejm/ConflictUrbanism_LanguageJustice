@@ -306,7 +306,7 @@ L.geoJson(data,{
      }
     }).addTo(map);
 });
-```
+	```
 
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
