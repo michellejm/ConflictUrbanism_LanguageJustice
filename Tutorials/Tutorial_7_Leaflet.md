@@ -217,8 +217,7 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	
 		1. Pass the .addTo property, and give it the map variable.
 	
-
-	```<body>
+		```<body>
 
   <div id="map"></div>
 
@@ -311,7 +310,7 @@ L.geoJson(data,{
      }
     }).addTo(map);
 });
-```
+	```
 
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
@@ -413,7 +412,8 @@ L.geoJson(data,{
 
 	1. From reading the Docs, we know that the maxClusterRadius is 60 pixels (this is always in pixels). We want to set it to 30 pixels instead. To override the default, add the maxClusterRadius property in the markerClusterGroup.
 	
-	```var clusters = L.markerClusterGroup({
+	```
+	var clusters = L.markerClusterGroup({
     	maxClusterRadius:30
     });
 	```
@@ -437,7 +437,8 @@ That's it for *styling* our web map (we still have to get it into the page). Thi
 You can add your map 2 ways. 
 1. Insert it with an iframe. To do this, you will direct the html to your FOLDER where you have been saving everything. Ideally, you will move the ENTIRE folder we made here (possibly rename it to something more logical) and set the src to the folder. Inside the folder, your html file should be called index.html (as we did here). 
 
-```<iframe src="path to the folder"> </iframe>
+```
+<iframe src="path to the folder"> </iframe>
 ```
 
 2. Insert an image into your page that links to the map. For example, 
