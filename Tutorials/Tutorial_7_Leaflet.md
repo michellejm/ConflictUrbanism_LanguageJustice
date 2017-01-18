@@ -233,12 +233,12 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
       maxZoom: 12,
       minZoom: 1
     }).addTo(map URBANISM);
-    
-// Be sure to keep these closing tags at the end of your document
-  </script>
-</body>
-</html>
-	```
+ 
+   	// Be sure to keep these closing tags at the end of your document
+ 	</script>
+	</body>
+	</html>
+```
 
 6. Let's go check it out on our website. Go back to the web browser at localhost:1010. A basic map of the US should appear. Congratulations!
 
