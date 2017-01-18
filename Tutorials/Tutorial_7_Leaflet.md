@@ -240,16 +240,14 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	</html>
 	```
 
-6. Let's go check it out on our website. Go back to the web browser at localhost:1010. A basic map of the US should appear. 
-
-
-Congratulations on starting your webmap!
+6. Let's go check it out on our website. Go back to the web browser at localhost:1010. A basic map of the US should appear. Congratulations on starting your webmap!
 
 
 ### Body - make the map
 
 
-1. First we will add the location of the cities.
+1. First add the location of the cities
+
 	1. Use the jQuery command, getJSON. Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
 	2. Tell jQuery where your file is located, and give the function a name (I'm going to use 'data'). 
 	3. Just like with the tiles, we want to add this element to the map.
