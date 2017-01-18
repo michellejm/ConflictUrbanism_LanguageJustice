@@ -247,6 +247,7 @@ Congratulations on getting your map up!
 
 *Body - make the map*
 
+
 1. First we will add the locations of the cities
 
 	1. Use the jQuery command, getJSON. Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
