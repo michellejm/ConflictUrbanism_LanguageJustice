@@ -288,8 +288,6 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
 	2. Give it the function of pointing to a layer feature at the lat/long. 
 	3. Tell it to return the marker we made at a given latitude and longitude. 
 	4. Add it to the map.
-
-
 	```  
 $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
@@ -307,6 +305,7 @@ L.geoJson(data,{
     }).addTo(map);
 });
 	```
+
 
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
