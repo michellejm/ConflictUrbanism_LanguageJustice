@@ -312,6 +312,7 @@ L.geoJson(data,{
     }).addTo(map);
 });
 ```
+
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
 	1. After the point to layer function, we need to define another variable. I'm goign to call it 'marker'.
@@ -335,8 +336,8 @@ L.geoJson(data,{
     
     }).addTo(map);
   });
+  	```
 
-```
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
 	1. Add the state data in the exact same way you loaded the cities data. 
@@ -347,7 +348,8 @@ L.geoJson(data,{
     $.getJSON("data/refugees_by_state.geojson",function(stateData){
   L.geoJson(stateData).addTo(map);
 });
-```
+	```
+
 	4. Style the fill of each polygon based on the number of refugees in the area. Look to the data for natural breaks in the data. 
 
 		1. For example, there are 404 individuals in Georgia, and 386 in North Carolina. Since the next closest number is 308 in Indiana, it makes more sense to group NC in with GA. It is important to get a feel for the data before assigning these breaks in order to accurately represent what the data can illustrate. 
@@ -364,7 +366,7 @@ L.geoJson(data,{
 	
 		1. Use the same format as we did for the font awesome files. 
 	
-```<head>
+		```<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/MarkerCluster.css" LEAFLET>
@@ -379,7 +381,7 @@ L.geoJson(data,{
   <script src="js/leaflet_awesome_markers.js"></script>
   
   <style>
-```
+	```
 
 	6. Include the groups
 	
@@ -388,7 +390,7 @@ L.geoJson(data,{
 		3. Add the clusters layer with the new rfg ClusterLayer
 		4. Add it to the map
 		5. Remove the previous "add to map" function
-```
+		```
 	    ***NEW****
 	    var rfg = L.geoJson(data,{
 	    *** END NEW ***
@@ -405,7 +407,7 @@ L.geoJson(data,{
     map.addLayer(clusters);
   });
   *** END NEW***
-```
+	```
 
 9. Those groups are awfully large and the colors don't match our blue. We'd like to limit the area covered by each grouping and change the marker colors. 
 
