@@ -45,7 +45,7 @@ The data we are using for this tutorial has already been cleaned for our purpose
 	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
 	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/metadata.png)
 
-2. Add more data from a file.  We are going to add language information to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/). It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
+2. Add data from a csv (comma separated values) file.  We are going to add language-speaker data to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find significant amounts of data, especially when working with historical information. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data) on the Github Page.
 	2. Find "nhgis_language_percents_nyc.csv" and download it to your computer.
