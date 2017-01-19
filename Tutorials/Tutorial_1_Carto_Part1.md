@@ -31,10 +31,9 @@ Language data from the census comes in many forms. We will use Language by abili
 
 ## Part II - Uploading Data
 
-The data we are using for this tutorial has already been cleaned for our purposes. First we need to upload a shapefile that has the boundaries we want to impose on our map. Carto comes pre-packaged with a basemap that represents the Earth (or the portion of it you want to look at). We need to upload the shape file in order to cut up that piece of Earth into smaller areas. 
-
-1. Import shapefile of census tracts for New York City
-This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available in multiple locations, multiple ways
+The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth (or the portion of it you want to look at). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larget than the US, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent. First we need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units for which we know something about the languages represented in that neighborhood. 
+ 
+1. Import shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
 	2. Find `gz_2010_36.csv` and download it to your computer 
@@ -44,6 +43,7 @@ This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cb
 	6. Return to Data View (with the slider at the top)
 	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
 	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
+	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/metadata.png)
 
 2. Add more data from a file.  We are going to add language information to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/). It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
