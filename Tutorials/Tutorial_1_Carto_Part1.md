@@ -9,22 +9,32 @@ By the end of this tutorial you will be able to:
 5. Add layers to your map
 6. Export your map 
 
-## Part I - Account Set Up
+## Part I - Getting Set Up
 
-You will need to set up a (free) account on Carto at [www.carto.com](www.carto.com). You only need an email and password. If you have [GitHub](www.github.org), I encourage you to sign up using your GitHub account so that any files you store (or update) on GitHub can be easily imported into your map.
+### Account
 
-Once you set up an account, you will be taken to the page to Add Datasets. We are going to be working with Census Data about income and language in New York City. First we need to decide what kind of boundaries we are going to use. For this tutorial, we will use Census Tracts ([click here](http://www2.census.gov/geo/pdfs/reference/GARM/Ch1GARM.pdf) for more on the different types offered by the US Census Bureau). 
+You will need to set up a (free) account on Carto. Columbia Libraries has a subscription which you can sign up for [here](https://columbialibraries.carto.com/signup). You must use your Columbia University email. If, for some reason, you do not wish to use your Columbia credentials, you may sign up for a free account [here](www.carto.com). Both the Columbia subscription and the free subscription entitle you to a 'Builder' account with 250MB of storage. 
 
-This dataset comes from the [American Community Survey](www.factfinder.census.gov). For more on finding and cleaning datasets, visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
+### Spatial Data and Boundaries
+
+We are going to be working with Census Data about income and language in New York City. First we need to decide what kind of boundaries we are going to use.  There are 5 ways spatial data is divided in New York City (block groups, census tracts, neighborhoods, PUMAs, and counties). 
+* Block groups are just as they suggest, a group of blocks, there are approx. 6,500 in New York City. Because they are so small, they can have a rather large margin of error. We will not use block groups in this tutorial because they can tend to be a little overwhelming for getting started. 
+* A census tract is approximately 4,000 people, there are more than 2,000 in New York City. They also tend to have a high margin of error, but not to the level of block groups. 
+* Neighborhood Tabulation Areas (NTAs) are a unit created by the NYC Department of City Planning in order to display data in a more meaningful way to those very familiar with New York City. They are created through simple addition of census tracts. 
+* PUMAs (Public Use Microdata Areas) are used by the Census (not just in NYC), and are areas of approximately 100,000 individuals, also tabulated by adding together block groups.
+* Counties (a legal subdivision of the state) are also used by the Census and in New York City, correspond to the boroughs (Brooklyn = Kings, The Bronx = Bronx, Manhattan = New York, Queens = Queens, Staten Island = Richmond). 
+
+The dataset we will use comes from the [American Community Survey](www.factfinder.census.gov). For more on finding and cleaning datasets, see [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md). The American Community Survey is sent every year. It is meant to supplement the dicennial census. Data is available yearly or in 3-5 year estimates. Because language data can tend to be small percentages, it is better to use 5 year estimates to get a more accurate representation of the languages spoken in a neighborhood.
 
 ## Part II - Uploading Data
 
-The data we are using for this tutorial is pre-cleaned. We will have another session on finding and cleaning data.
+The data we are using for this tutorial has already been cleaned for our purposes.
 
 1. Import shapefile of census tracts for New York State
 This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available in multiple locations, multiple ways
+
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
-	2. Find "gz_2010_36.csv" 
+	2. Find `gz_2010_36.csv` and download it to your computer 
 	3. Return to Carto >> Add Dataset
 	4. Upload the file here
 	5. Carto will show you the map view. It should look like New York City divided into census tracts.
@@ -34,9 +44,10 @@ This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cb
 
 2. Add more data from a file.  We are going to add language information to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/). It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
-	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
-	2. Find "nhgis_language_percents_nyc.csv"
-	3. Open this file to inspect it
+	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data) on the Github Page.
+	2. Find "nhgis_language_percents_nyc.csv" and download it to your computer.
+	3. Add this dataset to your 'My Datasets' Library
+	![datasets](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cartodataset.png)
 	4. Notice the Column named 'GISJOIN' this is the column we are going to use to merge those two datasets. Look back at the census tract file. It also has a GISJOIN column. These numbers correspond to each census tract.
 	5. Return to Carto and navigate back to the DataSets Page (*small arrow in left hand corner*)
 	6. Upload the "nhgis_language_percents_nyc.csv" 
