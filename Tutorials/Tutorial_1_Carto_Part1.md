@@ -31,9 +31,11 @@ Language data from the census comes in many forms. We will use Language by abili
 
 ## Part II - Uploading Data
 
-The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth (or the portion of it you want to look at). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larget than the US, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent. First we need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units for which we know something about the languages represented in that neighborhood. 
- 
-1. Import shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
+The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth, with many features already represented (i.e., water, country boundaries, etc.). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larger than the US, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent, so you can use any shapefile with any projection. 
+
+We need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units. We know something about the languages represented in that smaller area. 
+
+1. Import a shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
 	2. Find `gz_2010_36.csv` and download it to your computer 
@@ -45,7 +47,7 @@ The data we are using for this tutorial has already been cleaned for our purpose
 	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
 	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/metadata.png)
 
-2. Add data from a csv (comma separated values) file.  We are going to add language-speaker data to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find significant amounts of data, especially when working with historical information. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
+2. Add data from a csv (comma separated values) file.  We are going to add language-speaker data to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find all kinds of census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data) on the Github Page.
 	2. Find "nhgis_language_percents_nyc.csv" and download it to your computer.
@@ -94,9 +96,9 @@ In this section, we will look at the data in a map form. At this point, our ques
 4. Formatting the Tooltip
 *We want the tooltip to display as a percentage, not as a decimal. We can do this one of two ways. First, we could reformat the data in Excel, to natively be a percentage. Second, we can do it using SQL commands. I am going to chose the SQL commands because it gives me more control over the data.*
 	1. Click on the icon that says 'SQL' (directly above the wizard)
+	![sql](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sql.png)
 
-
-	2. SQL is a very old computer language still used for databases. Carto is treating your dataset as a database, and Querying it for information. 
+		1. SQL is a very old computer language still used for databases. Carto is treating your dataset as a database, and querying it for information. 
 	3. We are going to change the query.
 		1. Currently, it should say: **SELECT \* FROM languages_by_census_tracts_nyc** This means *select everything from the dataset, languages...* For this layer, Carto has access to all the information on your dataset. This layer is about Chinese, so we will restrict it to just Chinese.
 		2. Remove the original command and replace it with: **SELECT \*, to_char(chinese, '99V99%') AS chinese_percent FROM languages_by_census_tracts_nyc** *This says select everything from the dataset, languages..., and change the characters in the chinese column to a percent formal and call that transformation chinese_percent
@@ -119,10 +121,18 @@ In this section, we will look at the data in a map form. At this point, our ques
 		1. On the map, in the lower left corner is the 'Options' button.
 		2. Select 'Layer Selector'
 		3. Selection now appears in the upper right side of the map
-	3. Add titles, legends, etc.
+	3. Add a title and a legend in the 'Add Elements' box.
 	
 Congratulations! You have made your first map!! 
-In future tutorials, we will drop pins, upload media, clean data for analysis, and more!
+
+7. You are welcome to change the colors, highlight different languages, change the basemap, etc. This is not required.
+
+To complete this tutorial, send your finished map to Michelle at mam2518@columbia.edu
+
+1. Select `Visualize`
+![visualize](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/visual.png)
+2. Accept to create your map.
+3. Select 'Publish' and send me the link.
  
 	
 	
