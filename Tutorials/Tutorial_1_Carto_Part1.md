@@ -14,7 +14,7 @@ By the end of this tutorial you will be able to:
 
 ### Account
 
-You will need to set up a (free) account on Carto. Columbia Libraries has a subscription which you can sign up for [here](https://columbialibraries.carto.com/signup). You must use your Columbia University email. If, for some reason, you do not wish to use your Columbia credentials, you may sign up for a free account [here](www.carto.com). Both the Columbia subscription and the free subscription entitle you to a 'Builder' account with 250MB of storage. 
+You will need to set up a (free) account on [Carto](www.carto.com) (formerly CartoDB). Columbia Libaries has a subscription to an Enterprise  version of Carto (available [here](http://library.columbia.edu/locations/dssc/technology/gis.html) with your Columbia University email). We will **not** be using this version in this tutorial. If you discover that you need to do more complex calcluations, you can transfer your project to this version. 
 
 ### Spatial Data and Boundaries
 
@@ -37,7 +37,7 @@ We need to upload a shapefile that has the boundaries we want to impose on our m
 
 1. Import a shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
 
-	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data)
+	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data)
 	2. Find `gz_2010_36.csv` and download it to your computer 
 	3. Return to Carto >> Add Dataset
 	4. Upload the file here
