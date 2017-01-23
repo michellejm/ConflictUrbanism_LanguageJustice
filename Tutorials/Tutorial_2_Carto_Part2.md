@@ -9,9 +9,9 @@ By the end of this tutorial, you will be able to:
 
 
 
-The assumption in this tutorial is that you have collected raw data from the world and want to represent where that data exists. We will also look at options for geocoding addresses to find latitude and longitude. 
+The assumption in this tutorial is that you have collected raw data from the world and want to represent where that data exists. There are a lot of things to do with that data, including labeling it in a creative, provocative, or alternative way, geocoding it to find latitude and longitude, aligning it to other information about the physical or social space it inhabits. 
 
-Though there are many ways to represent shapes on a map, we are working with latitude and longitude here. Determining the latitude/longitude of a point is referred to as "geocoding." Addresses, points, intersections, events, etc. can all be geocoded and therefore represented as latitude and longitude.  Carto does this automatically when you place a point on a map. 
+First thing, we have to get that data onto the map. Though there are many ways to represent shapes on a map, we are going to start with latitude and longitude. Determining the latitude/longitude of a point is referred to as "geocoding." Addresses, points, intersections, events, etc. can all be geocoded and therefore represented as latitude and longitude.  Carto does this automatically when you place a point on a map. 
 
 ## Part I - Adding individual points
 
