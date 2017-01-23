@@ -1,6 +1,15 @@
 # Carto Tutorial - Adding points to Carto
 
-In this tutorial, we are going to add points to a basemap. We will first add points manually and then from a spreadsheet. The assumption here is that you have collected raw data from the world and want to represent where that data exists or existed on a map. We will also look at options for geocoding addresses to find latitude and longitude. 
+By the end of this tutorial, you will be able to:
+
+* Add points to a basemap manually and from a spreadsheet.
+* Geocode a group of addresses.
+* Make decisions about how to display information on your map.
+* Import data from Open Street Map into your own map.
+
+
+
+The assumption in this tutorial is that you have collected raw data from the world and want to represent where that data exists. We will also look at options for geocoding addresses to find latitude and longitude. 
 
 Though there are many ways to represent shapes on a map, we are working with latitude and longitude here. Determining the latitude/longitude of a point is referred to as "geocoding." Addresses, points, intersections, events, etc. can all be geocoded and therefore represented as latitude and longitude.  Carto does this automatically when you place a point on a map. 
 
