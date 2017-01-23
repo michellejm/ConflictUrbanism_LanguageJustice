@@ -16,14 +16,21 @@ First thing, we have to get that data onto the map. Though there are many ways t
 ## Part I - Adding individual points
 
 1. Go to the Carto Dashboard and click on 'New Map' in the upper right hand corner.
+![newmap](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/newmapcarto.png)
 2. You will arrive on a page to add datasets. Click on 'Create Empty Map' on the right side of the page.
-3. You will be prompted to add 'Points', 'Lines', or 'Polygons'. Select 'Point'
-	1. Alternatively, click on the little bubble in the lower right hand corner
-4. In this tutorial, we are going to map language information about Columbia University. For each combination, drop a pin on the building (if you don't know the shape of the building, just drop a point somewhere on campus. Toggle to DataView to add the relevant information about the pin. In DataView, double click on the box you expect it to go in.
+![createempty](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/createempty.png)
+3. You will be prompted to add 'Points', 'Lines', or 'Polygons'. Select **'Point'**
+	1. Alternatively, 'Skip' and then click on the little bubble in the lower right hand corner
+	![addfeature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addfeature.png)
+4. In this tutorial, we are first going to map language information about Columbia University. For each combination, drop a pin on the building (if you don't know the shape of the building, just drop a point somewhere on campus). The map is at Zoom Level 17 - which shows the details of the buildings. 
 	1. Schermerhorn Extension, Center for Spatial Research, English
+	![schermerhorn](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/schermerhorn.png)
 	2. Butler Library, Ancient & Medieval Studies Reading Room, Ancient Greek
 	3. International Affairs Building, Language Resource Center, Yoruba
-5. Latitude and Longitude should appear for each of these locations. Clearly this is a tedious way of making a map. 
+5. Toggle to DataView to add the relevant information about the pin you just dropped (double click on the box to edit it). ![featureedit](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/schermerhorn.png
+6. Latitude and Longitude should appear for each of these locations. 
+
+Clearly this is a tedious way of making a map, there must be something more efficient.
 
 ## Part II - Geocoding batches of addresses
 
