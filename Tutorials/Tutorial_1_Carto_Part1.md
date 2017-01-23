@@ -39,7 +39,7 @@ We need to upload a shapefile that has the boundaries we want to impose on our m
 1. Import a shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data)
-	2. Find `gz_2010_36.csv` and download it to your computer 
+	2. Find `gz_2010_36.csv` and download it to your computer (click 'View Raw'. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime)).
 	3. Return to Carto >> Add Dataset
 	4. Upload the file here
 	5. Carto will show you the map view. It should look like New York City divided into census tracts.
