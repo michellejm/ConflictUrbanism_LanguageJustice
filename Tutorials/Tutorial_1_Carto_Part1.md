@@ -19,7 +19,8 @@ You will need to set up a (free) account on [Carto](www.carto.com) (formerly Car
 ### Spatial Data and Boundaries
 
 We are going to be working with Census Data about income and language in New York City. First we need to decide what kind of boundaries we are going to use.  There are 5 ways spatial data is divided in New York City (block groups, census tracts, neighborhoods, PUMAs, and counties). 
-* Block groups are just as they suggest, a group of blocks, there are approx. 6,500 in New York City. Because they are so small, they can have a rather large margin of error. We will not use block groups in this tutorial because they can tend to be a little overwhelming for getting started. 
+
+* Block groups are just as they suggest, a group of blocks, there are approx. 6,500 in New York City. Because they are so small, they can have a large margin of error.  
 * A census tract is approximately 4,000 people, there are more than 2,000 in New York City. They also tend to have a high margin of error, but not to the level of block groups. 
 * Neighborhood Tabulation Areas (NTAs) are a unit created by the NYC Department of City Planning in order to display data in a more meaningful way to those very familiar with New York City. They are created through simple addition of census tracts. 
 * PUMAs (Public Use Microdata Areas) are used by the Census (not just in NYC), and are areas of approximately 100,000 individuals, also tabulated by adding together block groups.
@@ -135,6 +136,6 @@ To complete this tutorial, send your finished map to Michelle at mam2518@columbi
 3. Select 'Publish' and send me the link.
  
 	
-	
+To learn how to do more with Carto, work through the [Carto 2 Tutorial](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_2_Carto_Part2.md) or visit the [Carto Tutorials](https://carto.com/docs/tutorials) page.
 
 	
