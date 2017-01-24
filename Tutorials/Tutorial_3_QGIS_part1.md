@@ -11,7 +11,7 @@ The purpose of this tutorial is to introduce you to the mapping platform, QGIS, 
 
 
 ## Getting Started
-Download the GitHub repository for this tutorial. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder will then have all of the datasets needed for this tutorial. 
+Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. You only need to do this once. The Data folder will then have all of the datasets needed for this tutorial. 
 
 ## Mapping Refugee Destinations in the United States
 
