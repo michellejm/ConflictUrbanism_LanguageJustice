@@ -87,14 +87,6 @@ If you choose to display the data and want to have each point displayed, but sli
 3. Check your work in MapView
 
 
-## Part IV - Using Open Street Map Data
-[Open Street Map](http://www.openstreetmap.org/) is an open source, free, editable map of the world (kind of like the wikipedia of mapping). There is a lot of data available from OSM that has been contributed by individuals. We are going to download some of it for use in our map. 
-
-
-Congratulations!! That's the second map about language in New York City! 
-
-To complete the Tutorial, email the link to Michelle (instructions on how to download the map are at the end of the [Carto 1 Tutorial](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_1_Carto_Part1.md)
-
 ## Part IV - Exporting the Map for use in the Case Study
 
 1. In the Map View, click on 'Publish' 
@@ -109,7 +101,50 @@ To complete the Tutorial, email the link to Michelle (instructions on how to dow
 
 
 
+Congratulations!! That's the second map about language in New York City! 
 
+To complete the Tutorial, email the link to Michelle (instructions on how to download the map are at the end of the [Carto 1 Tutorial](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_1_Carto_Part1.md)
+
+The next part is optional if you think you will want to use data from Open Street Maps (i.e., restaurants, cafe's, schools, yoga studios, etc.).
+
+
+
+## Part V - Going Further - Using Open Street Map Data
+[Open Street Map](http://www.openstreetmap.org/) is an open source, free, editable map of the world (kind of like the wikipedia of mapping). Click [here](http://www.openstreetmap.org/welcome) for more on the basics of OSM
+Users contribute data to the map (i.e., indicating restaurants, marking streets or hiking trails, etc.) There is a lot of data available from OSM that has been contributed by individuals. We are going to download some of it for use in our map. 
+
+1. Go to [Open Street Map](http://www.openstreetmap.org/)
+	1. You may need to navigate to [Columbia University](http://www.openstreetmap.org/#map=17/40.80797/-73.96036) and zoom in so you can see all of the Morningside Heights campus and enough detail that the buildings are labeled (zoom level 17).
+	2. Initially, there is no information, just a basemap. We are going to Export the data. 
+2. Click `Export` 
+![export](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/exportdata.png)
+3. A default size will be chosen for you. You can edit this by selecting 'Manually select a different area' and dragging the edges of the box to surround what you are interested in. 
+![manuallyselect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/manually.png)
+4. Select Export and save it to your computer. 
+
+Now we want to upload this data into Carto so we can analyze and visualize it. 
+
+1. Return to your Carto Account.
+2. Go to the Data View and select `New Dataset`
+![newdata](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/newdata.png)
+3. Upload the map.osm file from your computer
+4. Return to the DataView and inspect this new dataset. 
+5. Switch to map view to get a sense of what information is positioned where. 
+
+There is a lot of information here. We are not interested in all of it. Let's look only at the Cafe's. 
+
+1. Open the `SQL` Editor on the left hand side
+2. We want to SELECT everything FROM the dataset, map_points, WHERE elements in the column, 'other_tags' is LIKE "amenity"=>"cafe" 
+![sqlselect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sqlosm.png)
+	1. '[LIKE](https://www.postgresql.org/docs/8.3/static/functions-matching.html)' means that the target string is in the entire string. 
+	2. 'ILIKE' is case-INSENSITIVE 'LIKE'
+	3. The % % on either end are a [Regular Expression](http://www.regular-expressions.info/). They mean 'Wildcard', so anything can come before or after the target string.
+	
+3. Return to the DataView
+SELECT * FROM map_points WHERE other_tags ILIKE '%"amenity"=>"cafe"%'
+
+
+Congratulations! You have now uploaded OSM data into a Carto Map. You can, of course, do much more with this (i.e., concentration of cafes versus [candy store](http://gothamist.com/2014/05/02/ask_a_native_new_yorker_whats_the_d.php) ('bodega','deli', 'corner grocery', etc.) in a given language neighborhood, etc. 
 
 
 
