@@ -19,7 +19,16 @@ This mapping project is based on recent [discussions](https://www.thisamericanli
 
 We are interested in creating a map of refugee resettlement in the United States (and at the same time exploring the QGIS interface). We have a point file for the cities refugees go when they arrive in the United States (from the [Refugee Processing Center](http://www.wrapsnet.org/Reports/InteractiveReporting/tabid/393/EnumType/Report/Default.aspx?ItemPath=/rpt_WebArrivalsReports/MX%20-%20Arrivals%20by%20Destination%20and%20Nationality)) and a polygon file for state boundaries. This map will serve as a basemap to which we can add additional information and layers in order to better understand refugee resettlement in the United States.
 
-##Setting up QGIS
+## Setting up QGIS
+
+1. Download QGIS [here](http://www.qgis.org/en/site/forusers/download.html)
+	1. On a PC, this is straightforward. Simply Click on the 'QGIS standalone installer' and follow the prompts. 
+	2. On a Mac, you will be taken to the KyngChaos page.
+	![kingchaos](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/qdown.png)
+	3. Something like this will download
+	![download](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/qgisdownload.png)
+	4. You MUST install the items IN ORDER. They are numbered. It is very important to follow the numbers. 
+	5. Finally, follow all of the prompts for all of the packages. 
 
 **Launch** QGIS. Your new blank map project will look like this:
 
