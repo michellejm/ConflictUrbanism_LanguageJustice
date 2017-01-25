@@ -36,7 +36,7 @@ The data we are using for this tutorial has already been cleaned for our purpose
 
 We need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units. We know something about the languages represented in that smaller area. 
 
-1. Import a [KML File](https://developers.google.com/kml/documentation/kml_tut) of census tracts for New York City. This file came from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources.
+1. Import a [KML File](https://developers.google.com/kml/documentation/kml_tut) of census tracts for New York City. This file came from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. We will work more with it in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
 ![downloadfile](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdownload.png)
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
