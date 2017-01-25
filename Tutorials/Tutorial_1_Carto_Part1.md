@@ -14,7 +14,7 @@ By the end of this tutorial you will be able to:
 
 ### Account
 
-You will need to set up a (free) account on Carto (formerly CartoDB). Columbia Libaries has a subscription to an enterprise version of Carto available [here](http://library.columbia.edu/locations/dssc/technology/gis.html) with your Columbia University email. The interface has recently dramatically changed. If you have the older version of Carto, please work through this tutorial.
+You will need to set up a (free) account on Carto (formerly CartoDB). Columbia Libaries has a subscription to an enterprise version of Carto available [here](http://library.columbia.edu/locations/dssc/technology/gis.html) with your Columbia University email. The interface has recently dramatically changed. If you have the older version of Carto, please work through [this tutorial](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Old/Carto2016_part1.md).
 
 ### Spatial Data and Boundaries
 
@@ -32,16 +32,22 @@ Language data from the census comes in many forms. We will use Language by abili
 
 ## Part II - Uploading Data
 
-The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth, with many features already represented (i.e., water, country boundaries, etc.). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larger than the US, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent, so you can use any shapefile with any projection. 
+The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth, with many features already represented (i.e., water, country boundaries, etc.). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larger than just a city, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent, so you can use any shapefile with any projection. 
 
 We need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units. We know something about the languages represented in that smaller area. 
 
 1. Import a shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
 
-	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data)
-	2. Find `gz_2010_36.csv` and download it to your computer (click 'View Raw'. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime)).
+	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
+	2. Find `gz_2010_36.csv` and download it to your computer 
+		1. Click `View Raw`. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime).
+		2. You *may* have to change the file type. By default, it will probably offer 'HTML' or 'Web Archive', change it to 'Text' or '.txt', or 'Page Source' depending on yur computer and browser.
+		3. If propted to Append '.txt' to the name, select 'Don't Append'
+		
 	3. Return to Carto >> Add Dataset
-	4. Upload the file here
+	![addset](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdatasets.png)
+	
+	4. Upload the file (Browse or Drag/Drop)
 	5. Carto will show you the map view. It should look like New York City divided into census tracts.
 	6. Return to Data View (with the slider at the top)
 	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
