@@ -34,14 +34,13 @@ We are interested in creating a map of refugee resettlement in the United States
 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/01_OpenQGIS.png)
 
-Begin to familiarize yourself with the interface. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_InterfaceDescription.md) of the elements of the interface for more information. 
+Begin to familiarize yourself with the interface by hovering over the icons to see what they say, . You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_InterfaceDescription.md) of the elements of the interface for more information. 
 
 ##Adding Layers
 
 Maps in QGIS are based on data layers. This system allows you to analyze datasets with respect to each other. We will use two layers with different information. The basemap is polygons representing states in the US. We will layer 
 
 First we will add a basemap of the United States. 
-
 1. Go to the Data/cb2014 folder. This folder contains all the files QGIS needs to make an outline of the United States. 
 
 	1. You'll notice a number of different file extensions. Do NOT delete, move or rename these files.
@@ -53,6 +52,13 @@ First we will add a basemap of the United States.
 		* .sbn and .sbx - The files that store the spatial index of features (these might get corrupted, see note at the end of this tutorial).
 		* .prj - The file that stores the coordinate system information.
 		* For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
+		
+		
+2. In the browser (on the left side of the QGIS window), navigate to where you saved the Data/cb2014 layer. For me, that is here. It may be somewhere else for you. 
+![layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/browserpanel.png)
+
+3. If you just 
+
 
 2. Click on the `Add Vector Layer` button to add the data. 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
