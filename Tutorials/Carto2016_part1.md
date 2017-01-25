@@ -14,7 +14,7 @@ By the end of this tutorial you will be able to:
 
 ### Account
 
-You will need to set up a (free) account on [Carto](www.carto.com) (formerly CartoDB). Columbia Libaries has a subscription to an enterprise version of Carto (available [here](http://library.columbia.edu/locations/dssc/technology/gis.html) with your Columbia University email). We will **not** be using this version in this tutorial. If you discover that you need to do more complex calcluations, you can transfer your project to the enterprise version. 
+You will need to set up a (free) account on [Carto](www.carto.com) (formerly CartoDB).
 
 ### Spatial Data and Boundaries
 
