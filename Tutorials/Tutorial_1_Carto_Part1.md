@@ -36,10 +36,11 @@ The data we are using for this tutorial has already been cleaned for our purpose
 
 We need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units. We know something about the languages represented in that smaller area. 
 
-1. Import a shapefile of census tracts for New York City. This file came from [the US Census](https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html), though it is available from many sources.
+1. Import a [KML File](https://developers.google.com/kml/documentation/kml_tut) of census tracts for New York City. This file came from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources.
+![downloadfile](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdownload.png)
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
-	2. Find `gz_2010_36.csv` and download it to your computer 
+	2. Find `2010 Census Tracts.kml` and download it to your computer 
 		1. Click `View Raw`. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime).
 		2. You *may* have to change the file type. By default, it will probably offer 'HTML' or 'Web Archive', change it to 'Text' or '.txt', or 'Page Source' depending on yur computer and browser.
 		3. If propted to Append '.txt' to the name, select 'Don't Append'
@@ -48,11 +49,16 @@ We need to upload a shapefile that has the boundaries we want to impose on our m
 	![addset](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdatasets.png)
 	
 	4. Upload the file (Browse or Drag/Drop)
-	5. Carto will show you the map view. It should look like New York City divided into census tracts.
-	6. Return to Data View (with the slider at the top)
-	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/dataview.png)
-	7. For clarity, I'm going to edit the metadata and rename my dataset "nyc_censustracts"
-	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/metadata.png)
+	5. Carto will show you the data view. This is just a list of Polygons. 
+	6. Select 'Create Map' in the lower right corner. It should look like New York City divided into census tracts.
+	![create](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/ccreatemap.png)
+	7. It should look like New York City divided into census tracts.
+	![basemap](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cbase.png)
+	8. For clarity, I'm going to edit the rename my dataset "nyc_censustracts"
+	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cmeta.png)
+	9. Return to HOme Screen (small white circle on left)
+	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
+
 
 2. Add data from a csv (comma separated values) file.  We are going to add language-speaker data to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find all kinds of census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
