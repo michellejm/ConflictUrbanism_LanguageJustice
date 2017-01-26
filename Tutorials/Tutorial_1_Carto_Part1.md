@@ -63,9 +63,9 @@ We need to upload a file that has the boundaries we want to impose on our map, w
 	8. For clarity, I'm going to edit the rename my dataset "nyc_censustracts"
 	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cmeta.png)
 
-Now we want to add language data to the map. 
+2. Now we want to add language data to the map. 
 
-2. We will add language data from a csv (comma separated values) file. The data come from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
+3. We will add language data from a csv (comma separated values) file. The data come from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto) on the Github Page.
 	2. Find "nhgis_language_percents_nyc.csv" and download it to your computer.
@@ -89,7 +89,7 @@ Now we want to add language data to the map.
 	15. Select Apply.
 	16. Your map should still be solid blue. 
 
-Now we want to see what this data looks like on our map. We are going to make a chloropleth map based on speaker density in census tracts. Chloropleth works best to represent density. Bubbles of various sizes work best to represent raw numbers. 
+4. Now we want to see what this data looks like on our map. We are going to make a chloropleth map based on speaker density in census tracts. Chloropleth works best to represent density. Bubbles of various sizes work best to represent raw numbers. 
 	1. From the Analysis Panel, select 'Style'
 	![addstyle](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cstyle.png)
 	2. Click on the Fill (blue bar) and Select 'By Value'. Pick your language (for this, you might want to pick something that you know there are a community of speaker (i.e., Greek or Korean are good choices, Navajo might	 not give you enough data for this type of map).
