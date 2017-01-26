@@ -34,13 +34,13 @@ Language data from the census comes in many forms. We will use Language by abili
 
 The data we are using for this tutorial has already been cleaned for our purposes.  Carto comes pre-packaged with a basemap that represents the Earth, with many features already represented (i.e., water, country boundaries, etc.). The default map projection is Web Mercator. Web Mercator is used because it is efficient, not because it is visually accurate. Web Mercator is good enough for our purposes since we will be looking at very small areas, so the visual distortion is not as significant. If you want to be more accurate or represent an area larger than just a city, check out [this blog post](https://carto.com/blog/free-your-maps-web-mercator) on how to change the projection in Carto. Shapefiles are projection-independent, so you can use any shapefile with any projection. 
 
-We need to upload a shapefile that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units. We know something about the languages represented in that smaller area. 
+Our first layer is our **geometry**.
+We need to upload a file that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units (census tracts). 
 
-1. Import a [KML File](https://developers.google.com/kml/documentation/kml_tut) of census tracts for New York City. This file came from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. We will work more with it in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
+1. Import the csv file of of census tracts for New York City. This file was modified from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. We will work more with it in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
 ![downloadfile](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdownload.png)
-
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
-	2. Find `2010 Census Tracts.kml` and download it to your computer 
+	2. Find `gx_2010_36.csv` and download it to your computer 
 		1. Click `View Raw`. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime).
 		2. You *may* have to change the file type. By default, it will probably offer 'HTML' or 'Web Archive', change it to 'Text' or '.txt', or 'Page Source' depending on yur computer and browser.
 		3. If propted to Append '.txt' to the name, select 'Don't Append'
@@ -56,22 +56,51 @@ We need to upload a shapefile that has the boundaries we want to impose on our m
 	![basemap](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cbase.png)
 	8. For clarity, I'm going to edit the rename my dataset "nyc_censustracts"
 	![freemeta](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cmeta.png)
-	9. Return to HOme Screen (small white circle on left)
-	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
 
+Now we want to add language data to the map. 
 
-2. Add data from a csv (comma separated values) file.  We are going to add language-speaker data to the census tracts. The data came from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find all kinds of census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
+2. We will add language data from a csv (comma separated values) file. The data come from [National Historical GIS](https://www.nhgis.org/) by submitting a data request. This is an excellent location to find census data, especially when working with datasets from multiple time periods. It has been pre-cleaned for this tutorial. For more on data cleaning visit [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md).
 
-	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Carto/Data) on the Github Page.
+	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto) on the Github Page.
 	2. Find "nhgis_language_percents_nyc.csv" and download it to your computer.
-	3. Add this dataset to your 'My Datasets' Library
-	![datasets](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cartodataset.png)
-	4. Notice the Column named 'GISJOIN' this is the column we are going to use to merge those two datasets. Look back at the census tract file. It also has a GISJOIN column. These numbers correspond to each census tract.
-	5. Return to Carto and navigate back to the DataSets Page (*small arrow in left hand corner*)
-	6. Upload the "nhgis_language_percents_nyc.csv" 
-	7. It will not automatically show you a map view, so click on the slider to see the map view.
-	8. It should ask you to Georeference the dataset. DO NOT GEOREFERENCE IT! There is no geographic information in this dataset - only statistical information.
-	9. Return to DataSets
+	3. Return to Carto, and select 'ADD'
+	![addlayer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddlayer.png)
+	4. Connect the language percentages in New York City dataset
+	![connect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cconnectdata.png)
+	5. Select 'Add Layer' in the lower right corner.
+	6. Carto will return you to the map view. 
+	7. Both of your layers should now appear (A and B)
+	8. On the 'nyc_census_layer' (Layer A) Select 'Add Analysis'
+	![addanalysis](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddanalysis.png)
+	9. Select 'Join columns from 2nd layer'
+	10. Input #1 should be your census file
+	11. Select your language file for Input #2
+	12. Join type is 'Inner'
+	13. For the Foreign Keys, select 'Cnty_tract' for BOTH files
+	14. Select the Columns you want to keep on each file. 
+		1. Be sure to select cnty_tract on at least one of them (to maintain a link to you original data).
+		2. Select all of the languages you are interested in. 
+	15. Select Apply.
+	16. Your map should still be solid blue. 
+
+Now we want to see what this data looks like on our map. We are going to make a chloropleth map based on speaker density in census tracts. Chloropleth works best to represent density. Bubbles of various sizes work best to represent raw numbers. 
+	1. From the Analysis Panel, select 'Style'
+	![addstyle](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cstyle.png)
+	2. Click on the Fill (blue bar) and Select 'By Value'. Pick your language (for this, you might want to pick something that you know there are a community of speaker (i.e., Greek or Korean are good choices, Navajo might not give you enough data for this type of map).
+	3. A chloropleth map of that language should appear. 
+	![addchloro](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cchloro.png)
+	4. This is great, but we probably want to have popups to tell us more information about the number of speakers. 
+	5. Next to the style button is 'Pop-Ups'. You can choose from Hover or Click, and Include any information you want. (Click might not work in the 
+
+NOTE: The information being displayed i sjust being pulled in form the spreasheet. You can edit it, add information or relabel rows based on what you want to highlight (i.e., your label can make a claim or commentary on the tract).
+
+OK, what if we want to creat multiple layers? I.e., I want my user to be able to select Chinese, Korean, or Vietnamese. 
+To do this, we will need to export 
+	
+	
+	
+9. Return to Home Screen (small white circle on left)
+	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
 	
 3. Combine Files - Now we are going to align the language information to the census tracts.
 	1. Open the "NYS_censustracts" dataset
