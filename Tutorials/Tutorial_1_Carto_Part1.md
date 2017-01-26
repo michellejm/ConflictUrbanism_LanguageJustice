@@ -86,96 +86,80 @@ Now we want to add language data to the map.
 Now we want to see what this data looks like on our map. We are going to make a chloropleth map based on speaker density in census tracts. Chloropleth works best to represent density. Bubbles of various sizes work best to represent raw numbers. 
 	1. From the Analysis Panel, select 'Style'
 	![addstyle](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cstyle.png)
-	2. Click on the Fill (blue bar) and Select 'By Value'. Pick your language (for this, you might want to pick something that you know there are a community of speaker (i.e., Greek or Korean are good choices, Navajo might not give you enough data for this type of map).
+	2. Click on the Fill (blue bar) and Select 'By Value'. Pick your language (for this, you might want to pick something that you know there are a community of speaker (i.e., Greek or Korean are good choices, Navajo might	 not give you enough data for this type of map).
 	3. A chloropleth map of that language should appear. 
 	![addchloro](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cchloro.png)
 	4. This is great, but we probably want to have popups to tell us more information about the number of speakers. 
-	5. Next to the style button is 'Pop-Ups'. You can choose from Hover or Click, and Include any information you want. (Click might not work in the 
+	5. Next to the style button is 'Pop-Ups'. You can choose from Hover or Click, and Include any information you want. (Hover might not work in the prview mode)
 
 NOTE: The information being displayed i sjust being pulled in form the spreasheet. You can edit it, add information or relabel rows based on what you want to highlight (i.e., your label can make a claim or commentary on the tract).
 
-OK, what if we want to creat multiple layers? I.e., I want my user to be able to select Chinese, Korean, or Vietnamese. 
-To do this, we will need to export 
+OK, what if we want to creat multiple layers? I.e., I want my user to be able to view Chinese, Korean, or Vietnamese neighborhoods by selecting layers on my final map. 
+The most efficient way to do this is to export the joined data table we created and create a new map with it. Then add that table with different language columns highlighted. 
 	
-	
-	
-9. Return to Home Screen (small white circle on left)
-	![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
-	
-3. Combine Files - Now we are going to align the language information to the census tracts.
-	1. Open the "NYS_censustracts" dataset
-	2. Merge this dataset with another (Click Edit >> Merge with dataset) *This will create a new dataset*
-	3. Select 'Column Join'
-	4. Find the 'nhgis_language_percents_nyc' file
-	5. Select 'cnty_tract' for both files, and click 'Next'
-	6. All of the languages and county names should be selected. If they aren't, select them now.
-	7. A new dataset will appear. I'm going to rename mine, "languages_by_censustract_nyc"
-	8. Carto will probably suggest some "interesting maps" ignore these.
-	
-## Part III - Mapping data
-In this section, we will look at the data in a map form. At this point, our questions are exploratory.
+1. Export the data (the layer that has the Join in it) by clicking on the 3 little dots and 'Export Data'
+![export](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cexportdata.png)
+2. Download as CSV and remember where you save it to.
+3. Return to Home Screen (by clicking the small white circle on left)
+![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
+4. Upload this file you just downloaded as a new dataset. Let's take a shortcut. 
+	1. Select 'New Map' on the Right side
+	2. Select 'Connect Dataset'
+	![connect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cconnectdata.png)
+	3. This will take you to a map where the joined layer is the baselayer.
+5. Change the name of the map by clicking on the 3 little dots next to 'Untitled Map'. I'm going to change it to NYC Languages.
+6. The imported layer will be the first layer. 
+	1. Select 'ADD ANALYSIS' again
+	![addanalysis](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddanalysis.png)
+	2. Select 'Filter By Column Value'
+		1. In the 'Filter by column value' Category
+			1. Input = the table you just uploaded
+			2. Column = 'English only' OR the column with the language you are interested in (it might say 'right_LANGUAGE', that's fine.)
+		2. In the 'Parameters' Category
+			1. Filter = Is Greater Than
+			2. Value = 0 (this could be something like .05, if you are looking for concentrations of speakers.
+		3. 'APPLY'
+	3. You should see another solid colored map. Go to 'Style' and change it to a Chloropleth again.
+		1. Select the language you filtered by (i.e., English only)
+	4. Change the name of the layer based on the language (select the 3 little dots next to the dataset name and 'Rename')
+	5. Change the legend by selecting 'Legend' (next to PopUps). The data in this files does not follow capitalization rules. 
+	5. OPTIONAL: Add tooltips or Widgets
+		1. On the Data Tab at the Left, there is the option to add 'Widgets'. These add graphs to your map.
+			1. Select the Only English (or other language) - it will add a graph of how many census tracts are in each percentage group.
+			2. Select the little drop icon to have the census tracts and the graph colors match. 
+			3. You can customize the graph type or the colors by selecting the 3 dots icon and making your choices on the left. 
+6. Add a second layer. 
+	1. Select the Left Arrow until you arrive at the layers page. You may have to select the Layers tab.
+	![left](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cleftarrow.png)
+	![layers](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/clayers.png)
+	2. Select 'Add'. You will be directed back to the datasets. Add the same censustracts+languages dataset
+	![addlayer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddlayer.png)
+	3. It will be imported as layer 'B'. 
+	4. Repeat Step 6, starting with 'ADD ANALYSIS'
+		1. Filter By Column Value
+		2. Pick another language (i.e., Chinese)
+		3. Repeat
+7. Add a third layer following the same steps.
+8. You can change the order of the Layers by dragging them by the small keys ar the left. This will change the order that viewers can see them. In this case, it doesn't matter in terms of the map since all the layers are opaque. It does mean that only the top layer will be viewable when the user arrives at your map. We need to provide them the option to see other layers. 
 
-1. Make the data into a map
-	1. In the upper right hand corner, click on 'Visualize'
-	2. Carto will prompt you to make a map. Accept this.
-	3. This changes your dataset from a spreadsheet with a spatial component into a map you can add layers to within the system.
+9. Add a layer selector to your map. 
+	1. Click on the Map Options icon
+	![options](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cselector.png)
+	2. Select the layer selector option. 
+
+10. Share your map (you can still edit it)
+	1. Select the 'Share' button in the lower right corner
+	2. Click on the 'Private' button and choose 'Only with Link'
+	3. Click on the 'Publish' button
+	![share](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cprivate.png)
+	4. Change to the 'Publish Tab'
+	5. Copy the link
 	
-2. Inspect the data
-	1. Click on the number '1' in the box on the right side of the screen. This is the first layer. 
-	2. If it isn't selected already, click on the little square with a paintbrush. This is the mapping 'wizard'. Eventually, you will create these maps manually, but for right now, let's just look at the built-in options.
-	3. Select Choropleth. Choropleth maps are good for showing differences in density. Our language data is perfectly suited to this.
-	4. Select any language. I'm going to choose Chinese.
-	5. Does this align with what you might expect for the city? Why or why not?
-	
-3. Add a Tooltip
-	1. Click on the 'infowindow' box directly below the 'wizard' box.
-	2. There are two options here - 'click' and 'hover' - pick your preference.
-	3. Select a language to show, I'm choosing Chinese since we're looking at the Chinese map.
-	4. Go back to the map and either click or hover over one of the census tracts, two numbers should appear. 
-		1. The decimal represents the percentage of speakers
-		2. The grey number represents the row where that datum appears in the table (only visible to you)
-
-4. Formatting the Tooltip
-*We want the tooltip to display as a percentage, not as a decimal. We can do this one of two ways. First, we could reformat the data in Excel, to natively be a percentage. Second, we can do it using SQL commands. I am going to chose the SQL commands because it gives me more control over the data.*
-	1. Click on the icon that says 'SQL' (directly above the wizard)
-	![sql](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sql.png)
-
-		1. SQL is a very old computer language still used for databases. Carto is treating your dataset as a database, and querying it for information. 
-	3. We are going to change the query.
-		1. Currently, it should say: **SELECT \* FROM languages_by_census_tracts_nyc** This means *select everything from the dataset, languages...* For this layer, Carto has access to all the information on your dataset. This layer is about Chinese, so we will restrict it to just Chinese.
-		2. Remove the original command and replace it with: **SELECT \*, to_char(chinese, '99V99%') AS chinese_percent FROM languages_by_census_tracts_nyc** *This says select everything from the dataset, languages..., and change the characters in the chinese column to a percent formal and call that transformation chinese_percent
-		3. Run this query by clicking 'Apply Query'
-	4. Now return to the tooltip and select the new variable, chinese_percent (and deselect the old chinese).
-		
-5. Making layers
-	1. In the last step, we make layer 1 for Chinese. Let's make another layer for Arabic.
-	2. Click on 'Add Layer', directly above the Chinese layer
-	3. We are going to do the same for Arabic that we did for Chinese.
-	4. Select Choropleth Map view (Step 2)
-	5. Apply the SQL filter for Arabic (Step 4)
-	6. Add the tooltip (Step 3)
-	7. Be sure to rename the layer
-	8. Repeat for as many languages as you want
-
-6. Customizing Views
-	1. Toggle the visibility of layers by selecting the layer and moving the slider button on the top right hand side of the title bar.
-	2. Add a layer selector to your map by changing the settings
-		1. On the map, in the lower left corner is the 'Options' button.
-		2. Select 'Layer Selector'
-		3. Selection now appears in the upper right side of the map
-	3. Add a title and a legend in the 'Add Elements' box.
 	
 Congratulations! You have made your first map!! 
 
-7. You are welcome to change the colors, highlight different languages, change the basemap, etc. This is not required.
+To complete this tutorial, send the link to your finished map to Michelle at mam2518@columbia.edu
 
-To complete this tutorial, send your finished map to Michelle at mam2518@columbia.edu
-
-1. Select `Visualize`
-![visualize](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/visual.png)
-2. Accept to create your map.
-3. Select 'Publish' and send me the link.
- 
 	
 To learn how to do more with Carto, work through the [Carto 2 Tutorial](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_2_Carto_Part2.md) or visit the [Carto Tutorials](https://carto.com/docs/tutorials) page.
 
