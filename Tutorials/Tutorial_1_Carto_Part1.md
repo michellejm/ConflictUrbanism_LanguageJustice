@@ -41,8 +41,9 @@ Our first layer is our **geometry**.
 We need to upload a file that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units (census tracts). 
 
 1. Import the csv file of of census tracts for New York City. This file was modified from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. The file we will use has been modified to make this tutorial more straightforward. We will work more with preparing data in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
-
 ![downloadfile](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdownload.png)
+
+
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
 	2. Find `gz_2010_36.csv` and download it to your computer 
 	
@@ -51,7 +52,6 @@ We need to upload a file that has the boundaries we want to impose on our map, w
 		3. If propted to Append '.txt' to the name, select 'Don't Append'
 		
 	3. Return to Carto >> Add Dataset
-	
 	![addset](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdatasets.png)
 	
 	4. Upload the file (Browse or Drag/Drop)
