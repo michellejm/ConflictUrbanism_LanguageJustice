@@ -37,10 +37,10 @@ The data we are using for this tutorial has already been cleaned for our purpose
 Our first layer is our **geometry**.
 We need to upload a file that has the boundaries we want to impose on our map, we will essentially be cuttng up New York City into smaller units (census tracts). 
 
-1. Import the csv file of of census tracts for New York City. This file was modified from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. We will work more with it in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
+1. Import the csv file of of census tracts for New York City. This file was modified from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku), though it is available from many sources. This is the NYC Open Data Interface. The file we will use has been modified to make this tutorial more straightforward. We will work more with preparing data in [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
 ![downloadfile](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdownload.png)
 	1. Go to the [data folder](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/Data/Carto)
-	2. Find `gx_2010_36.csv` and download it to your computer 
+	2. Find `gz_2010_36.csv` and download it to your computer 
 		1. Click `View Raw`. If you are on a Mac, click `Command` + `s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime).
 		2. You *may* have to change the file type. By default, it will probably offer 'HTML' or 'Web Archive', change it to 'Text' or '.txt', or 'Page Source' depending on yur computer and browser.
 		3. If propted to Append '.txt' to the name, select 'Don't Append'
