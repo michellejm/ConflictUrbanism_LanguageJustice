@@ -183,21 +183,25 @@ Now we want to upload this data into Carto so we can analyze and visualize it.
 1. Return to your Carto Account.
 2. Go to the Dataset View and select 'New Dataset'
 3. Upload the map.osm file from your computer
+4. If you have an option, it is the **POINTS** file
 4. Return to the DataView and inspect this new dataset. 
 5. Switch to map view to get a sense of what information is positioned where. 
 
-There is a lot of information here. We are not interested in all of it. Let's look only at the Cafe's. 
+There is a lot of information here. We are not interested in all of it. Let's look only at the Bicycle Parking. We can image a project where we want to know if speakers of a language have access to bike parking (hospitals, groceries, etc.).
 
-1. Open the `SQL` Editor on the left hand side
-2. We want to SELECT everything FROM the dataset, map_points, WHERE elements in the column, 'other_tags' is LIKE "amenity"=>"cafe" 
-![sqlselect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sqlosm.png)
-	1. '[LIKE](https://www.postgresql.org/docs/8.3/static/functions-matching.html)' means that the target string is in the entire string. 
-	2. 'ILIKE' is case-INSENSITIVE 'LIKE'
+1. Go to the Data View of this layer
+1. Open the `SQL` Editor with the slider at the bottom
+![sqlosm](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/csql.png)
+2. If you forget what features/columns are available to you, click on the icon with 3 veritcal bars on the lower right hand side.
+![dataview](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdata.png)
+2. We want to SELECT everything FROM the dataset, map_points, WHERE elements in the column, 'other_tags' is LIKE "amenity"=>"bicycle_parking" 
+![sqlselect](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/csql.png)
+	1. SELECT * FROM mmcsweeney.map1_points WHERE other_tags LIKE '%"amenity"=>"bicycle_parking"%'
+		1. The name of the points file will be your user name
+	2. '[LIKE](https://www.postgresql.org/docs/8.3/static/functions-matching.html)' means that the target string is in the entire string. 
 	3. The % % on either end are a [Regular Expression](http://www.regular-expressions.info/). They mean 'Wildcard', so anything can come before or after the target string.
-	
-3. Return to the DataView
-SELECT * FROM map_points WHERE other_tags ILIKE '%"amenity"=>"cafe"%'
-
+	![sql](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/csqlout.png)
+	4. Apply the Query and return to the map view.
 
 Congratulations! You have now uploaded OSM data into a Carto Map. You can, of course, do much more with this (i.e., concentration of cafes versus [candy store](http://gothamist.com/2014/05/02/ask_a_native_new_yorker_whats_the_d.php) ('bodega','deli', 'corner grocery', etc.) in a given language neighborhood, etc. 
 
