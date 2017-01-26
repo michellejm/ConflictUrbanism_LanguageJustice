@@ -15,28 +15,63 @@ First thing, though, we have to get that data onto the map. Though there are man
 
 ## Part I - Adding individual points
 
-1. Go to the Carto Dashboard and click on 'New Map' in the upper right hand corner.
-![newmap](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/newmapcarto.png)
-2. You will arrive on a page to add datasets. Click on 'Create Empty Map' on the right side of the page.
-![createempty](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/createempty.png)
-3. You will be prompted to add 'Points', 'Lines', or 'Polygons'. Select **'Point'**
-	1. Alternatively, 'Skip' and then click on the little bubble in the lower right hand corner
-	![addfeature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addfeature.png)
-4. In this tutorial, we are first going to map language information about Columbia University. For each combination, drop a pin on the building (if you don't know the shape of the building, just drop a point somewhere on campus). The map is at Zoom Level 17 - which shows the details of the buildings. 
+1. In this tutorial, we are first going to map language information about Columbia University. This is the data we have collected about some langauges that can be found at Columbia.
 	1. Schermerhorn Extension, Center for Spatial Research, English
 	![schermerhorn](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/schermerhorn.png)
 	2. Butler Library, Ancient & Medieval Studies Reading Room, Ancient Greek
 	3. International Affairs Building, Language Resource Center, Yoruba
-5. Toggle to DataView to add the relevant information about the pin you just dropped (double click on the box to edit it). ![featureedit](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/schermerhorn.png)
+2. Go to the Carto Dashboard and click on 'New Map' in the upper right hand corner.
+![newmap](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cnewmap.png)
+2. You will arrive on a page to add datasets. Click on 'Create Empty Map' on the right side of the page.
+![createempty](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/createempty.png)
+3. An empty (untitled) layer will be added to your map. 
+![untitled](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cuntitledlayer.png)
+4. To change the name of this layer, click on the dots next to "untitled_table" and rename it, I'm going to call it "Columbia Languages"
+5. Click on the title to go to the editing view
+6. It will take you to the data tab.
+	1. This icon with the + sign should be visible in the lower right corner. If it isn't, refresh your browser.
+	![point](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddpoint.png)
+	2. Click on that icon. It will prompt you to drop a pin. 
+	3. Drop a pin on the Schermerhorn Extension (data point #1) (if you don't know the shape of the building, just drop a point somewhere on campus). The map is at Zoom Level 17 - which shows the details of the buildings. 
+	4. It should take you to this view, where you can enter the attribute name (Schermerhorn Extension) and a description (English)
+	5. It will prompt 'Add Custom Value' - click on that, it will not add automatically.
+	![featureedit](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdroppoint.png)
+	5. Add the other two data points from Step 1. 
+7. Return Home with the small white circle
+![home](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/chome.png)
+8. Select DataSets View. 
 6. Latitude and Longitude should appear for each of these locations. 
+	1. Select the table we just made
+	2. Add a Column to enter more information
+	3. Edit a cell by clicking on it
+	![home](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddcolumn.png)
+9. Select 'Create Map'
+10. You may have to search for the pins. Search New York City in the searchbar at the bottom and find Columbia University. 
 
-Clearly this is a tedious way of making a map, let's try something more efficient.
+Let's hypothesize about areas of influence. Let's assume that the Spanish speaker we found at Schermerhorn Extension is willing to walk up to 50 meters from where he works to get lunch or coffee. We want to know what his area of influence is, or where he carries his Spanish. 
+
+1. Select 'ADD ANALYSIS'
+![add analysis](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddanalysis.png)
+2. Select 'Areas of Influence'
+	1. Select the distance you want to use (Time requires having timeseries data in your dataset).
+	2. 'Intact' means the spheres will overlap. 'Dissolved' means they turn into one big odd shape
+3. However you've selected to make the buffers, change the name of the map to something more recognizable.
+4. Share the map
+	1. Accessible with the link
+	2. Published
+	3. Send this link to Michelle at mam2518@columbia.edu
+
+Congratulations! You have added buffers to your map to represent Spheres of Influence
+
+
+You probably won't collect you data in Carto - it is more likely that you will use a Spreadhseet of some sort. 
 
 ## Part II - Geocoding batches of addresses
 
 We are going to geocode language information from a spreadsheet. This data was collected from various sources, and may be similar to the type of data you will be collecting in your projects. We will use the Geocoder provided by the [US Census](https://www.census.gov/geo/maps-data/data/geocoder.html). Carto will geocode up to 100 points for free.
 
 1. Go to the [data folder], and find the ColumbiaLanguages.csv file and save it to your computer (click 'View Raw'. If you are on a Mac, click `Command + s` to save it. On a PC, select it all and save it to a Text Document (in Notepad, Text Wrangler, or Sublime)).
+2. Go to the 'DataView' and select 'Add New Dataset'. Add the 'ColumbiaLanguages.csv'. Return to the Dashboard/Home
 2. This file is already formatted for you. To use the Census Geocoder, the file must be in .csv format, and include the following information:
 	1. Unique ID,
     	2. House Number and Street Name,
@@ -50,56 +85,77 @@ We are going to geocode language information from a spreadsheet. This data was c
 5. A csv file will be returned that looks something like this, though it may not be in the same order:
 ![csv](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/address.png)
 6. To use this file in Carto, we have to clean it. 
-	1. Open GeocodeResults.csv in Excel
+	1. Open GeocodeResults.csv in Excel (This can also be done in Google Sheets)
 	2. You may notice that the language and department data is missing. Don't worry about that yet, we will come back to it.
 	3. Select the column that looks like Latitude, Longitude numbers (probably Column F)
+	4. Insert a Column to the Right
 	4. On the Data Tab, select Text to Columns
 	![txtcol](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/latlongtxtcol.png)
 	5. Select 'Delimited' and 'Comma' as prompted
+	6. Rename your columns Latitude and Longitude (Latitude = 40.xxx)
 	6. Save this file
 	7. Optional: I prefer to remove columns that I won't be using before I enter it into Carto:
 		1. If they are all a 'Match', remove 'Matching Result 1.' If they are not all a 'Match', inspect the ones that are not and then remove the column. 
 		2. If they are all 'Exact', remove 'Matching Result 2' Inspect any fields that are not 'Exact' before removing the column.
 		3. The first address column. If everything is an 'Exact Match', the second address column is redundant. If they are not an 'Exact Match', the second address column is the address used to obtain latitude and longitude. You likely want to keep both columns in this case. 
 		4. Save the new, clean file
-7. Return to Carto and Create a New Map. Select 'Connect Dataset' and upload the GeocodeResults.csv that you just cleaned.
-8. Go to data view and make sure it looks like what you expect. At this stage, it may be easier to rename the columns with something you can recognize. If you don't want to do this, write down which field latitude and longitude are in. 
-9. Now we need to tell Carto what the Latitude and Longitude columns are so it can plot the points. 
-	1. Click `Edit` and `Georeference Layer`
-	2. You will be prompted to select which column has Longitude and which has Latitude.
-	3. Return to Map View and zoom in on Columbia, you should see your points
+7. Return to the Carto home, and switch to Datasets View. Select 'Add New Dataset' and upload the GeocodeResults.csv that you just cleaned.
+
+8. Select 'Create Map'
+	1. You should see a map of New York with some light orange dots on it. 
+	![dots](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/corange.png)
+	
 10. At this point, these are just points without any information attached. We need to add the language information that we have in the ColumbiaLanguages.csv file.
-	1. Return to your Carto Dashboard, and find `Your Datasets`
-	2. Add a `New Dataset`
+	1. Return to the Layers View
+	2. Select 'ADD ANALYSIS'
+	![add analysis](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddanalysis.png)
+	2. Select 'Join Columnbs by second layer'
 	3. Connect the `ColumbiaLanguages.csv` dataset
-	4. Once it appears in the DataView, select `Edit` and `Merge with Dataset`
-	5. Merge it with the `GeocodeResults` dataset, and join on the `ID` column
-	6. Once the datasets are merged, go to the MapView
-11. Now the information that you would have collected in a spreadsheet about each language and department is attached to the markers. 
+	4. Join on the 'id' field for both files.
+	5. Make sure you select the 'id' field for at least one of the datasets so you have a link back to the originals.
+	6. Be sure in the Columbialanguages dataset you select description, address, name, etc. 
+	7. Export this dataset as a csv file.
+	![export](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cexportdata.png)
+11. We will use the exported file to create a new layer.
+
 
 ## Part III - Representing this data
 
 Because there is no statistical or numerical data associated with this map, the best way to represent this data is either simple points or clusters. Simple points allow you to turn on the click or hover feature where you can display information about each point. Clusters represent how many lines are represented at each location. 
 
 If you choose to display the data and want to have each point displayed, but slightly askew from each other so that it appears that they are in slightly different locations in the same building, you may have to manually manipulate the data.
-1. Click on DataView and select the line you wish to move over just slightly. 
-2. Change either latitude or longitude by approximately .000025, this is just enough to move the location over and be able to see both dots. Of course, if you want it somewhere else, feel free to move it more or less. 
-3. Check your work in MapView
+	1. Upload the file you just downloaded again as a new layer
+	![add layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddlayer.png)
+	2. You may want to rename it 'ColumbiaLanguages' using the 3 dots to keep organized.
+	3. Click on this layer to go to the Data View.
+	![add layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cdataview.png)
+	4. Select 'Analysis'
+	5. Add popups with the name of the office and the name of the language.
+	6. Change the label name to make it clearer for your user
+	![add layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cpopup.png)
+	
+## Part IV - Simple Style
+You can do a LOT in this new version of Carto to style your map and help tell the story. 
+	1. These orange dots are awfully small. Let's change them
+		1. Under 'Style' click on the Number (7), and make it larger, like 15
+		![changesize](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cfixval.png)
+		2. Change the color if you wish by clicking on the Orange bar
+	2. This is looking better, but we are seeing both layers at once (eventhough our bigger dots are covering the smaller). Let's fix that.
+		1. Return to the layers panel
+		2. Click on the eye icon next to layer 'A', the base geometry. This will make it invisible.
+		![changeviz](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/ceye.png)
+	1. Change the basemap (I chose watercolor) 
+	![watercolor](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cwater.png)
+	2. You can use custom maps or tiles from other servers.
 
 
 ## Part IV - Exporting the Map for use in the Case Study
 
-1. In the Map View, click on 'Publish' 
-
-![publish](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/cartopublish.png)
-
-2. Select the 'Embed' Option
-
-![embed](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/embedcarto.png)
-
-3. Paste this iFrame Code where you want it to appear in your site.
-
-
+1. Click on Share
+	1. Select your Privacy settings
+	2. Select 'Publish'
+	3. Select the 'Embed' option
+	3. Paste this iFrame Code where you want it to appear in your site.
 
 Congratulations!! That's the second map about language in New York City! 
 
@@ -125,8 +181,7 @@ Users contribute data to the map (i.e., indicating restaurants, marking streets 
 Now we want to upload this data into Carto so we can analyze and visualize it. 
 
 1. Return to your Carto Account.
-2. Go to the Data View and select `New Dataset`
-![newdata](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/newdata.png)
+2. Go to the Dataset View and select 'New Dataset'
 3. Upload the map.osm file from your computer
 4. Return to the DataView and inspect this new dataset. 
 5. Switch to map view to get a sense of what information is positioned where. 
