@@ -52,7 +52,7 @@ Let's hypothesize about areas of influence. Let's assume that the Spanish speake
 
 1. Select 'ADD ANALYSIS'
 ![add analysis](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/caddanalysis.png)
-2. Select 'Areas of Influence'
+2. Select 'Create Areas of Influence'
 	1. Select the distance you want to use (Time requires having timeseries data in your dataset).
 	2. 'Intact' means the spheres will overlap. 'Dissolved' means they turn into one big odd shape
 3. However you've selected to make the buffers, change the name of the map to something more recognizable.
