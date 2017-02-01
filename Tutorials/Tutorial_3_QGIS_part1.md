@@ -41,6 +41,7 @@ Begin to familiarize yourself with the interface by hovering over the icons to s
 Maps in QGIS are based on data layers. This system allows you to analyze datasets with respect to each other. We will use two layers with different information. The basemap is polygons representing states in the US. We will layer 
 
 First we will add a basemap of the United States. 
+
 1. Go to the Data/cb2014 folder. This folder contains all the files QGIS needs to make an outline of the United States. 
 	1. You'll notice a number of different file extensions. Do NOT delete, move or rename these files.
 	2. These **files must stay together** in the same folder otherwise QGIS will not be able to load the layer.
