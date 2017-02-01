@@ -56,7 +56,7 @@ First we will add a basemap of the United States.
 2. In the browser (on the left side of the QGIS window), navigate to where you saved the Data/cb2014 layer. For me, that is here. It may be somewhere else for you. 
 ![layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/browserpanel.png)
 
-3. If you just Click on the `Add Vector Layer` button to add the data. 
+3. Click on the `Add Vector Layer` button to add the data. 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 	1. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj). 
 		1. The selected layer will be added in default colors. 
