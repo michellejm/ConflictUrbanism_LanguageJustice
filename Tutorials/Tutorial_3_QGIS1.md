@@ -24,8 +24,8 @@ We are interested in creating a map of refugee resettlement in the United States
 ## Setting up QGIS
 
 1. Download QGIS [here](http://www.qgis.org/en/site/forusers/download.html)
-	1. On a PC, this is straightforward. Simply Click on the 'QGIS standalone installer' and follow the prompts. 
-	2. On a Mac, you will be taken to the KyngChaos page.
+	1. On a **PC**, simply Click on the 'QGIS standalone installer' and follow the prompts. 
+	2. On a **Mac**, you will be taken to the KyngChaos page.
 	![kingchaos](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/qdown.png)
 	3. Something like this will download
 	![download](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/qgisdownload.png)
