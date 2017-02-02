@@ -324,6 +324,8 @@ In order to present this map, we will now compose a map layout and become famili
 7. use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/saveas.png)
 
+8. To complete this tutorial, send Michelle a pdf or svg of your map at mam2518@columbia.edu
+
 ______________________________________________________________________________________________________________
 
 This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities* taught in Summer 2016 also by the [Center for Spatial Research](http://c4sr.columbia.edu).
