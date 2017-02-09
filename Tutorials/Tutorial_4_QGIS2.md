@@ -119,15 +119,19 @@ What projection you want to use could be the topic for an entire class. We will 
   4. Change the color scale to be multicolored (I'm choosing BrBG to symbolize loss of speakers (Brown) and growth (Green)).
   5. Click on 'Classify' to appy your changes. The value ranges appear at the left. 
   6. Note that the white color in the middle is not 0. We, as viewers, would expect no change to be colorless. Double click on the number to change this value to zero and click Apply (QGIS took the midpoint of the data, since there was an overall gain in Arabic speakers, the midpoint is slightly positive).
-  ![rastgradient](![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2grad.png)
-  7. If this makes you a little disoriented, add the Neighborhood Tabulation Areas vector layer, and change the fill to transparent. 
+  ![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2grad.png)
+8. If this map makes you a little disoriented, add the Neighborhood Tabulation Areas vector layer, and change the fill to transparent. 
 
-Another approach we could have taken was to add the layer together to symbolize the neighborhoods with the most speakers over the past 10 years, or taken data over many years to determine which are the most established neighborhoods.
+Another approach we could have taken was to add the layer together to symbolize the neighborhoods with the most speakers over the past 10 years, or taken data over many years to determine which are the most established neighborhoods. We could also use this type of map to visualize what languages are moving out of a neighborhood and what languages are moving in. 
 
 **Export your map as a .jpeg** and send it to Michelle at mam2518@columbia.edu(do not use Composer - we have another map to make).
 
 ## Use a Historical Map
 
+What if we want to illustrate modern information on a historic map? For example, I want to know what features were present in an area before a given group moved into that area. One way we could do this is layering raster data for every five years on a base map and visualizing the progression as layers. The NYPL has made public thousands of historical maps through their Map Warper. The [NYPL Map Warper](http://maps.nypl.org/warper/) is an crowd-sourced project to rectify historical maps and align them to modern ones. You can download the georeferenced raster files to use for data or as basemaps, use them as base layers in webmaps, and download them strictly as images. In this tutorial, we are going to layer modern information about Russian speakers in New York City to a historical map of Brooklyn. We know that Russians began arriving in New york City around 1905, and there are strong Russian speaking enclaves throughout the city. A more complete project would also incorporate the 1910 and 1920 Census data as layers on this map. 
+
+1. Visit the NYPL Map Warper site and Export [map 27204](http://maps.nypl.org/warper/maps/27204#Export_tab) as a Warped GeoTiff. Two files will be downloaded. These must stay together in the same folder. 
+2. 
 
 
 
