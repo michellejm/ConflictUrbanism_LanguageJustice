@@ -86,15 +86,35 @@ What projection you want to use could be the topic for an entire class. We will 
  * Input file: NYCT-Langs_ACS_5YR_15
  * Attribute Field: Arabic
  * Output file: Arabic15Raster (GeoTiff is the default - keep this)
- * Keep default Raster size in pixels (3000 x 3000)
+ * Raster size in pixels (3000 x 3000)
  * Load into canvas when finished YES
  * OK
  * Close
 3. Nothing changed, now what?
 4. Save your project.
 5. If your Arabic15Raster.tiff file exists (where you saved it), you have made a raster file!
+6. Save your Project!!
 
 ## Calculate Population Change
+1. Open a new Project
+2. Import the Arabic15Raster file we just created.
+3. Import the Arabic10Raster file from the Data folder. This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder.
+4. Both of these raster files are in the 'WGS 84 / Pseudo Mercator EPSG 3857' Projection. Make sure that both of the layers and the project are in this CRS. If they are not, change them now.
+5. This is difficult to look at because the colors are inverted (white indicates high density, black indicates low). We want to change this for both layers. 
+  1. Double click on the layer. 
+  2. Select Style and change the Color Gradient to 'White to Black'. (If you wanted to show variations in color, select 'Singleband Pseudocolor, we don't need to do that for this project, though.)
+  ![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2raststyle.png)
+6. Now we want to calculate the difference between these two layers.
+  1. Select Raster > Raster Calculator
+  ![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2rastc.png)
+  2. Double click on each layer to add it to your equation. We want to subtract the 2015 data from the 2010 data and add it to our map.
+  ![rastcalc](![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2rastcalc.png)
+  3. Save your new layer as Arabic_Diff_2010-2015
+  4. Select Add to Map
+  5. A new layer should appear with a grey background. 
+7. Style this map to illustrate what we want to know.
+  1. Double
+ 
 
 
 
