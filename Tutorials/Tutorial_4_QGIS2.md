@@ -102,7 +102,7 @@ What projection you want to use could be the topic for an entire class. We will 
 4. Both of these raster files are in the 'WGS 84 / Pseudo Mercator EPSG 3857' Projection. Make sure that both of the layers and the project are in this CRS. If they are not, change them now.
 5. This is difficult to look at because the colors are inverted (white indicates high density, black indicates low). We want to change this for both layers. 
   1. Double click on the layer. 
-  2. Select Style and change the Color Gradient to 'White to Black'. (If you wanted to show variations in color, select 'Singleband Pseudocolor, we don't need to do that for this project, though.)
+  2. Select Style and change the Color Gradient to 'White to Black'.
   ![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2raststyle.png)
 6. Now we want to calculate the difference between these two layers.
   1. Select Raster > Raster Calculator
@@ -113,8 +113,20 @@ What projection you want to use could be the topic for an entire class. We will 
   4. Select Add to Map
   5. A new layer should appear with a grey background. 
 7. Style this map to illustrate what we want to know.
-  1. Double
- 
+  1. Deselect the original two Arabic layers so only the Arabic_Diff layer is showing.
+  2. Double click to open the Properties Window
+  3. Change the Render type to Singleband pseudocolor
+  4. Change the color scale to be multicolored (I'm choosing BrBG to symbolize loss of speakers (Brown) and growth (Green)).
+  5. Click on 'Classify' to appy your changes. The value ranges appear at the left. 
+  6. Note that the white color in the middle is not 0. We, as viewers, would expect no change to be colorless. Double click on the number to change this value to zero and click Apply (QGIS took the midpoint of the data, since there was an overall gain in Arabic speakers, the midpoint is slightly positive).
+  ![rastgradient](![raster style](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2grad.png)
+  7. If this makes you a little disoriented, add the Neighborhood Tabulation Areas vector layer, and change the fill to transparent. 
+
+Another approach we could have taken was to add the layer together to symbolize the neighborhoods with the most speakers over the past 10 years, or taken data over many years to determine which are the most established neighborhoods.
+
+**Export your map as a .jpeg** and send it to Michelle at mam2518@columbia.edu(do not use Composer - we have another map to make).
+
+## Use a Historical Map
 
 
 
