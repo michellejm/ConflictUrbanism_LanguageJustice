@@ -629,5 +629,13 @@ your Name: <br/><br/>Description (Program, Year, Expertise)
 <hr>
 ```
 
+You cannot complete your final project without completing this tutorial. So, just for record keeping, please send the template as an .html file to Michelle at mam2518@columbia.edu. Fill in:
 
+* your name,
+* a tentative project title, and 
+* a tentative project description. 
 
+You can leave the Lorem Ipsum in the template until you are creating the final product. 
+
+_____________________
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on a tutorial written by Medeeha Merchant, for Conflict Urbanism: Aleppo taught in Spring 2016 also by the Center for Spatial Research.
