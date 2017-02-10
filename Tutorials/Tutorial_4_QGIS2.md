@@ -156,5 +156,5 @@ Export this map (either Export As Image or use the Print Composer to make a map 
 Congratulations!! You have completed the Final Mapping Tutorial for the Conflict Urbanism: Language Justice Course. There are, of course, many more topics to cover that will help support you mapping project, but as of now, you should have enough familiarity with mapping to be able to make a map to support your final project. 
 
 ____________________
-This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on the tutorial written by Dare Brawley, for Mapping for the Urban Humanities taught in Summer 2016 also by the Center for Spatial Research.
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. 
 
