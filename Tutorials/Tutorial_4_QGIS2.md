@@ -72,7 +72,9 @@ First, we are going to take a vector file and turn it into a raster file.
 **STOP!!!** This is a point where Projections become very important. Take a minute to look a the projection you are using. The projection for the project is in the bottom right hand corner. 
 ![project](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
 What projection you want to use could be the topic for an entire class. We will use Web Mecator because we plan to use our map as a webmap, and Web Mercator is the standard projection for Web Maps. 
+
 **Change your projection**
+
 1. Click on the CRS number 
 2. Select 'Enable on the fly transformations' at the top of the page
 3. Select 'WGS 84 / Pseudo Mercator EPSG 3857'
