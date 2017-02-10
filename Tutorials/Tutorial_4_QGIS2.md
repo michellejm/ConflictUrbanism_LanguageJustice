@@ -128,18 +128,33 @@ Another approach we could have taken was to add the layer together to symbolize 
 
 ## Use a Historical Map
 
-What if we want to illustrate modern information on a historic map? For example, I want to know what features were present in an area before a given group moved into that area. One way we could do this is layering raster data for every five years on a base map and visualizing the progression as layers. The NYPL has made public thousands of historical maps through their Map Warper. The [NYPL Map Warper](http://maps.nypl.org/warper/) is an crowd-sourced project to rectify historical maps and align them to modern ones. You can download the georeferenced raster files to use for data or as basemaps, use them as base layers in webmaps, and download them strictly as images. In this tutorial, we are going to layer modern information about Russian speakers in New York City to a historical map of Brooklyn. We know that Russians began arriving in New york City around 1905, and there are strong Russian speaking enclaves throughout the city. A more complete project would also incorporate the 1910 and 1920 Census data as layers on this map. 
+What if we want to illustrate modern information on a historic map? For example, I want to know what features were present in an area before a given group moved into that area. One way we could do this is layering raster data for every five years on a base map and visualizing the progression as layers. 
+
+Historical maps start out as images and then get "georectified" to align to modern maps in modern projections. The NYPL has made public thousands of historical maps via their digital map collection. Even better, many of these are already georectified! The [NYPL Map Warper](http://maps.nypl.org/warper/) is an crowd-sourced project to rectify historical maps and align them to modern ones. You can download the georeferenced raster files to use in your project, you can use them data, as base layers in webmaps, or download them strictly as images. 
+
+In this tutorial, we are going to layer modern information about Russian speakers in New York City to a historical map of Brooklyn. We know that Russians began arriving in New york City around 1905, and there are strong Russian speaking enclaves throughout the city today. A more complete project would also incorporate the 1920 Census data and the 1980 and 1990 census data as layers on this map. 
 
 1. Visit the NYPL Map Warper site and Export [map 27204](http://maps.nypl.org/warper/maps/27204#Export_tab) as a Warped GeoTiff. Two files will be downloaded. These must stay together in the same folder. 
-2. 
+2. Start a new Project in QGIS
+2. Add two Raster Layers
+ 3. Add the Russian1910.tiff Raster layer
+ 4. Add the 27204.tiff Raster file you just downloaded
+3. Move the Russian speaker data on top of the NYPL Map
+![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2rasts.png)
+4. Double click on the Russian Speaker data layer to change the style of the map
+ 1. Style > Color gradient >> white to black
+ 2. I like to do, but it's not necessary: Style > Blending Mode > overlay
+ 2. Transparency > 50%
+5. Drag the 'Zoom In' magnifying glass over Coney Island/Sheepshead Bay (lower Brooklyn) to narrow in on this area. 
+6. The Data Folder also contains a Russian15.tiff file that has the census data for Russian speakers for 2015 if you would like to add that layer for comparison. 
+7. We will learn how to use leaflet to add layers to a webmap in [Tutorial 7](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_7_Leaflet.md). 
 
 
+Export this map (either Export As Image or use the Print Composer to make a map and email it to Michelle.
 
 
- 
+Congratulations!! You have completed the Final Mapping Tutorial for the Conflict Urbanism: Language Justice Course. There are, of course, many more topics to cover that will help support you mapping project, but as of now, you should have enough familiarity with mapping to be able to make a map to support your final project. 
 
-
-
-
-
+____________________
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on the tutorial written by Dare Brawley, for Mapping for the Urban Humanities taught in Summer 2016 also by the Center for Spatial Research.
 
