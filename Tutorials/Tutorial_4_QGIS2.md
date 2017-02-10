@@ -152,7 +152,9 @@ In this tutorial, we are going to layer modern information about Russian speaker
 7. We will learn how to use leaflet to add layers to a webmap in [Tutorial 7](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_7_Leaflet.md). 
 
 
-Export this map (either Export As Image or use the Print Composer to make a map and email it to Michelle.
+To complete this tutorial, export this map (either Export As Image or use the Print Composer)
+![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2prints.png)
+and email it to Michelle at mam2518@columbia.edu.
 
 
 Congratulations!! You have completed the Final Mapping Tutorial for the Conflict Urbanism: Language Justice Course. There are, of course, many more topics to cover that will help support you mapping project, but as of now, you should have enough familiarity with mapping to be able to make a map to support your final project. 
