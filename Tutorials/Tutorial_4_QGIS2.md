@@ -50,6 +50,17 @@ First, we are going to take a vector file and turn it into a raster file.
 
 
 ## Make a Population Density Map
+
+**QGIS 2.18+**
+1. In the Map View again, select Processing > Processing Toolbox > QGIS geoalgorithms > Vector Creation Tools > Random points inside polygons (variable).
+ * Input Boundary Layer: NYCT-Langs_ACS_5YR_2015
+ * Use value from input field: Arabic
+ * Minimum distance: 0.000001
+ * Random points: Create temporary layer
+ * Open output file after running algorithkm (YES)
+ * OK
+ 
+**QGIS 2.14-2.16**
 1. In the Map View again, select Vector > Research Tools > Random Dots
  * Input Boundary Layer: NYCT-Langs_ACS_5YR_2015
  * Use value from input field: Arabic
