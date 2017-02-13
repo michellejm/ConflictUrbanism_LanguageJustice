@@ -22,7 +22,7 @@ Rasters, on the other hand, represent spatial information through pixels. Imagin
 In this tutorial, we will go over two ways to use rasters. In the first, we will use georeferenced historical maps as basemaps, essentially combining raster and vector data. In the second, we will use two raster layers to analyze population change. 
 
 ## Getting Started
-Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder has all of the files needed for this tutorial. If you do not have QGIS installed on your computer, [install it now](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Install-QGIS.md).
+Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder has most of the files needed for this tutorial. The remaining files are [available here](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ). If you do not have QGIS installed on your computer, [install it now](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Install-QGIS.md).
 
 The data for this tutorial came from:
 * American Community Survey 5-Year Estimates 2011-2015 (Table B16002)
