@@ -52,34 +52,46 @@ First, we are going to take a vector file and turn it into a raster file.
 ## Make a Population Density Map
 
 **QGIS 2.18+**
+
 1. In the Map View again, select Processing > Processing Toolbox > QGIS geoalgorithms > Vector Creation Tools > Random points inside polygons (variable).
  * Input Boundary Layer: NYCT-Langs_ACS_5YR_2015
  * Use value from input field: Arabic
- * Minimum distance: 0.000001
+ * Minimum distance: 0.000000
  * Random points: Create temporary layer
  * Open output file after running algorithkm (YES)
  * OK
+ * When the new layer appears, right click and select 'Save As' 
+  * ESRI Shapefile
+  * I'm calling it ArabicDots15 (saved where ever makes sense to you)
+ *If that didn't work, try it again with NYCT-Langs_ACS_5YR_2010*
+ *If neither one works, calculate a new (identical) column using the 'Field Calculator'. Output Field Type = Decimal Number (real). Precision = 1. Select Fields and Values = 'Arabic'.
  
-**QGIS 2.14-2.16**
+**QGIS 2.14**
+
 1. In the Map View again, select Vector > Research Tools > Random Dots
  * Input Boundary Layer: NYCT-Langs_ACS_5YR_2015
  * Use value from input field: Arabic
  * Add result to canvas (YES)
- * Output Shapefile: ArabicDots (saved where ever makes sense to you)
+ * Output Shapefile: ArabicDots15 (saved where ever makes sense to you)
  * OK
  * Close
+ 
+ 
+**ALL QGIS VERSIONS** 
+
 2. Change the Style of the dots so they are 1 PIXEL (Double click the layer name > Style > Simple Marker > Change 'Size' and 'Border' (Change 'Color' if you need/want to)
 3. Deselect the layer with the tracts 'NYCT-Langs_ACS_5YR_15'
 4. You should now see 1 dot representing every Arabic speaker in NYC overlaid on the neighborhood boundaries. 
 
 ### Transform a Vector into a Raster
+
 **STOP!!!** This is a point where Projections become very important. Take a minute to look a the projection you are using. The projection for the project is in the bottom right hand corner. 
 ![project](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
 What projection you want to use could be the topic for an entire class. We will use Web Mecator because we plan to use our map as a webmap, and Web Mercator is the standard projection for Web Maps. 
 
 **Change your projection**
 
-1. Click on the CRS number 
+1. Click on the CRS number in the bottom right corner
 2. Select 'Enable on the fly transformations' at the top of the page
 3. Select 'WGS 84 / Pseudo Mercator EPSG 3857'
 4. Double Click on your NYCT-Langs_ACS_5YR_15 layer to be sure that it is ALSO in Psuedo Mercator (it's under 'General')
@@ -103,8 +115,8 @@ What projection you want to use could be the topic for an entire class. We will 
 
 ## Calculate Population Change
 1. Open a new Project
-2. Import the Arabic15Raster file we just created.
-3. Import the [Arabic10Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ) file from the Google Drive folder (the files were too big for GitHub). This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder.
+2. Import the Arabic15Raster file we just created. 
+3. Import the [Arabic10Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ) or the [Arabic15Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ)file (whichever you are missing) from the Google Drive folder (the files were too big for GitHub). This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder. *QGIS 2.18.x is having some problems making these files* 
 4. Both of these raster files are in the 'WGS 84 / Pseudo Mercator EPSG 3857' Projection. Make sure that both of the layers and the project are in this CRS. If they are not, change them now.
 5. This is difficult to look at because the colors are inverted (white indicates high density, black indicates low). We want to change this for both layers. 
   1. Double click on the layer. 
