@@ -37,6 +37,7 @@ The Georeferened historical map comes from:
 
 
 First, we are going to take a vector file and turn it into a raster file. 
+
 1. Open QGIS 
 2. Add a vector layer
 ![vector](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorlayer.png)
