@@ -1,4 +1,5 @@
 ## Setting up QGIS
+For ALL users, please install the most stable version (2.14) rather than the most recent version (2.18). At this stage, 2.14 is more reliable than 2.18
 
 1. Download QGIS [here](http://www.qgis.org/en/site/forusers/download.html)
 	1. On a **PC**, simply Click on the 'QGIS standalone installer' and follow the prompts. 
