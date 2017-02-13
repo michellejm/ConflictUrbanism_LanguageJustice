@@ -22,7 +22,9 @@ Rasters, on the other hand, represent spatial information through pixels. Imagin
 In this tutorial, we will go over two ways to use rasters. In the first, we will use georeferenced historical maps as basemaps, essentially combining raster and vector data. In the second, we will use two raster layers to analyze population change. 
 
 ## Getting Started
-Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder has most of the files needed for this tutorial. The remaining files are [available here](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ). If you do not have QGIS installed on your computer, [install it now](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Install-QGIS.md).
+Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. The Data folder has most of the files needed for this tutorial. The remaining files are [available here](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ). Since these are large, you don't need to download all of them now. Links are provided throughout. 
+
+If you do not have QGIS installed on your computer, [install it now](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Install-QGIS.md).
 
 The data for this tutorial came from:
 * American Community Survey 5-Year Estimates 2011-2015 (Table B16002)
@@ -117,7 +119,7 @@ What projection you want to use could be the topic for an entire class. We will 
 ## Calculate Population Change
 1. Open a new Project
 2. Import the Arabic15Raster file we just created. 
-3. Import the [Arabic10Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ) or the [Arabic15Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ)file (whichever you are missing) from the Google Drive folder (the files were too big for GitHub). This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder. *QGIS 2.18.x is having some problems making these files* 
+3. Import the [Arabic10Raster](https://drive.google.com/open?id=0B8IdSWLrkSd3VHQwNlZHb3hCRWs) or the [Arabic15Raster](https://drive.google.com/open?id=0B8IdSWLrkSd3Tmc2TlFKbHNxZjg) file (whichever you are missing) from the Google Drive folder (download BOTH files in the folder - you need **both** the .tif and the .tif.aux.xml). This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder. *QGIS 2.18.x is having some problems making these files, so if you want to do a project with dot densities, you may want to downgrade your QGIS to the more stable version 2.14* 
 4. Both of these raster files are in the 'WGS 84 / Pseudo Mercator EPSG 3857' Projection. Make sure that both of the layers and the project are in this CRS. If they are not, change them now.
 5. This is difficult to look at because the colors are inverted (white indicates high density, black indicates low). We want to change this for both layers. 
   1. Double click on the layer. 
@@ -143,7 +145,7 @@ What projection you want to use could be the topic for an entire class. We will 
 
 Another approach we could have taken was to add the layer together to symbolize the neighborhoods with the most speakers over the past 10 years, or taken data over many years to determine which are the most established neighborhoods. We could also use this type of map to visualize what languages are moving out of a neighborhood and what languages are moving in. 
 
-**Export your map as a .jpeg** and send it to Michelle at mam2518@columbia.edu(do not use Composer - we have another map to make).
+**Export your map as a .jpeg or .pdf** and send it to Michelle at mam2518@columbia.edu (do not use Composer - we have another map to make).
 
 ## Use a Historical Map
 
@@ -156,7 +158,7 @@ In this tutorial, we are going to layer modern information about Russian speaker
 1. Visit the NYPL Map Warper site and Export [map 27204](http://maps.nypl.org/warper/maps/27204#Export_tab) as a Warped GeoTiff. Two files will be downloaded. These must stay together in the same folder. 
 2. Start a new Project in QGIS
 2. Add two Raster Layers
- 3. Add the Russian1910.tiff Raster layer from the [Google Drive Folder](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ)
+ 3. Add the Russian1910.tiff Raster layer from the [Google Drive Folder](https://drive.google.com/open?id=0B8IdSWLrkSd3RDZ3TmVBV2RzWk0)
  4. Add the 27204.tiff Raster file you just downloaded
 3. Move the Russian speaker data on top of the NYPL Map
 ![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2rasts.png)
@@ -169,7 +171,7 @@ In this tutorial, we are going to layer modern information about Russian speaker
 7. We will learn how to use leaflet to add layers to a webmap in [Tutorial 7](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_7_Leaflet.md). 
 
 
-To complete this tutorial, export this map (either Export As Image or use the Print Composer)
+**To complete this tutorial, export this map** (either Export As Image (.jpeg or .pdf or use the Print Composer)
 ![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2prints.png)
 and email it to Michelle at mam2518@columbia.edu.
 
