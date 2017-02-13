@@ -93,7 +93,7 @@ What projection you want to use could be the topic for an entire class. We will 
 ## Calculate Population Change
 1. Open a new Project
 2. Import the Arabic15Raster file we just created.
-3. Import the Arabic10Raster file from the Data folder. This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder.
+3. Import the [Arabic10Raster](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ) file from the Google Drive folder (the files were too big for GitHub). This file was created in the same way as Arabic15Raster. The supporting data for the other languages is in the Q2 Data folder.
 4. Both of these raster files are in the 'WGS 84 / Pseudo Mercator EPSG 3857' Projection. Make sure that both of the layers and the project are in this CRS. If they are not, change them now.
 5. This is difficult to look at because the colors are inverted (white indicates high density, black indicates low). We want to change this for both layers. 
   1. Double click on the layer. 
@@ -132,7 +132,7 @@ In this tutorial, we are going to layer modern information about Russian speaker
 1. Visit the NYPL Map Warper site and Export [map 27204](http://maps.nypl.org/warper/maps/27204#Export_tab) as a Warped GeoTiff. Two files will be downloaded. These must stay together in the same folder. 
 2. Start a new Project in QGIS
 2. Add two Raster Layers
- 3. Add the Russian1910.tiff Raster layer
+ 3. Add the Russian1910.tiff Raster layer from the [Google Drive Folder](https://drive.google.com/drive/u/0/folders/0B8IdSWLrkSd3TmRNZVNadEs4VTQ)
  4. Add the 27204.tiff Raster file you just downloaded
 3. Move the Russian speaker data on top of the NYPL Map
 ![raster](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2rasts.png)
