@@ -44,7 +44,7 @@ First, we are going to take a vector file and turn it into a raster file.
 2. Add a vector layer
 ![vector](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vectorlayer.png)
 3. Add the `NYCT-Langs_ACS5YR_2015` Shape file from the Data>Q2 folder.
-  * This file was created by joining census data to the 2010 census tracts that have been clipped to the shoreline (nyct2010_16d). The data wsa cleaned and modified to allow a column join. The values were then transformed from integers to real decimals with a precision of 2. For more on data cleaning, see [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
+  * This file was created by joining census data to the 2010 census tracts that have been clipped to the shoreline (nyct2010_16d). The data was cleaned and modified to allow a column join. The values were then transformed from integers to real decimals with a precision of 2. For more on data cleaning, see [Tutorial 6](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Tutorials/Tutorial_6_DataCleaning.md)
 4. This file will appear as census tracts for New York City. 
 ![tracts](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/q2addvect.png)
 5. Right click (or Control+Click) on the layer name to Open Attribute Table. You should see metadata, information about the geometries, and Languages at the far right. Name that begin with 'O' refer to 'other' of that group. If everything looks ok, close the Attribute table
