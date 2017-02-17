@@ -1,4 +1,4 @@
-##Tutorial 1: Setting Up A Conflict Urbanism: Language Justice Case Study
+##Tutorial 5: Setting Up A Conflict Urbanism: Language Justice Case Study
 
 This tutorial is required for all students in Conflict Urbanism: Language Justice. It introduces the format you will be working with and explains the template we expect you to use. Through editing the pre-made template, you will develop familiarity with HTML and CSS. These two languages drive both the structure and formatting of webpages. 
 
