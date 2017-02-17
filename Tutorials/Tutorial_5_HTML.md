@@ -4,7 +4,7 @@ This tutorial is required for all students in Conflict Urbanism: Language Justic
 
 If you are already familiar with HTML and CSS, you may skip ahead to working directly with the template provided. You are requested *not* to change the style settings, so that everyone's project retains a similar aesthetic.
 
-This tutorial is primarily an introduction to using the template we have provided. Whereas other tutorials in this series are more hands-on and technical, this one should help lay the foundation for your future work in this cthese. 
+This tutorial is primarily an introduction to using the template we have provided. Whereas other tutorials in this series are more hands-on and technical, this one is really designed to get you up and running with the template you will use. 
 
 By the end of this tutorial, you will be able to:
 * Set up a Case Study for your project
