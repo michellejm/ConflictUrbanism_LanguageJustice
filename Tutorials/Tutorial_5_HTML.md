@@ -299,8 +299,8 @@ Every step is commented. More detailed comments follow this code block. You can 
     <div class="row top-row">
       <div class="col-md-12">
 
-        <!--Do not change:Cthese : Title if working on Aleppo -->
-        <h5><a href="index.html">Conflict Urbanism Aleppo</a></h5>
+        <!--Do not change these : Title  -->
+        <h5><a href="index.html">Conflict Urbanism: Language Justice</a></h5>
 
         <!--Add: Case Study Title -->
         <h5>Case Study | Type Title Here </h5>
@@ -407,7 +407,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
 
 <iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
+<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Language Justice Site</a></p>
 
 <br/>
 
@@ -629,7 +629,7 @@ your Name: <br/><br/>Description (Program, Year, Expertise)
 <hr>
 ```
 
-You cannot complete your final project without completing this tutorial. So, just for record keeping, please send the template as an .html file to Michelle at mam2518@columbia.edu. Fill in:
+To complete this tutorial, please send the template as an .html file to Michelle at mam2518@columbia.edu. Fill in:
 
 * your name,
 * a tentative project title, and 
