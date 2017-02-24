@@ -12,6 +12,7 @@ By the end of this tutorial, you will be able to:
 The most important part of any visualization is the data. Data can refer to "big data", just a few data points, or anything in between (i.e., census data). Sometimes the raw data is not best to illustrate the story you want to tell. In those cases you want to transform it. 
 
 Basic Data transformations
+
 1. Mean, Median, Mode
   1. Mean - this is the average you are used to (add all the numbers and divide by the total)
   2. Median - the number in the middle, this helps account for outliers
