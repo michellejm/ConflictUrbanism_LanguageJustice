@@ -48,15 +48,56 @@ Basic Data transformations
     
  That's fine, but often change tells a more compelling story. 
 
-1. Let's look at 2006-2010 ACS data. Taking the middle year, here, we will treat this as 2008, and the 2011-2015 as 2013.
+1. Let's look at 2006-2010 ACS data as well. Taking the middle year, here, we will treat this as 2008, and the 2011-2015 as 2013.
 2. From 2008-2013, there are 2 more Vietnamese speakers living in NYC, though 300 of them moved from the Bronx to Manhattan and Brooklyn. 
 3. Let's look at a group of speakers who have seen more change in that time: 
   1. Speakers of African Languages: 35% growth
-  2. Speakers of Arabic and Armenia both saw 32% growth. That's a change of 1062 people for Armenian and 13,871 for Arabic. 
+  2. Speakers of Arabic and Armenia both saw 32% growth. That's a change of 1062 people for Armenian and 13,871 for Arabic. This might suggest a potential increase in the Armenian community in the coming years. 
   3. At the same time, 54,064 Chinese speakers arrived, but that was only a 13% growth from 2008. The greatest number of arrivals was from English Monolinguals, with almost 100,000 individuals, though only a 3% increase in people.
   * Chinese       54064	13%
   * Spanish       70436	4%
   * EnglishMono   99172	3%
+
+4. What about who left? Well, it seems to be a mixture
+  * Italian   -18986	-19%
+  * Mon-Khmer -302		-12%
+  * Gujarati  -1085	  -11%
+  * Greek     -4936	  -10%
+Italians and Greeks represent very old immigration, so many are moving or dying and not necessarily being replaced. What about Mon-Khmer and Gujarati speakers? First, Mon-Khmer is a language family (of which, Vietnamese is one language), not just one language. This probably refers to MK speakers from Cambodia, a group that has been [slowly shrinking](http://www.nytimes.com/2008/01/20/nyregion/thecity/20camb.html) for some time. Gujarati is spoken in India, mostly on the border with Pakistan. There is a Gujarati newspaper based in the city, and a long history of Gujaratis in NYC. So, what's happening? Gujaratis also have a very long history of immigration to the US, as many started arriving immediately after the 1965 Immigration and Nationality Act. So this decrease may also be to a slowing of immigration, movement to NJ and death without replacement. 
+
+In this way, the data helps to tell the story. 
+
+## Part II - Questions
+
+1. Question formation is usually a combination of interest, curiosity, and what data is available. 
+We have two data sets: 
+  * 2006-2010 American Community Survey (language spoken at home)
+  * 2011-2015 American Community Survey (language spoken at home)
+We also have a precalcuated table of changes between these two datasets
+
+2. Start with a cloze exercise:
+  1. Other than English or Spanish, ____________ is the most commonly spoken language in each borough.
+  2. There has been the greatest increase in ____________ speakers since 2010.
+3. Write 2 more cloze sentences.
+
+## Part III - Exploratory Visualization
+
+1. Open these datasets in Excel.
+2. Answer your two cloze exercises. 
+3. Create one plot just using Excel's defaults where a user could find the answer. 
+
+
+
+## Part IV - Techniques
+
+1. 
+
+
+1. Most visualizations are both - exploratory and explanatory, but all have an exploration stage. 
+2. At this point, we are going to play with the data by visualizaing it in a variety of different ways. There are 3 datasets all from the American Community Survey
+
+
+
  
  
     
