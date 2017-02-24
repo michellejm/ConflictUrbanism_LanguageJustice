@@ -53,7 +53,10 @@ Basic Data transformations
 3. Let's look at a group of speakers who have seen more change in that time: 
   1. Speakers of African Languages: 35% growth
   2. Speakers of Arabic and Armenia both saw 32% growth. That's a change of 1062 people for Armenian and 13,871 for Arabic. 
-  3. This shows a huge change in people for 
+  3. At the same time, 54,064 Chinese speakers arrived, but that was only a 13% growth from 2008. The greatest number of arrivals was from English Monolinguals, with almost 100,000 individuals, though only a 3% increase in people.
+  * Chinese       54064	13%
+  * Spanish       70436	4%
+  * EnglishMono   99172	3%
  
  
     
