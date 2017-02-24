@@ -32,19 +32,19 @@ Basic Data transformations
   
   3. Percentages
     1. Percent of Vietnamese speakers in each borough:
-    Bronx: 30%
-    Brooklyn: 29%
-    Manhattan: 13%
-    Queens: 25%
-    Staten Island: 4%
+      * Bronx: 30%
+      * Brooklyn: 29%
+      * Manhattan: 13%
+      * Queens: 25%
+      * Staten Island: 4%
     
     2. Percentage of each borough that speaks Vietnamese:
-    Bronx: 0.22%
-    Brooklyn: 0.14%
-    Manhattan: 0.09%
-    Queens: 0.13%
-    Staten Island: 0.11%
-    New York City: 0.14%
+      * Bronx: 0.22%
+      * Brooklyn: 0.14%
+      * Manhattan: 0.09%
+      * Queens: 0.13%
+      * Staten Island: 0.11%
+      * New York City: 0.14%
     
  That's fine, but often change tells a more compelling story. 
 
