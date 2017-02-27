@@ -57,7 +57,7 @@ Community Centers in New York City offer a variety of services from classes to f
 1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.pmg)
+	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.png)
 	
 	2. Don't change the Original tab
 	
