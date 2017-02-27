@@ -12,11 +12,8 @@ For this tutorial, we are going to take a publicly available dataset from the In
 *Our questions:*
 Community Centers in New York City offer a variety of services from classes to family support to immigration help and much more. This is an exploratory mapping exercise where we want to know how these services are situated in the city.
 
-
-1. Go to [NYC OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics. 
-
-2. Use the search bar to find datasets that reference **immigration**. You will be presentedto a list of Datasets.
-	
+1. Go to [NYC OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics.
+2. Use the search bar to find datasets that reference **immigration**. You will be presented a list of Datasets.
 3. Select DYCD after-school programs: Immigrant Services
 4. Select 'View Data'
 ![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/clview.png)
@@ -57,9 +54,7 @@ Community Centers in New York City offer a variety of services from classes to f
 
 1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
-	
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.png)
-	
 	2. Don't change the Original tab
 		1. Make a copy of the data and paste it into 'Working'
 		2. Select all of the cells by clicking on the cell in the bottom right and pressing 'Command' + a
@@ -68,7 +63,8 @@ Community Centers in New York City offer a variety of services from classes to f
 		2. Select Data > Remove Duplicates
 		3. You will be prompted with a dialoge box, Accept the duplicates if you think it is correct.
 		![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicates.png)
-	4. Add an 'ID' column
+	4. Move the first column, 'Program Type', to the end. Since the data in this column is descriptive rather than identifying, I prefer to have it at the end.
+	5. Add a column to the left of 'Program', this will be in column A, label it 'ID'
 	
 		1. Insert a row and typing 1,2,3 and carrying it to the bottom **OR**
 		
@@ -80,38 +76,30 @@ Community Centers in New York City offer a variety of services from classes to f
 2. Missing Data
 
 	1. Each Row that is missing an address needs to be removed from the data set since we cannot map it. 
-		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more informati
+		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more information.
 		2. Since we are only concerned about the addresses, one way to do this is to sort the sheet by addresses and remove the blanks.
 		
 	2. Each Row that has a missing Age Group should stay in the dataset but **also** be added to the Incomplete tab, in the hopes that we might do other searches to fill in the blanks. 
-	
 		1. Copy and post these rows into the Incomplete Tab
-		
-		2. Fill in the missing values with a null value (i.e., 'Unk', 'NaN', or another value.
+		2. Fill in the missing values with a null value (i.e., 'Unk', 'NaN', or another value. This is just good practice as some systems will crash without *something* in every field).
 		
 	3. Select all of the cells again and find any remaining empty cells.
-	
-	4. We can return to these datapoints later to recover the information.
-	
+	4. We can return to these datapoints later if we decide to use this dataset for a project.
 	
 3. Fix errors created by converting to Excel
 	1. There are two dates (May 20 and Nov 14) that have been automatically created by Excel
-	
-	2. Change the datatype in this column to 'Text'
+	2. To override Excel's automatic formatting, change the datatype in this Column to 'Text'
 		1. Format > Cells > Data Type > Text
-		
 	3. Go back to the original data to find the correct values
 		1. (May 20 is Age 5-20; Nov 14 is Age 11-14)
-		
 	4. Enter the correct ranges.
-
 
 4. Separate Addresses *Location contains both address information and latitude/longitude - it would be easier for us to have latitude/longitude available*
 	1. First take a look at the cells with the location information in them. There are multiple lines per cell. We need the information in one line. We are going to use an Excel formula to collapse those lines, and will be a little clever about it because there is no direct way to do this. 
 	
 	2. Insert FOUR columns to the right of 'Location'.
 	3. Type this formula into the first cell of the first column (probably Column I: =SUBSTITUTE(H2,CHAR(13),"\")  
-		- *This means take cell H2, find Character #13 (the carriage return) and substitute the backslash. This was a bit of trial and error as it could have also been Character #10 (new line).*
+		- *This means take cell H2, find Character #13 (the carriage return) and substitute the backslash.* This was a bit of trial and error as it could have also been Character #10 (new line).
 		1. If your Location column is in a different place, change H2 to the relevant location.
 		2. Drag this formula to the bottom of the data to fill in all of the cells.
 		
@@ -121,7 +109,7 @@ Community Centers in New York City offer a variety of services from classes to f
 	4. Select the entire 'Location' column again if it isn't already selected (the new location column you just made).
 	
 	5. Go to Data > Text to column
-	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/TExt2Columns.tiff)
+	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/TExt2Columns.png)
 		1. Select 'Delimited' 
 		2. Select \
 		3. Finish
