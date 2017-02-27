@@ -4,7 +4,7 @@ By the end of this tutorial you will be able to:
 
 * Download an original dataset from NYC Open Data
 * Modify that dataset to suit your needs
-* Clean the dataset so it can be used in 
+* Clean the dataset so it can be used in various formats
 * Strategically use exploratory visualizations to better understand the dataset
 
 For this tutorial, we are going to take a publicly available dataset from the Internet and map some of the datapoints. Most datasets will need some cleaning before they are ready to be worked with; there are usually some errors, missing information, duplicate information, etc. Therefore, we need to clean this dataset before we begin using it. 
