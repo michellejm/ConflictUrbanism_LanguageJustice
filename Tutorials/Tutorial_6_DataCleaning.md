@@ -54,26 +54,18 @@ Community Centers in New York City offer a variety of services from classes to f
 *Data from different sources will need different approaches, this is appropriate for this particular dataset.*
 
 *Steps*
-1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 
+1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.png)
-	
 	2. Don't change the Original tab
-	
 		1. Make a copy of the data and paste it into 'Working'
-		
 		2. Select all of the cells by clicking on the cell in the bottom right and pressing 'Command' + a
-		
 	3. Remove Duplicates (this step comes early because in the next step, we give every row a unique ID)
-	
 		1. Select the entire sheet by clicking in the upper right hand corner.
-		
 		2. Select Data > Remove Duplicates
-		
 		3. You will be prompted with a dialoge box, Accept the duplicates if you think it is correct.
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicates.png)
-		
+		![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicates.png)
 	4. Add an 'ID' column
 	
 		1. Insert a row and typing 1,2,3 and carrying it to the bottom **OR**
