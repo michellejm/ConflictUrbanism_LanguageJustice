@@ -59,6 +59,7 @@ Community Centers in New York City offer a variety of services from classes to f
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
 	
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.png)
+	
 	2. Don't change the Original tab
 		1. Make a copy of the data and paste it into 'Working'
 		2. Select all of the cells by clicking on the cell in the bottom right and pressing 'Command' + a
