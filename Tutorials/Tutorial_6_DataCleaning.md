@@ -72,7 +72,7 @@ Community Centers in New York City offer a variety of services from classes to f
 		2. Select Data > Remove Duplicates
 		
 		3. You will be prompted with a dialoge box, Accept the duplicates if you think it is correct.
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicatess.png)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicates.png)
 		
 	4. Add an 'ID' column
 	
@@ -81,13 +81,13 @@ Community Centers in New York City offer a variety of services from classes to f
 		2. Highlight all of the cells by clicking on the first and then Shift+click on the last cell and then select Edit > Fill > Series 
 		
 	5. At this point, I like to rename the columns into single words (i.e., 'Age Group' > 'AgeGroup'), make the column names bold and freeze the first row and first column.
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Freeze.png)
+	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Freeze.png)
 
 2. Missing Data
 
 	1. Each Row that is missing an address needs to be removed from the data set since we cannot map it. 
 
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/find_blank.png)
+	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Find_blank.png)
 
 		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more information
 		
