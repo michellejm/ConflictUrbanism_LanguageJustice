@@ -53,10 +53,11 @@ Community Centers in New York City offer a variety of services from classes to f
 
 *Data from different sources will need different approaches, this is appropriate for this particular dataset.*
 
-*Steps*
+**Steps**
 
 1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
+	
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.png)
 	2. Don't change the Original tab
 		1. Make a copy of the data and paste it into 'Working'
