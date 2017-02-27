@@ -28,7 +28,6 @@ Community Centers in New York City offer a variety of services from classes to f
 	4. What problems do you see with using it?
 
 5. Export the data and download it as a csv file. ('Export' is light blue on the far right side)
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/bluebutton.tiff)
 
 6. Go to Excel and open a new spreadsheet. You *may* be guided through a series of steps asking how the data is delimited. It is 'delimited', not 'fixed-width'. "CSV" stands for "comma separated values", so select 'comma', and keep the quotes for delimiting text. 
 
@@ -58,7 +57,7 @@ Community Centers in New York City offer a variety of services from classes to f
 1. Prepare the workspace. When cleaning datasets, it is far too easy to make mistakes, forget where you are, and otherwise get confused. This step helps prevent that.
 
 	1. Make four tabs (sheets) in your Excel Workbook - 'Original', 'Working', 'Final', 'Incomplete'
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/fourtabs.pmg)
 	
 	2. Don't change the Original tab
 	
@@ -73,7 +72,7 @@ Community Centers in New York City offer a variety of services from classes to f
 		2. Select Data > Remove Duplicates
 		
 		3. You will be prompted with a dialoge box, Accept the duplicates if you think it is correct.
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicatess.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/duplicatess.png)
 		
 	4. Add an 'ID' column
 	
@@ -82,13 +81,13 @@ Community Centers in New York City offer a variety of services from classes to f
 		2. Highlight all of the cells by clicking on the first and then Shift+click on the last cell and then select Edit > Fill > Series 
 		
 	5. At this point, I like to rename the columns into single words (i.e., 'Age Group' > 'AgeGroup'), make the column names bold and freeze the first row and first column.
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Freeze.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Freeze.png)
 
 2. Missing Data
 
 	1. Each Row that is missing an address needs to be removed from the data set since we cannot map it. 
 
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/find_blank.tiff)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/find_blank.png)
 
 		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more information
 		
