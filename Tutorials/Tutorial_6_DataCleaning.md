@@ -74,20 +74,16 @@ Community Centers in New York City offer a variety of services from classes to f
 		
 		2. Highlight all of the cells by clicking on the first and then Shift+click on the last cell and then select Edit > Fill > Series 
 		
-	5. At this point, I like to rename the columns into single words (i.e., 'Age Group' > 'AgeGroup'), make the column names bold and freeze the first row and first column.
+	5. At this point, I like to rename the columns into single words (i.e., 'Age Group' > 'AgeGroup'), make the column names bold, and freeze the first row and first column.
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Freeze.png)
 
 2. Missing Data
 
 	1. Each Row that is missing an address needs to be removed from the data set since we cannot map it. 
-
-	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Find_blank.png)
-
-		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more information
+		1. Cut and paste these rows into the 'Incomplete' Tab. We won't be able to map this datapoint without finding more informati
+		2. Since we are only concerned about the addresses, one way to do this is to sort the sheet by addresses and remove the blanks.
 		
-		2. A faster way to do this is to sort the sheet by addresses.
-		
-	2. Each Row that has a missing Age Group should stay in the dataset but also be added to the Incomplete tab. 
+	2. Each Row that has a missing Age Group should stay in the dataset but **also** be added to the Incomplete tab, in the hopes that we might do other searches to fill in the blanks. 
 	
 		1. Copy and post these rows into the Incomplete Tab
 		
