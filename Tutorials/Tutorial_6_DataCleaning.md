@@ -96,56 +96,35 @@ Community Centers in New York City offer a variety of services from classes to f
 
 4. Separate Addresses *Location contains both address information and latitude/longitude - it would be easier for us to have latitude/longitude available*
 	1. First take a look at the cells with the location information in them. There are multiple lines per cell. We need the information in one line. We are going to use an Excel formula to collapse those lines, and will be a little clever about it because there is no direct way to do this. 
-	
 	2. Insert FOUR columns to the right of 'Location'.
 	3. Type this formula into the first cell of the first column (probably Column I: =SUBSTITUTE(H2,CHAR(13),"\")  
 		- *This means take cell H2, find Character #13 (the carriage return) and substitute the backslash.* This was a bit of trial and error as it could have also been Character #10 (new line).
 		1. If your Location column is in a different place, change H2 to the relevant location.
 		2. Drag this formula to the bottom of the data to fill in all of the cells.
-		
 	3. Copy this entire column, and Paste Special > Values into the same location. 
 		- You have to do this step for Excel to recognize the data in these cells rather than just the formulas.
-	
 	4. Select the entire 'Location' column again if it isn't already selected (the new location column you just made).
-	
 	5. Go to Data > Text to column
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/TExt2Columns.png)
 		1. Select 'Delimited' 
 		2. Select \
 		3. Finish
-		
-		
 5. Separate Latitude and Longitude
-
 	1. Select the column with latitude and longitude in it
-	
 	2. Insert a column to the right
-	
 	3. Select text-to-columns
-	
 	4. Select 'Delimited', 'comma-separated', Finish
-	
-	5. Remove the parentheses
-	
-		1. Select the Latitude column
-		
-			1. Find and Replace the character, ( , with nothing
-			
-		2. Select the Longitude column
-		
-			1. Find and replace the character, ) , with nothing
-	
-	6. Rename the columns appropriately
-	
-		1. I chose Location2, Street, City_State_Zip, Latitude, Longitude
-		
+5. Remove the parentheses
+	1. Select the Latitude column
+		1. Find and Replace the character, ( , with nothing	
+	2. Select the Longitude column
+		1. Find and replace the character, ) , with nothing
+6. Rename the columns appropriately
+	1. I chose Location2, Street, City_State_Zip, Latitude, Longitude	
 5. Select all of the data in this sheet and copy it onto the Final Tab.
-
 6. Save it
-
 	1. From the Final Tab, select Save As > csv, and rename it something easier to type. (I chose ' *This will only save this sheet. That is OK - that is all that you want.* )
-	
-	2. Save the whole workbook 
+	2. **Also** save the whole workbook 
 	
 **Congratulations! The data is clean enough to work with!**
 
