@@ -26,33 +26,19 @@ Community Centers in New York City offer a variety of services from classes to f
 	2. Are there any columns that are going to be irrelevant to your project?
 	3. Is there spatial information in this dataset? What does it look like?
 	4. What problems do you see with using it?
-	
+
 5. Export the data and download it as a csv file. ('Export' is light blue on the far right side)
 ![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/bluebutton.tiff)
 
-6. Go to Excel and open a new spreadsheet. You will be guided through a series of steps asking how the data is delimited. It is 'delimited', not 'fixed-width'. "CSV" stands for "comma separated values", so select 'comma', and keep the quotes for delimiting text. 
+6. Go to Excel and open a new spreadsheet. You *may* be guided through a series of steps asking how the data is delimited. It is 'delimited', not 'fixed-width'. "CSV" stands for "comma separated values", so select 'comma', and keep the quotes for delimiting text. 
 
-7. Click 'Next' and 'Finish'.
-**STOP** *Does the data look how you expected it to look? Why or why not? What happened? How can we fix it?*
+7. Click 'Next' and 'Finish'. **STOP** *Does the data look how you expected it to look? Why or why not? What happened? How can we fix it?
 
-7. Go back to NYC OpenData
-
-	1. Select 'Manage' (brown button on left)
-	
-	2. Rearrange the columns so that the first column is last
-	
-	3. Export the data and download it as a csv file. 
-	
-	4. Repeat **Step 6**
-	
 8. On using Excel
 
-	1. There are many tools to clean data, and if you are going to work with large datasets regularly, you will want to learn Python+Pandas, R, SAS, or another programming language. However, for our purposes, you do not need anything more powerful than Excel.
-	
+	1. There are many tools to clean data, and if you are going to work with very large datasets regularly, you will want to learn Python+Pandas, R, SAS, or another programming language. However, for our purposes, you do not need anything more powerful than Excel.
 	2. The data we are going to work with is relatively "clean." Most datasets made available by governments and large institutions are "clean", meaning that there are very few errors, duplicate entries, misspellings, alternative descriptions, etc. 
-	
 	3. The messier the data, the more powerful tool you will need. For working with very messy data without learning a programming language, I suggest [Open Refine](http://openrefine.org/)
-
 
 **Plan for cleaning**
 
@@ -238,9 +224,12 @@ Now we want to get an idea of what this looks like against a map of New York Cit
 	
 	4. Does looking at this map present further questions about distribution of immigration services in NYC?
 
-# Next steps
 
-I would like to know which language speakers have access to the most access to immigration services. Are any groups being underserved? Simply layering speaker maps would not be enough. What would we have to do to answer this question?
+To complete this tutorial, send your exploratory map as a pdf or jpeg to Michelle at mam2518@columbia.edu
+
+## Next steps
+
+I would like to know which language speakers have access to the most access to immigration services. Are any groups being underserved? What would we have to do to answer this question? How could we bring in data about languages in the city to get a better answer to this question? Do transportation routes matter?
 
 __________________________________________________________________________________________
 
