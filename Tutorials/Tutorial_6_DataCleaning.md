@@ -13,29 +13,25 @@ For this tutorial, we are going to take a publicly available dataset from the In
 Community Centers in New York City offer a variety of services from classes to family support to immigration help and much more. This is an exploratory mapping exercise where we want to know how these services are situated in the city.
 
 
-1. Go to [NY OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics. 
+1. Go to [NYC OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics. 
 
-2. Use the search bar to find datasets that reference immigration. You will likely come to a list of Datasets.
-	1. The orange grid is a table
-	2. The blue funnel is a filtered table view
-	3. The green paperclip is a document
-	4. The darker green compus is a map
-	5. The light blue box with three charts is the 'Data Lens Pages' and includes automatically generated charts and graphs
+2. Use the search bar to find datasets that reference **immigration**. You will be presentedto a list of Datasets.
 	
-3. Select the Table View: DYCD_after-school_programs__Neighborhood_Development_Area__NDA__Family_Support
-
-![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/opendata.tiff)
+3. Select DYCD after-school programs: Immigrant Services
+4. Select 'View Data'
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/clview.png)
 
 4. Spend a few minutes getting acquainted with the data.
 	1. What do all of the columns mean?
 	2. Are there any columns that are going to be irrelevant to your project?
-	3. Is there geo-referenced information in this dataset? What does it look like?
-	4. What problems will need to resolve?
+	3. Is there spatial information in this dataset? What does it look like?
+	4. What problems do you see with using it?
 	
 5. Export the data and download it as a csv file. ('Export' is light blue on the far right side)
 ![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/bluebutton.tiff)
 
 6. Go to Excel and open a new spreadsheet. You will be guided through a series of steps asking how the data is delimited. It is 'delimited', not 'fixed-width'. "CSV" stands for "comma separated values", so select 'comma', and keep the quotes for delimiting text. 
+
 7. Click 'Next' and 'Finish'.
 **STOP** *Does the data look how you expected it to look? Why or why not? What happened? How can we fix it?*
 
