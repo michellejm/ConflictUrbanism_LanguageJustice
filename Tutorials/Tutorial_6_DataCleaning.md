@@ -12,7 +12,7 @@ For this tutorial, we are going to take a publicly available dataset from the In
 *Our questions:*
 Community Centers in New York City offer a variety of services from classes to family support to immigration help and much more. This is an exploratory mapping exercise where we want to know how these services are situated in the city.
 
-1. Go to [NYC OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics.
+1. Go to [NYC OpenData](https://nycopendata.socrata.com/). As you can see, there are a lot of datasets available categorized under a variety of topics.[data](https://drive.google.com/file/d/0B8IdSWLrkSd3QUhnSnVaRXBXY0E/view?usp=sharing)
 2. Use the search bar to find datasets that reference **immigration**. You will be presented a list of Datasets.
 3. Select DYCD after-school programs: Immigrant Services
 4. Select 'View Data'
