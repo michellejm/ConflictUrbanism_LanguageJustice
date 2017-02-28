@@ -187,6 +187,69 @@ To complete this tutorial, send your exploratory map as a pdf or jpeg to Michell
 
 I would like to know which language speakers have access to the most access to immigration services. Are any groups being underserved? What would we have to do to answer this question? How could we bring in data about languages in the city to get a better answer to this question? Do transportation routes matter?
 
+
+## Advanced
+
+Download the 2011-2015 American Community Survey Dataset
+
+Data cleaning plan:
+1. Remove columns we are not going to use. We only want number of speakers - not how well they speak english
+2. Create a column that matches the census tracts clipped to shoreline so we can do a column join
+3. Get subtotals for each borough
+4. Calculate percentages from the raw numbers
+
+
+1. Create the data management 4 tabs. Add 1 more tab: Extras
+Step 1 - Remove columns will not use. It is MUCH easier to remove rows than columns
+
+1. Select all of the cells from the original tab. Do this by clicking in one corner and then 'Shift'+'click' in cell II2168 (the bottom cell of the sheet)
+2. Copy these.
+4. Go to the 'Working' Tab and 'Paste Special' - Transpose the data.
+5. Freeze the top 5 rows.
+6. Copy the entire workbook (click in upper left corner) and Paste-Special (Values)
+8. Insert 2 columns to the right of the ID Column
+9. Use 'Text-to-columns' to separate on the colon
+6. highlight row 6 to the end by selecting the entire row 6 and pressing "shift" + "click" on the last row (you have to click on the little numbers)
+11. Sort by column C
+12. Cut all rows referencing 'Speak English' and paste them in the Extras tab.
+13. Insert the headers above this on the Extras Tab
+14. Sort to consolidate the 'Margin of Error' and move these to the Extras tab also
+15. Delete Column C
+16. Remove the ' - ' from the languages.
+17. Move all of the languages over under the 'ID' Column
+18. Delete Column 'B'
+
+Step 2 - Create a column that matches the census tracts clipped to shoreline so we can do a column join
+1. This is in the wrong shape now so we need to transpose it back. You can't do this on the same sheet because of the shapes. So make ANOTHER Tab - Call it 'Working2'
+2. Paste Special - Transpose
+3. Insert a row next to 'County'
+4. In cell F2, write =CONCATENATE(D2, ", ", E2)
+5. Drag the bottom corner to fill ther rest of the Column. 
+6. Call this Column 'GEOID'
+7. Copy & Paste Special as Values
+
+Step 3 - Get subtotals for each borough
+1. Under Data is a 'Subtotal' Tool
+2. At every change in 'County', SUM all of the languages
+3. To just see the counties, select the tiny '2' on the far right side - this will collapse so you only see the subtotals. 
+4. To use these separately, create another tab, called 'Borough'
+5. Select each of these rows individually by clicking on each row while holding the 'Control' Key
+6. Copy & Paste Special - Values in the new sheet.
+7. Copy the entire header row and paste it into the new borough sheet also
+
+Step 4 - Calculate percentages from the raw numbers
+1. Copy the languages from "Speak only English" to "Other and Unspecified"
+2. Freeze panes so you have some orientation.
+2. Paste them in the rows next to the raw data. 
+3. In cell AV2, type this formula: =H2/$G2
+	1. The $ make the G column stay constant. 
+	2. If you ALWAYS wanted to divide by cell G2, you'd type $G$2. 
+	3. If the total number of speakers was in ROW 2, you'd type G$2
+4. Use the bottom left corner to fill across and down for all the tracts and all the languages.
+5. While it is highlighted, Right click to Format Cells. Change it to 'Percent' with 0 decimal places.
+
+Done!! Your data is ready to be joined to the 2010 Census tracts file clipped to shoreline or used for data visualization.
+
 __________________________________________________________________________________________
 
 This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
