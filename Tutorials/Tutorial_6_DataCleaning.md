@@ -114,6 +114,7 @@ Community Centers in New York City offer a variety of services from classes to f
 	2. Insert a column to the right
 	3. Select text-to-columns
 	4. Select 'Delimited', 'comma-separated', Finish
+	5. Rename the columns (Latitude = 40.xxx, Longitude = -73.xxx)
 5. Remove the parentheses
 	1. Select the Latitude column
 		1. Find and Replace the character, ( , with nothing	
@@ -198,8 +199,8 @@ Data cleaning plan:
 3. Get subtotals for each borough
 4. Calculate percentages from the raw numbers
 
-
 1. Create the data management 4 tabs. Add 1 more tab: Extras
+
 Step 1 - Remove columns will not use. It is MUCH easier to remove rows than columns
 
 1. Select all of the cells from the original tab. Do this by clicking in one corner and then 'Shift'+'click' in cell II2168 (the bottom cell of the sheet)
@@ -220,6 +221,7 @@ Step 1 - Remove columns will not use. It is MUCH easier to remove rows than colu
 18. Delete Column 'B'
 
 Step 2 - Create a column that matches the census tracts clipped to shoreline so we can do a column join
+
 1. This is in the wrong shape now so we need to transpose it back. You can't do this on the same sheet because of the shapes. So make ANOTHER Tab - Call it 'Working2'
 2. Paste Special - Transpose
 3. Insert a row next to 'County'
@@ -229,6 +231,7 @@ Step 2 - Create a column that matches the census tracts clipped to shoreline so 
 7. Copy & Paste Special as Values
 
 Step 3 - Get subtotals for each borough
+
 1. Under Data is a 'Subtotal' Tool
 2. At every change in 'County', SUM all of the languages
 3. To just see the counties, select the tiny '2' on the far right side - this will collapse so you only see the subtotals. 
@@ -238,6 +241,7 @@ Step 3 - Get subtotals for each borough
 7. Copy the entire header row and paste it into the new borough sheet also
 
 Step 4 - Calculate percentages from the raw numbers
+
 1. Copy the languages from "Speak only English" to "Other and Unspecified"
 2. Freeze panes so you have some orientation.
 2. Paste them in the rows next to the raw data. 
