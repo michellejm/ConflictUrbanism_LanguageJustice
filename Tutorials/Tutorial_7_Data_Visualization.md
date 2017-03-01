@@ -77,9 +77,11 @@ We have two data sets:
   * 2011-2015 American Community Survey (language spoken at home)
 We also have a precalcuated table of changes between these two datasets
 
+Download all of the datasets [here](
+
 2. Start with a cloze exercise:
-  1. Other than English or Spanish, ____________ is the most commonly spoken language in each borough.
-  2. There has been the greatest increase in ____________ speakers since 2010.
+  1. There has been the greatest increase in ____________ speakers since 2010.
+  2. ____________ has the most English monolinguals.
 3. Write 2 more cloze statements.
 
 ## Part III - Exploratory Visualization
@@ -87,15 +89,27 @@ We also have a precalcuated table of changes between these two datasets
 1. Open these datasets in Excel.
 2. Answer your two cloze statements. 
 3. Create one plot just using Excel's defaults where a user could find the answer. 
-  1. If you have never used Excel's graph making tools, we will make two of the following three together.
+  1. If you have never used Excel's graph making tools, we will make one of the following three together.
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
-Excel Defaults
-1. I am most interested in 
+Using the Excel Defaults
+1. We are going to make the first map: Growth in Speakers of a Language other than English in New York City 2008-2013 (top 5 languages)
+2. In the LanguageRows Tab, each row represents a language and each column represents a borough/year combination and calculations about the differences between each. This format (each language in one row) allows for easy comparison between the languages (rather than comparison between the geometries). 
+3. Sort the sheet by 'PeopleChange' (Column P - lowest to highest - your sheet has 'headers')
+4. The top 5 languages are at the bottom.
+5. Copy these 5 languages (exclude 'English' and 'Total') and paste them on a **new tab** (this isn't exactly necessary, but will make it visually easier).
+6. Copy the corresponding values and Paste-Special as 'Values' on the new tab
+7. Also Copy and Paste-Special the **PplChng Columns** (Columns V-Z) on the new tab
+8. On the new tab
+  1. Select the A1:B6 cells
+  2. Under 'Insert', Select 'Column', 'Clustered Column'
+  3. Your graph should appear.
+  3. Change the title by double clicking on it.
 
-
+  
 
 
 ## Part IV - Techniques
@@ -110,4 +124,8 @@ Excel Defaults
 
  
  
-    
+ 
+__________________________________________________________________________________________
+
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
+   
