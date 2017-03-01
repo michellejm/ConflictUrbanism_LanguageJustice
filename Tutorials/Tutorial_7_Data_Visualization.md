@@ -90,7 +90,7 @@ We also have a precalcuated table of changes between these two datasets
   1. If you have never used Excel's graph making tools, we will make two of the following three together.
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 
 Excel Defaults
 1. I am most interested in 
