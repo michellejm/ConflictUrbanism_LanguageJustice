@@ -91,7 +91,7 @@ Download all of the datasets [here](
 3. Create one plot just using Excel's defaults where a user could find the answer. 
   1. If you have never used Excel's graph making tools, we will make one of the following three together.
 
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png | width=100)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png =250x250)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
