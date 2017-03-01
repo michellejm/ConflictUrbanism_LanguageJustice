@@ -1,4 +1,5 @@
-# Tutorial 7: Leaflet.js
+# Tutorial 8: Leaflet.js
+March 21, 2017
 
 By the end of this tutorial, students will be able to:
 
@@ -447,3 +448,9 @@ You can add your map 2 ways.
 
 
 That's it! Congratulations! You have made a webmap with Leaflet!
+
+
+__________________________________________________________________________________________
+
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
+
