@@ -258,8 +258,5 @@ ________________________________________________________________________________
 
 This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
 
-
-
-
 	
 
