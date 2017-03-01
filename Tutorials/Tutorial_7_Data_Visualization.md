@@ -91,11 +91,12 @@ Download all of the datasets [here](
 3. Create one plot just using Excel's defaults where a user could find the answer. 
   1. If you have never used Excel's graph making tools, we will make one of the following three together.
 
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png | width=100)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
 Using the Excel Defaults
+
 1. We are going to make the first map: Growth in Speakers of a Language other than English in New York City 2008-2013 (top 5 languages)
 2. In the LanguageRows Tab, each row represents a language and each column represents a borough/year combination and calculations about the differences between each. This format (each language in one row) allows for easy comparison between the languages (rather than comparison between the geometries). 
 3. Sort the sheet by 'PeopleChange' (Column P - lowest to highest - your sheet has 'headers')
