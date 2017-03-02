@@ -163,18 +163,18 @@ We will begin with the *Header*
 	1. This works by indicating the style of the map in a way the browser can interpret
 	`<style> #map {width: SIZEpx; height: SIZEpx; } </style>`
 
-Type this into your document exactly (DO NOT copy/paste - I put errors in it. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
+Type this into your document exactly (DO NOT copy/paste. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
 
 ```<html>
 <head>
   <title>A Leaflet map!</title>
-  <link rel="stylesheet" CONFLICT href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   
-  <link rel="stylesheet" URBANISM href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
   <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
 
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js" LANGUAGE>  </script>
-  <script src="js/jquery-2.1.1.min.js" JUSTICE>  </script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">  </script>
+  <script src="js/jquery-2.1.1.min.js">  </script>
   <script src="js/leaflet_awesome_markers.js"></script>
 
   
@@ -225,15 +225,15 @@ Type this into your document exactly (DO NOT copy/paste - I put errors in it. [C
   <script>
 
   // initialize the map
-  var map = L.map('map').setView([39.76, -98.50], LANGUAGE 4);  
+  var map = L.map('map').setView([39.76, -98.50], 4);  
 
   // load a tile layer
-  L.tileLayer('http://{s}.tile.openstreetmap.org/JUSTICE{z}/{x}/{y}.png',
+  L.tileLayer('http://{s}.tile.openstreetmap.org/z}/{x}/{y}.png',
     {
-      attribution: 'Tiles by <a href="http://www.openstreetmap.org/">OSM</a>, Data by <a href="http://census.gov" CONFLICT>US Census</a>',
+      attribution: 'Tiles by <a href="http://www.openstreetmap.org/">OSM</a>, Data by <a href="http://census.gov">US Census</a>',
       maxZoom: 12,
       minZoom: 1
-    }).addTo(map URBANISM);
+    }).addTo(map);
  
    	// Be sure to keep these closing tags at the end of your document
  	</script>
@@ -277,10 +277,8 @@ Congratulations on starting your webmap!
 	
 	```  $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
-    	CONFLICT
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
-       URBANISM
        iconColor: 'black',
     });
     ```
@@ -294,10 +292,8 @@ Congratulations on starting your webmap!
 	```  
 $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
-    	CONFLICT
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
-       URBANISM
        iconColor: 'black',
     });
     *****NEW*****
@@ -366,14 +362,14 @@ L.geoJson(data,{
 		<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
-  <link rel="stylesheet" href="css/MarkerCluster.css" LEAFLET>
+  <link rel="stylesheet" href="css/MarkerCluster.css">
   <link rel="stylesheet" href="css/MarkerCluster.Default.css" IS SO>
   <link rel="stylesheet" href="css/font-awesome.min.css >
   <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
   
 
   <script src="js/leaflet.js"></script>
-  <script src="js/leaflet.markercluster.js" AWESOME></script>
+  <script src="js/leaflet.markercluster.js"></script>
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/leaflet_awesome_markers.js"></script>
   
