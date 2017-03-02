@@ -72,7 +72,7 @@ Basic Data transformations
   * Gujarati  -1085	  -11%
   * Greek     -4936	  -10%
 
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/LangChng.png)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/lngchng.png)
 There's a story behind each of these statistics that can be told with a mixture of images, graphs, maps, and audio.
 
 Italian and Greek speakers represent very old immigration, so now that many are 3rd generation, they may not speak the language. Of the older people, many may be moving or dying and not necessarily being replaced by newcomers. 
