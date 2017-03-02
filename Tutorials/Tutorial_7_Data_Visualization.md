@@ -110,7 +110,7 @@ Using the Excel Defaults
   3. Your graph should appear.
   3. Change the title by double clicking on it.
 
-1. Let's do the same for 
+1. Let's do the same for answering question
 
 
 ## Part IV - Techniques
