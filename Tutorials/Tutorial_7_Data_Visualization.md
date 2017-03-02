@@ -1,3 +1,7 @@
+# Tutorial 7: Data Visualization
+
+March 7, 2017
+
 This tutorial covers the very basics of data visualization and digital storytelling, covering visualization types, features to consider and important design considerations. The purpose of this tutorial is to help you create informative, appealing visuals to accompany your final project. 
 
 By the end of this tutorial, you will be able to:
