@@ -91,7 +91,7 @@ Download all of the datasets [here](
 3. Create one plot just using Excel's defaults where a user could find the answer. 
   1. If you have never used Excel's graph making tools, we will make one of the following three together.
 
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png =250x250)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
@@ -103,14 +103,14 @@ Using the Excel Defaults
 4. The top 5 languages are at the bottom.
 5. Copy these 5 languages (exclude 'English' and 'Total') and paste them on a **new tab** (this isn't exactly necessary, but will make it visually easier).
 6. Copy the corresponding values and Paste-Special as 'Values' on the new tab
-7. Also Copy and Paste-Special the **PplChng Columns** (Columns V-Z) on the new tab
+7. Also Copy and Paste-Special the **PplChng Columns** (Columns V-Z) on the new tab. We may not get back to it, but there are some interesting things in here (look at Chinese in the Bronx)
 8. On the new tab
   1. Select the A1:B6 cells
   2. Under 'Insert', Select 'Column', 'Clustered Column'
   3. Your graph should appear.
   3. Change the title by double clicking on it.
 
-  
+1. Let's do the same for 
 
 
 ## Part IV - Techniques
