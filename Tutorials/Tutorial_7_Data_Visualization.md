@@ -56,8 +56,11 @@ Basic Data transformations
 1. Let's look at 2006-2010 ACS data as well. Taking the middle year, here, we will treat this as 2008, and the 2011-2015 as 2013.
 2. From 2008-2013, there are 2 more Vietnamese speakers living in NYC, though 300 of them moved from the Bronx to Manhattan and Brooklyn. 
 3. Let's look at a group of speakers who have seen more change in that time: 
+
   1. Speakers of African Languages: 35% growth
+  
   2. Speakers of Arabic and Armenia both saw 32% growth. That's a change of 1062 people for Armenian and 13,871 for Arabic. This might suggest a potential increase in the Armenian community in the coming years. 
+  
   3. At the same time, 54,064 Chinese speakers arrived, but that was only a 13% growth from 2008. The greatest number of arrivals was from English Monolinguals, with almost 100,000 individuals, though only a 3% increase in people.
   * Chinese       54064	13%
   * Spanish       70436	4%
@@ -68,10 +71,18 @@ Basic Data transformations
   * Mon-Khmer -302		-12%
   * Gujarati  -1085	  -11%
   * Greek     -4936	  -10%
-  
-Italians and Greeks represent very old immigration, so many are moving or dying and not necessarily being replaced by newcomers. What about Mon-Khmer and Gujarati speakers? First, Mon-Khmer is a language family (of which, Vietnamese is one language), not just one language. This probably refers to MK speakers from Cambodia, a group that has been [slowly shrinking](http://www.nytimes.com/2008/01/20/nyregion/thecity/20camb.html) for some time. Gujarati is spoken in India, mostly on the border with Pakistan. There is a Gujarati newspaper based in the city, and a long history of Gujaratis in NYC. So, what's happening? Gujaratis also have a very long history of immigration to the US, as many started arriving immediately after the 1965 Immigration and Nationality Act. So this decrease may also be to a slowing of immigration, movement to NJ and death without replacement. 
 
-In this way, the data helps to tell the story. 
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/LangChng.png)
+There's a story behind each of these statistics that can be told with a mixture of images, graphs, maps, and audio.
+
+Italian and Greek speakers represent very old immigration, so now that many are 3rd generation, they may not speak the language. Of the older people, many may be moving or dying and not necessarily being replaced by newcomers. 
+
+What about Mon-Khmer and Gujarati speakers? First, Mon-Khmer is a language family (of which, Vietnamese is one language), not just one language. This probably refers to MK speakers from Cambodia, a group that has been [slowly shrinking](http://www.nytimes.com/2008/01/20/nyregion/thecity/20camb.html) in New York City for some time. Gujarati is spoken in India, mostly on the border with Pakistan. There is a Gujarati newspaper based in the city, and a long history of Gujaratis in NYC. So, what's happening? Gujaratis also have a very long history of immigration to the US, as many started arriving immediately after the 1965 Immigration and Nationality Act. So this decrease may also be to a slowing of immigration, movement to NJ and death without replacement. 
+
+What about the bigger languages?
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5chng.png)
+
+In this way, the data helps to get the story started. 
 
 ## Part II - Questions
 
