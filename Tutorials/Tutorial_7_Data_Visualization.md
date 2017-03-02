@@ -42,7 +42,7 @@ Basic Data transformations
       * Manhattan: 13%
       * Queens: 25%
       * Staten Island: 4%
-      ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vietnamese.png]
+      ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/vietnamese.png)
     2. Percentage of each borough that speaks Vietnamese:
       * Bronx: 0.22%
       * Brooklyn: 0.14%
