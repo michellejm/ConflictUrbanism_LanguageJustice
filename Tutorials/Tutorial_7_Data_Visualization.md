@@ -94,7 +94,7 @@ We have two data sets:
   * 2011-2015 American Community Survey (language spoken at home)
 We also have a precalcuated table of changes between these two datasets
 
-Download all of the datasets [here](
+Download all of the datasets [here](https://drive.google.com/drive/folders/0B8IdSWLrkSd3bWx6NnByWGNZUTQ?usp=sharing)
 
 2. Start with a cloze exercise:
   1. There has been the greatest increase in ____________ speakers since 2010.
@@ -310,7 +310,112 @@ On deciding [which chart type to use](http://extremepresentation.com/wp-content/
 
 #### D3
 
-D3 is a Javascript Library that is often used to make interactive charts and graphs. There are MANY examples on the [D3 website](https://d3js.org/) and around the internet ([Mike Bostock](https://bl.ocks.org/mbostock), [D3 Wiki](https://github.com/d3/d3/wiki/Gallery), etc.). In this tutorial, I am going to provide you with an HTML template that you can embed into your HTML page. Because it is interactive, we will need to get a local server running on our computers. 
+D3 is a Javascript Library that is often used to make interactive charts and graphs. Libraries are like sets of commands we give to a programming language. Javascript is the 3rd web-based programming language. It makes the interactive things on websites. Javascript alone does a lot, but D3 specializes in making beauitful data-driven graphics. There are MANY examples on the [D3 website](https://d3js.org/) and around the internet ([Mike Bostock](https://bl.ocks.org/mbostock), [D3 Wiki](https://github.com/d3/d3/wiki/Gallery), etc.). In this tutorial, I am going to provide you with an HTML template that you can embed into your HTML page. Because it is interactive, we will need to get a local server running on our computers. 
+
+If you didn't download your datasets before, download them [here](https://drive.google.com/drive/folders/0B8IdSWLrkSd3bWx6NnByWGNZUTQ?usp=sharing)
+
+**Get a local server up and running**
+
+### (Mac) Check which Python version you have (if any)
+
+1. Open a Terminal Window 
+![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
+2. Type `$ python -V` hit 'Return'
+3. Something like this should appear. 
+![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
+4. Make a note of which Python version you have, you will need it later.
+
+### (Windows) Check which Python version you have (if any)
+1. open Command Prompt
+2. type python --version hit 'Return'
+	* if python is installed something like this will appear
+	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/pythontest.png)
+	* if it isn't then a message stating that will appear
+	* if Python is installed make note of which version you have installed, you will need it later
+3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing version 2.7. 
+4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the defaul settings until you get to the page that reads "Customize Python 2.7.XX" 
+	* Scroll to the bottom of options, and click the drop-down selection that reads "Add python.exe to Path" (it should have a red "X" by default)
+	* Select the option that reads "Entire feature will be installed on local hard drive"
+5. Follow the prompts on the rest of the setup, allow the installation to finish. When it's done, it will tell you, and python is now installed on your computer and available to use.
+6. To test that python was installed, open the Command Prompt application, and enter python --version. It should read "Python 2.12.XX". 
+
+### (Mac) Set up a local server
+
+We will run a local server from our computers. The details of this are far beyond this tutorial, for more on  the technical details, visit the [Mozilla Developer site](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Set_up_a_basic_working_environment). For more on how the web works the difference between a local and remote server, [read this](https://devdojo.com/blog/technology/local-vs-remote-servers).
+
+1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Desktop > CULJ > d3. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
+
+	* `$ cd Desktop`
+	* `$ cd CULJ` 
+	* `$ cd d3`
+	
+2. If you have Python 3, type:
+
+	* `$ sudo python -m http.server 1010`  (you can pick your favorite 3 or 4 digit number)
+	
+2. If you have Python 2, type:
+
+	* `$ sudo python -m SimpleHTTPServer`
+	
+	It will look something like this:
+	![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
+
+3. Return to your browser window (Chrome, Firefox, or Safari) and type `localhost:1010` in the navigation bar. You should see an empty webpage. 
+
+We will come back to this.
+
+###(Windows) Set up a local server
+1. Open Command Prompt. Then navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Desktop > CULJ > d3. To navigate there, I type the following commands:
+
+	* cd Desktop
+	* cd lCULJ
+	* cd d3
+
+2. If you have python 2 type:
+
+	* python -m SimpleHTTPServer
+
+3. If you have python 3 type: 
+
+	* python -m http.server
+
+	It will look something like this:
+	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/localhost.png)
+3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar. You should see an empty webpage.
+
+We will come back to this.
+
+
+#### The template
+
+Open the barchart.html document with Sublime or Text Wrangler
+
+1. Notice this is structured just like the HTML document for your Case Study Template EXCEPT that the css is in the header because there is very little CSS associated with this chart and it is very specific to this graph (i.e., you wouldn't necessarily want a universal color combination, though you may want MORE universals than we have established).
+
+2. The next block tells this HTML page to read from the d3 website to understand the instructions we are about to pass to it. 
+
+3. Javascript uses a lot of 'var' to set the variables. Every time you see 'var', it is passing JS a container full of instructions. At the end, these instructions are compiled. 
+
+4. d3.COMMAND specifies that that command is part of the d3 library
+
+5. There are few things we have to change.
+	1. Find where the data is coming from. HINT: we are telling d3 to looks for a tsv file, who's extension is actually a txt.
+	2. When we said that data visualizations are made programmatically, this is largely what we meant - that the file that contains the data is separate from the commands that turn the data into a visual. 
+	3. d3 reads this as if it were a database. It first looks for a header for each column. 
+	4. When we *call* the file, we assign it a function, d. *function* is a special word *d* is something we chose randomly. Once we pass it the function and assign it the name, d, we tell it where to find the values. We say look in the VALUES column.
+		1. Replace the word 'VALUES' with the name of the corresponding column in our txt file. 
+	6. Now we have to tell it where to find the X values. 
+		1. In the next block of text, we define the x domain and assign a new function, d, and tell it where to find the names of our categories. 
+		2. Replace the word 'CATEGORY' with the name of the corresponding column in our text file.
+6. Each instance of 'append' places something on the graph. 
+
+Now, return to your browser and refresh the page. You should either see your visual or a list of files, click on the appropriate file. 
+
+If your graph is not appearing, we need to debug and check that the code is right and the data and HTML files are both in the same folder. 
+
+
+
+
 
 
 __________________________________________________________________________________________
