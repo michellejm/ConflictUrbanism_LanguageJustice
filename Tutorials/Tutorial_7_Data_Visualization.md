@@ -104,7 +104,8 @@ Download all of the datasets [here](
 1. Open these datasets in Excel.
 2. Answer your two cloze statements. 
 3. Create one plot just using Excel's defaults where a user could find the answer. 
-  1. If you have never used Excel's graph making tools, we will make one of the following three together.
+  1. If you have never used Excel's graph making tools, we will make the first and third of these together.
+  2. If you have used Excel's graph making tools, make 1-2 graphs to illustrate your cloze statements. 
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
@@ -125,7 +126,19 @@ Using the Excel Defaults
   3. Your graph should appear.
   3. Change the title by double clicking on it.
 
-1. Let's do the same for answering question
+Let's do the same for answering the second cloze exercise
+
+1. In the **Language Columns** Tab, each row represents a borough, and each column represents a language. This format allows for easy comparisons between the boroughs. 
+3. Copy the cells corresponding to  English-only percent_speakers/Bronx-Staten Island_2011-15 (D20:D24) 
+4. Paste-Special on a new tab in column B
+5. Go back and copy the borough names & past on the new tab in column A
+8. On the new tab
+  1. Select the A1:B5 cells
+  2. Under 'Insert', Select 'Column', 'Clustered Column'
+  3. Your graph should appear.
+  3. Change the title by double clicking on it.
+  4. Remove 2011-15 either through Find & Replace or manually.
+  
 
 
 ## Part IV - Techniques
