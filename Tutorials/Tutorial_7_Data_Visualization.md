@@ -276,7 +276,7 @@ On the other hand are more qualitative stories that incorporate data only to und
 
 1. Box plots (usually for financial data)
 	1. Good for multiple variables, outliers, and ranges [example citation](http://www.datamology.com/sample-BA.shtml)
-	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sample.png)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sample.jpeg)
 
 2. Heat maps
 	1. Good for groups compared to other groups (time of day, day of week, web visits) [example citation](http://help.plot.ly/plotly1/make-a-heatmap/)
