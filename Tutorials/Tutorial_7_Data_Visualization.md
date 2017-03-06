@@ -310,7 +310,7 @@ On deciding [which chart type to use](http://extremepresentation.com/wp-content/
 
 #### D3
 
-D3 is a Javascript Library that is often used to make interactive charts and graphs. Libraries are like sets of commands we give to a programming language. Javascript is the 3rd web-based programming language. It makes the interactive things on websites. Javascript alone does a lot, but D3 specializes in making beauitful data-driven graphics. There are MANY examples on the [D3 website](https://d3js.org/) and around the internet ([Mike Bostock](https://bl.ocks.org/mbostock), [D3 Wiki](https://github.com/d3/d3/wiki/Gallery), etc.). In this tutorial, I am going to provide you with an HTML template that you can embed into your HTML page. Because it is interactive, we will need to get a local server running on our computers. 
+D3 is a Javascript Library that is often used to make interactive charts and graphs. Libraries are like sets of commands we give to a programming language. Javascript is the 3rd web-based programming language. It makes the interactive things on websites. Javascript alone does a lot, but D3 specializes in making beauitful data-driven graphics. There are MANY examples on the [D3 website](https://d3js.org/) and around the internet ([Mike Bostock](https://bl.ocks.org/mbostock), [Dashing D3](https://www.dashingd3js.com/d3js-axes), [D3 Wiki](https://github.com/d3/d3/wiki/Gallery), etc.). In this tutorial, I am going to provide you with an HTML template that you can embed into your HTML page. Because it is interactive, we will need to get a local server running on our computers. 
 
 If you didn't download your datasets before, download them [here](https://drive.google.com/drive/folders/0B8IdSWLrkSd3bWx6NnByWGNZUTQ?usp=sharing)
 
