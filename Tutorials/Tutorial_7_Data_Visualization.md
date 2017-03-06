@@ -368,7 +368,7 @@ We will come back to this.
 1. Open Command Prompt. Then navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Desktop > CULJ > d3. To navigate there, I type the following commands:
 
 	* cd Desktop
-	* cd lCULJ
+	* cd CULJ
 	* cd d3
 
 2. If you have python 2 type:
@@ -413,10 +413,19 @@ Now, return to your browser and refresh the page. You should either see your vis
 
 If your graph is not appearing, we need to debug and check that the code is right and the data and HTML files are both in the same folder. 
 
+CONGRATULATIONS!!! 
+To complete this tutorial, send the HTML file to Michelle at mam2518@columbia.edu
 
 
+### ADVANCED - NOT IN CLASS 
 
+1. Modify the Advanced template to include a title. 
+2. Change the colors
+3. Change the font
 
+### EXTRA ADVANCED JS MASTER
+
+This [bubble chart](https://github.com/vlandham/gates_bubbles) remade for language in NYC.
 
 __________________________________________________________________________________________
 
