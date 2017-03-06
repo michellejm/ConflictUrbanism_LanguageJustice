@@ -208,7 +208,7 @@ On the other hand are more qualitative stories that incorporate data only to und
     1. Good for continuous variables (i.e., time, distance, etc.)
     2. Poor for categorical 
   2. Size
-    1. Good for continuos variables
+    1. Good for continuous variables
     2. Poor for categorical
   3. Color ([color brewer](http://colorbrewer2.org/) and [coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/)
     1. Good for categorical variables
@@ -241,11 +241,21 @@ On the other hand are more qualitative stories that incorporate data only to und
   1. Humans are so good at this (see above). Often start with a bar chart to get a sense of the data and then decide a better way to represent it.
   ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 	2. Grouped bar chart (2 datapoints)
-  ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/yiddish_hebrew.png)
-	3. Comparison within groups (stacked bar chart)
-  
-	4 Relative value, strength of category (stacked percentage bar chart)
+  	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/yiddish_hebrew.png)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/lolConc.png)
+	3. Comparison within groups (stacked bar chart) [citation](http://peltiertech.com/diverging-stacked-bar-charts/)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/stacked.png)
+	4. Relative value, strength of category (stacked percentage bar chart)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/digital2.png)
+2. Bar chart vs. Line chart?
+	1. Bar charts are categorical (i.e, this much or this many in this bin)
+	2. Line charts are continuous (i.e., this much or this many at each point along this interval)
 
+3. Line charts
+	1. X axis must have a CONTINUOUS variable (i.e., time, distance, temparature)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/DRMobile.png)
+
+	
 
 On deciding [which chart type to use](http://extremepresentation.com/wp-content/uploads/6a00d8341bfd2e53ef0148c699cc96970c.jpg)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/charttype.jpeg)
