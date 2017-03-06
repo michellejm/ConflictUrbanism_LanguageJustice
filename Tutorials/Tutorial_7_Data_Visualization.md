@@ -22,6 +22,8 @@ Basic Data transformations
   2. Median - the number in the middle, this helps account for outliers
   3. Mode - the number that occurs the most often
   
+An EXCELLENT resource for thinking about statistics is [here](http://students.brown.edu/seeing-theory/). This was made with D3, a javascript library for making interactive, reactive visualizations.
+  
 2. Real, Ranked, Percentage (2011-2015 American Community Survey)
   1. Real numbers are the raw data so there were X Vietnamese speakers reported in the census in 2011-2015 for each county
   Bronx: 2871
@@ -104,11 +106,10 @@ Download all of the datasets [here](
 1. Open these datasets in Excel.
 2. Answer your two cloze statements. 
 3. Create one plot just using Excel's defaults where a user could find the answer. 
-  1. If you have never used Excel's graph making tools, we will make the first and third of these together.
+  1. If you have never used Excel's graph making tools, we will make these together.
   2. If you have used Excel's graph making tools, make 1-2 graphs to illustrate your cloze statements. 
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
 Using the Excel Defaults
@@ -126,7 +127,12 @@ Using the Excel Defaults
   3. Your graph should appear.
   3. Change the title by double clicking on it.
 
-Let's do the same for answering the second cloze exercise
+Another graph you might want to make would be percentages
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
+
+Let's ask another question about English speakers in boroughs. 
+
+____________ has the most English monolinguals.
 
 1. In the **Language Columns** Tab, each row represents a borough, and each column represents a language. This format allows for easy comparisons between the boroughs. 
 3. Copy the cells corresponding to  English-only percent_speakers/Bronx-Staten Island_2011-15 (D20:D24) 
@@ -138,20 +144,34 @@ Let's do the same for answering the second cloze exercise
   3. Your graph should appear.
   3. Change the title by double clicking on it.
   4. Remove 2011-15 either through Find & Replace or manually.
-  
 
+This gives you a way to better understand your data.
 
-## Part IV - Techniques
+### Exploring the Explanations
 
-1. 
+What makes a good Exploratory versus Explanatory visualization?
 
+What are the goals of the visualization? What story are the authors trying to tell? Why? How? **Is** there a story being told or is the viewer invited to follow their own narrative?
 
-1. Most visualizations are both - exploratory and explanatory, but all have an exploration stage. 
-2. At this point, we are going to play with the data by visualizaing it in a variety of different ways. There are 3 datasets all from the American Community Survey
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/nobel_large.jpeg)
 
+1. A viewer of the Visual History of the Nobel Prize and Nobel Laureates could take one of many paths through the visualization and come away with many different interpretations. 
+2. While some types of data were highlighted, others were not (i.e., what industry they work in (in/out of academia), if they have children, etc.)
+3. Some data points were highlighted (lower right corner), offering explanatory examples.
 
+On the other hand, 538 did a great piece explaining [why Katie Ledecky is so phenomenal](https://fivethirtyeight.com/features/katie-ledecky-is-the-present-and-the-future-of-swimming/). They are telling a story, and telling it very linearly.
 
- 
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/ledecky.png)
+
+And then there is this story covering [Simone Biles](https://www.nytimes.com/interactive/2016/08/05/sports/olympics-gymnast-simone-biles.html?module=Article&region=TopBar&action=Click&pgtype=Multimedia) that tells a very linear story through mostly video and short, direct sentences. 
+
+#### Dimensions of a visualization
+
+Deciding between an Exploratory or Explanatory approach can be easier after thinking through your data.
+
+1. How many dimensions does your data have?
+  1. Does it all need to be in the same chart?
+2. 
  
  
 __________________________________________________________________________________________
