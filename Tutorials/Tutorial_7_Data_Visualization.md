@@ -255,11 +255,56 @@ On the other hand are more qualitative stories that incorporate data only to und
 	1. X axis must have a CONTINUOUS variable (i.e., time, distance, temparature)
 	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/DRMobile.png)
 
-	
+4. Pie Charts
+	1. Though they are common, often used poorly. 
+	2. Best for showing 2-3 categories
+	3. Terrible for showing slight variations (or good for hiding slight variations)
+	4. Compared to bar charts, arcs are challenging to visually understand
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/txtlng.png)
+5. Scatter plots
+	1. Good for showing correlation or patterns
+	2. Only 2 variables
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/acad.png)
+6. Bubble charts
+	1. Good for showing 3 variables - like a scatter plot with size added
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Sonority.png)
+7. Area chart
+	1. Like a line chart, but with the area under the line filled in. A good example is [here](https://research.google.com/bigpicture/music/)
+	2. Best to represent volume of a variable over time (i.e., records, or, with enough data, people)
 
+#### More Variables
+
+1. Box plots (usually for financial data)
+	1. Good for multiple variables, outliers, and ranges [example citation](http://www.datamology.com/sample-BA.shtml)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sample.png)
+
+2. Heat maps
+	1. Good for groups compared to other groups (time of day, day of week, web visits) [example citation](http://help.plot.ly/plotly1/make-a-heatmap/)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/okc.png)
+	
+3. Radar or spider charts
+	1. multiple variables at a time. These are extremely difficult to parse. Do not use them if you want your readers to understand what you're saying. [example citation](http://www.datavizcatalogue.com/methods/radar_chart.html)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/radar_chart.png)
+
+4. Parallel coordinates
+	1. Each line going across shows the data point, can see relationships between variables (I've seen few good examples outside of biology) [example citation](https://www.computer.org/csdl/mags/cs/2015/03/mcs2015030070.html)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/sepal.png)
+
+5. Tree Map
+	1. Size based relationships [example citation](http://flowingdata.com/2015/02/06/baking-units-demystified/)
+	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/units.png)
+	
 On deciding [which chart type to use](http://extremepresentation.com/wp-content/uploads/6a00d8341bfd2e53ef0148c699cc96970c.jpg)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/charttype.jpeg)
 
+## Making a Visual
+
+1. Excel
+2. Google Sheets
+3. [Plot.ly](https://plot.ly/) for embedable, interactive charts (freemium)
+4. D3
+
+#### D3
 
 
 __________________________________________________________________________________________
