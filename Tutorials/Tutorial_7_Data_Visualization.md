@@ -294,6 +294,10 @@ On the other hand are more qualitative stories that incorporate data only to und
 	1. Size based relationships [example citation](http://flowingdata.com/2015/02/06/baking-units-demystified/)
 	![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/units.png)
 	
+#### For Fun
+1. The NY Magazine [Approval Matrix](http://nymag.com/arts/all/approvalmatrix/approval-matrix-2016-09-05/#)
+2. 
+	
 On deciding [which chart type to use](http://extremepresentation.com/wp-content/uploads/6a00d8341bfd2e53ef0148c699cc96970c.jpg)
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/charttype.jpeg)
 
@@ -305,6 +309,8 @@ On deciding [which chart type to use](http://extremepresentation.com/wp-content/
 4. D3
 
 #### D3
+
+D3 is a Javascript Library that is often used to make interactive charts and graphs. There are MANY examples on the [D3 website](https://d3js.org/) and around the internet ([Mike Bostock](https://bl.ocks.org/mbostock), [D3 Wiki](https://github.com/d3/d3/wiki/Gallery), etc.). In this tutorial, I am going to provide you with an HTML template that you can embed into your HTML page. Because it is interactive, we will need to get a local server running on our computers. 
 
 
 __________________________________________________________________________________________
