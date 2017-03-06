@@ -110,7 +110,7 @@ Download all of the datasets [here](
   2. If you have used Excel's graph making tools, make 1-2 graphs to illustrate your cloze statements. 
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5growth.png)
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
+
 
 Using the Excel Defaults
 
@@ -127,12 +127,11 @@ Using the Excel Defaults
   3. Your graph should appear.
   3. Change the title by double clicking on it.
 
-Another graph you might want to make would be percentages
-![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
-
-Let's ask another question about English speakers in boroughs. 
+Let's answer the other cloze. 
 
 ____________ has the most English monolinguals.
+
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/EngMono.png)
 
 1. In the **Language Columns** Tab, each row represents a borough, and each column represents a language. This format allows for easy comparisons between the boroughs. 
 3. Copy the cells corresponding to  English-only percent_speakers/Bronx-Staten Island_2011-15 (D20:D24) 
@@ -201,8 +200,11 @@ On the other hand are more qualitative stories that incorporate data only to und
     2. Would it make sense to break them up across multiple charts represented the same way?
     ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/5boros.png)
     
-2. Visual Contrast - viewers expect each of these things to mean something. 
-  1. Position
+2. Visual Contrast - viewers expect each of these things to mean something. This cart is from [here](http://paldhous.github.io/ucb/2016/dataviz/week2.html). The reference is [here](https://ils.unc.edu/courses/2015_spring/inls541_001/Readings/Cleveland%20and%20McGill%201985%20-%20Graphical%20Perception%20and%20Cleveland1985-Graphical%20Methods%20for%20Analyzing%20Scientific%20Data.pdf)
+
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/class2.jpeg)
+
+  1. Position along the axis
     1. Good for continuous variables (i.e., time, distance, etc.)
     2. Poor for categorical 
   2. Size
@@ -214,7 +216,7 @@ On the other hand are more qualitative stories that incorporate data only to und
   4. Shape
     1. Good for categorical variables
     2. Impossible for continuous
-  5. Constrast
+
 
 3. Visual math is hard to do
   1. [This chart](http://lotrproject.com/blog/2013/01/15/character-dialog-in-the-hobbit-an-unexpected-journey-measured/) asks you to subtract the red from the grey to calculate differences in the grey. 
@@ -231,7 +233,24 @@ On the other hand are more qualitative stories that incorporate data only to und
   1. Do use labels for all variables
   2. Don't label redundantly (i.e., a label on the chart AND next to it)
   3. Do minimize visual clutter by using larger intervals (i.e., label every 5 years rather than every year, etc.)
+
+## Chart types
+
+#### Basic Charts (1-3 variables)
+1. Bar charts 
+  1. Humans are so good at this (see above). Often start with a bar chart to get a sense of the data and then decide a better way to represent it.
+  ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/top5percent.png)
+	2. Grouped bar chart (2 datapoints)
+  ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/yiddish_hebrew.png)
+	3. Comparison within groups (stacked bar chart)
   
+	4 Relative value, strength of category (stacked percentage bar chart)
+
+
+On deciding [which chart type to use](http://extremepresentation.com/wp-content/uploads/6a00d8341bfd2e53ef0148c699cc96970c.jpg)
+![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/charttype.jpeg)
+
+
 
 __________________________________________________________________________________________
 
