@@ -159,21 +159,80 @@ What are the goals of the visualization? What story are the authors trying to te
 2. While some types of data were highlighted, others were not (i.e., what industry they work in (in/out of academia), if they have children, etc.)
 3. Some data points were highlighted (lower right corner), offering explanatory examples.
 
-On the other hand, 538 did a great piece explaining [why Katie Ledecky is so phenomenal](https://fivethirtyeight.com/features/katie-ledecky-is-the-present-and-the-future-of-swimming/). They are telling a story, and telling it very linearly.
+On the other hand, 538 did a great piece explaining [why Katie Ledecky is so phenomenal](https://fivethirtyeight.com/features/katie-ledecky-is-the-present-and-the-future-of-swimming/). They are telling a story, and telling it very linearly, but the data drives the way the story is told.
 
 ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/ledecky.png)
 
-And then there is this story covering [Simone Biles](https://www.nytimes.com/interactive/2016/08/05/sports/olympics-gymnast-simone-biles.html?module=Article&region=TopBar&action=Click&pgtype=Multimedia) that tells a very linear story through mostly video and short, direct sentences. 
+On the other hand are more qualitative stories that incorporate data only to underscore the point. There's NYT story covering [the war in Yemen](https://www.nytimes.com/interactive/2016/12/16/world/middleeast/yemen-war-saudi-arabia-we-visited-the-place-the-world-has-forgotten.html) and another about [Simone Biles](https://www.nytimes.com/interactive/2016/08/05/sports/olympics-gymnast-simone-biles.html?module=Article&region=TopBar&action=Click&pgtype=Multimedia). Both of these use visuals to tell a qualitative story rather than a quantitative one, incorporating data to illustrate the point.
 
-#### Dimensions of a visualization
+#### Considerations with a visualization
 
-Deciding between an Exploratory or Explanatory approach can be easier after thinking through your data.
+1. Infographics versus Data Visualizations
+  1. Infographics *tend* to be story-heavy rather than data-heavy
+    1. May include visual scaffolding or context.
+    2. Include data and statistics to tell a story 
+    3. Heavy on story, light on charts and graphs. 
+    5. Often "hand-drawn" with Adobe Illustrator or similar software. Author makes individual choices about position, size, color, styling for each element
+    
+  2. Data visualizations *tend* to be data-heavy rather than story-heavy 
+    1. Usually made programatically with D3 or Python+MatPlotLib or even Excel
+    2. Because the visual draws automatically from the data, can be used with an API to get "real-time" data
+    2. The focus is on clear presentation of the data, not on telling a story
+    3. Emphasis is on clarity and minimalism rather than delivering contextual information
+    3. Generally used to support other findings or with some written context
+    
+2. Data Types
+  1. Categorical
+    1. Nominal (countries, gender texts) 
+    2. Ordinal (rankings, likert scales)
+  2. Continuous
+    1. Interval (temperature, dates/times) - the distance of measurement is the same, zero is arbitrary, and fractions don't make sense (i.e., 60 deg is NOT twice as hot as 30)
+    2. Ratio (people counts, money) - there is a 0 count (i.e., there are 0 Navajo speakers, there are 300 Vietnamese speakers, and more than twice as many Japanese speakers).
+    
+2. Dimensionality of the data
+  1. How many variables does your data have?
+  * For example, 'Language spoken at home' and 'Neighborhood' is easy to visulize many ways (maps, charts, etc.).
+  * 'Language spoken at home', 'Neighbhorhood', and 'Dual language schools' would be a little harder, but 
+  * 'Language spoken at home', 'Neighbhorhood', 'Dual language schools', 'ELA scores', and 'Income' would be much harder.
+    1. Are any variables dependent upon another?
+    2. Are any variables redundant?
+  2. Do all of the variables need to be represented on the same chart?
+    1. Could they be separated?
+    2. Would it make sense to break them up across multiple charts represented the same way?
+    ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/5boros.png)
+    
+2. Visual Contrast - viewers expect each of these things to mean something. 
+  1. Position
+    1. Good for continuous variables (i.e., time, distance, etc.)
+    2. Poor for categorical 
+  2. Size
+    1. Good for continuos variables
+    2. Poor for categorical
+  3. Color ([color brewer](http://colorbrewer2.org/) and [coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/)
+    1. Good for categorical variables
+    2. Bad for continuous (except chloropleth maps)
+  4. Shape
+    1. Good for categorical variables
+    2. Impossible for continuous
+  5. Constrast
 
-1. How many dimensions does your data have?
-  1. Does it all need to be in the same chart?
-2. 
- 
- 
+3. Visual math is hard to do
+  1. [This chart](http://lotrproject.com/blog/2013/01/15/character-dialog-in-the-hobbit-an-unexpected-journey-measured/) asks you to subtract the red from the grey to calculate differences in the grey. 
+  ![chart](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/hobbit.jpeg)
+  2. A clearer approach would be to make another chart, pulling out what they want you to understand from the visualization.
+  
+3. Scales
+  1. Scales should ALWAYS start at 0. Not doing so deceives the viewer [example](http://flowingdata.com/2012/08/06/fox-news-continues-charting-excellence/)
+  3. If there are extreme outliers remove them and indicate them elsewhere.
+  4. You can always split the data if they are on different scales (see the examples above)
+  5. The scale should size to the data to show variation in the most representative way
+  
+4. Labels
+  1. Do use labels for all variables
+  2. Don't label redundantly (i.e., a label on the chart AND next to it)
+  3. Do minimize visual clutter by using larger intervals (i.e., label every 5 years rather than every year, etc.)
+  
+
 __________________________________________________________________________________________
 
 This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
