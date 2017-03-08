@@ -30,18 +30,18 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 4. Make a note of which Python version you have, you will need it later.
 
 ### (Windows) Check which Python version you have (if any)
-1. open Command Prompt
-2. type python --version hit 'Return'
+1. Open Command Prompt
+2. After the > type python --version hit 'Return'
 	* if python is installed something like this will appear
 	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/pythontest.png)
 	* if it isn't then a message stating that will appear
 	* if Python is installed make note of which version you have installed, you will need it later
-3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing Python 3. 
-4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the defaul settings until you get to the page that reads "Customize Python 3.5.XX" 
+3. If python is not installed then go to [python.org](python.org) to download python. We recommend installing Python 3. 
+4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the default settings until you get to the page that reads "Customize Python 3.6.XX" 
 	* Scroll to the bottom of options, and click the drop-down selection that reads "Add python.exe to Path" (it should have a red "X" by default)
 	* Select the option that reads "Entire feature will be installed on local hard drive"
 5. Follow the prompts on the rest of the setup, allow the installation to finish. When it's done, it will tell you, and python is now installed on your computer and available to use.
-6. To test that python was installed, open the Command Prompt application, and enter python --version. It should read "Python 2.12.XX". 
+6. To test that python was installed, open the Command Prompt application, and enter python --version. It should read "Python 3.6.XX". 
 
 ### Get Organized
 
@@ -81,7 +81,7 @@ We will run a local server from our computers. The details of this are far beyon
 	
 2. If you have Python 2, type:
 
-	* `$ sudo python -m SimpleHTTPServer`
+	* `$ sudo python -m SimpleHTTPServer 1010`
 	
 	It will look something like this:
 	![server](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/server.png)
