@@ -24,7 +24,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 
 1. Open a Terminal Window 
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
-2. Type `$ python -V` hit 'Return'
+2. After the $, type `python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
 4. Make a note of which Python version you have, you will need it later.
@@ -36,8 +36,8 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/pythontest.png)
 	* if it isn't then a message stating that will appear
 	* if Python is installed make note of which version you have installed, you will need it later
-3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing version 2.7. 
-4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the defaul settings until you get to the page that reads "Customize Python 2.7.XX" 
+3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing Python 3. 
+4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the defaul settings until you get to the page that reads "Customize Python 3.5.XX" 
 	* Scroll to the bottom of options, and click the drop-down selection that reads "Add python.exe to Path" (it should have a red "X" by default)
 	* Select the option that reads "Entire feature will be installed on local hard drive"
 5. Follow the prompts on the rest of the setup, allow the installation to finish. When it's done, it will tell you, and python is now installed on your computer and available to use.
@@ -59,7 +59,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 	
 3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). (If using Firefox, copy/paste the code into a text editor and save it in the js folder as jquery-2.1.1.min.js). If using Safari or Chrome, just save the file in the js folder. If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome folder into your **css** folder.
-5. Download the leaflet-font awesome extension files. You need BOTH the css and the js file (the js can be the min file or the regular one). Save these in their respective files (css and js). 
+5. Download the [leaflet-font awesome extension files] from the dist folder of this [GitHub Repository]((https://github.com/lvoogdt/Leaflet.awesome-markers). You need BOTH the css and the js file (the js can be the min file or the regular one). Save these in their respective files (css and js). 
 6. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
@@ -90,7 +90,7 @@ We will run a local server from our computers. The details of this are far beyon
 
 We will come back to this.
 
-###(Windows) Set up a local server
+### (Windows) Set up a local server
 1. Open Command Prompt. Then navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in root > leaflet > leafletmap. To navigate there, I type the following commands:
 
 	* cd leaflet
