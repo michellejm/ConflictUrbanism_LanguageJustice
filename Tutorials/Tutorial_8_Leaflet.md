@@ -21,12 +21,12 @@ You must have a text editor installed - we suggest [Sublime Text](https://www.su
 
 For this tutorial, you need to have Python installed. Check if you have Python installed and which version it is. We will be using Python to run a local server. If you do NOT have Python installed, please see me as there are many ways to run a local server.
 
-### (Mac) Check which Python version you have (if any)
+### (Mac) Check which Python version you have
 
 1. Open a Terminal Window 
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
-*When you are in the Terminal, a $ appears at the end of the line. It is convention when offering instructions to include this $ to indicate that it is a command in the Terminal. You do NOT need to type the $. If you are in terminal and do not see the $, you are in the wrong language. For a list of commands, click [here](https://github.com/0nn0/terminal-mac-cheatsheet).* 
-2. After the $, type `python -V` hit 'Return'
+*When you are in the Terminal, a $ appears at the end of the line. It is convention when providing instructions to include this $ to indicate that it is a command in the Terminal. You do NOT need to type the $. If you are in terminal and do not see the $, you are in the wrong language. For a list of Terminal commands, click [here](https://github.com/0nn0/terminal-mac-cheatsheet).* 
+2. After the $, type `python -V` hit 'Return' (Spaces and capitalization matter!)
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
 4. Make a note of which Python version you have, you will need it later.
@@ -47,7 +47,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 
 ### Get Organized
 
-1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's in Dropbox, you might want to put it somewhere else.
+1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder.
 	1. Create subfolders in that folder. Call them:
 		1. **css** *put css files here*
 		2. **data** *put data files here*
@@ -59,13 +59,15 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 	1. Take the css file out of this folder and put it in the css folder
 	2. Move the leaflet folder into the js folder
 	
-3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). (If using Firefox, copy/paste the code into a text editor and save it in the js folder as jquery-2.1.1.min.js). If using Safari or Chrome, just save the file in the js folder. If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
+3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). If this opens in the browser, right click to save it. If promted to add a .txt extension, do NOT do it, keep the .js extension. If you are familiar with javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
 4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome folder into your **css** folder.
-5. Download the [leaflet-font awesome extension files] from the dist folder of this [GitHub Repository]((https://github.com/lvoogdt/Leaflet.awesome-markers). You need BOTH the css and the js file (the js can be the min file or the regular one). Save these in their respective files (css and js). 
-6. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
+5. Download the [leaflet-font awesome extension repository](https://github.com/lvoogdt/Leaflet.awesome-markers). 
+	1. From the dist folder, you need BOTH the css and the js file (the js can be the min file or the regular one). 
+	2. Save these in their respective files (css and js). 
+6. Make an empty html file and save it in the leafletmap folder (not in a subfolder). Call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
-![directory](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/directory.png)
+![directory](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/files.png)
 
 ### (Mac) Set up a local server
 
