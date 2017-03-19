@@ -20,10 +20,12 @@ We are going to make a web using the data we calculated in QGIS.
 You must have a text editor installed - we suggest [Sublime Text](https://www.sublimetext.com/)
 
 For this tutorial, you need to have Python installed. Check if you have Python installed and which version it is. We will be using Python to run a local server. If you do NOT have Python installed, please see me as there are many ways to run a local server.
+
 ### (Mac) Check which Python version you have (if any)
 
 1. Open a Terminal Window 
 ![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
+*When you are in the Terminal, a $ appears at the end of the line. It is convention when offering instructions to include this $ to indicate that it is a command in the Terminal. You do NOT need to type the $. If you are in terminal and do not see the $, you are in the wrong language. For a list of commands, click [here](https://github.com/0nn0/terminal-mac-cheatsheet).* 
 2. After the $, type `python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
