@@ -157,6 +157,8 @@ What are tiles?
 
 ### Collect the ingredients
 
+#### Skip this step in the tutorial and just download GeoJSONs from the Google Drive
+
 1. Open QGIS
 2. Reopen your saved project from the QGIS Tutorial (This may be called refugee_states)
 3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a *good idea* to change it everywhere all at once.
