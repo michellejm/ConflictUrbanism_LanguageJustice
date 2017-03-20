@@ -15,7 +15,7 @@ By the end of this tutorial, students will be able to:
 
 ## Getting Started
 
-We are going to make a web using the data we calculated in QGIS. 
+We are going to make a web using the data we calculated in QGIS. All of the files for this tutorial are [here](https://drive.google.com/drive/folders/0B8IdSWLrkSd3YjVuTmthNjBNcWc?usp=sharing)
 
 You must have a text editor installed - we suggest [Sublime Text](https://www.sublimetext.com/)
 
@@ -158,7 +158,7 @@ What are tiles?
 ### Collect the ingredients
 
 1. Open QGIS
-2. Reopen your saved project from the QGIS Tutorial (This may be called Refugee_Cities)
+2. Reopen your saved project from the QGIS Tutorial (This may be called refugee_states)
 3. We need to change the projection of this map. Most web maps are in spherical mercator projection (EPSG 3857), and it is the default for all of the tiles we will use. You only HAVE to change it on the layer we will work with, but it is a *good idea* to change it everywhere all at once.
 
 	2. Change the Project Projection by double clicking in the lower right corner
