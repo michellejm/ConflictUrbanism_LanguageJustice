@@ -267,7 +267,7 @@ Type this into your document exactly (DO NOT copy/paste. [Click here](https://me
 		1. Pass the .addTo property, and give it the map variable.
 	
 ```
-		<body>
+<body>
 
   <div id="map"></div>
 
@@ -304,7 +304,7 @@ Congratulations on starting your webmap!
 	3. Just like with the tiles, we want to add this element to the map.
 
 ```
-	// load GeoJSON file
+// load GeoJSON file
   $.getJSON("data/FILENAME.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
@@ -324,14 +324,14 @@ Congratulations on starting your webmap!
 	2. Call Leaflet with L and call the AwesomeMarkers.icon property. This syntax is from the Awesome Markers [documentation](https://github.com/lvoogdt/Leaflet.awesome-markers)
 	3. There are a few other icon sets, so we have to set the prefix as 'fa', find the icon you want (we're going to use 'home' to represent Refugee Homes), and tell it what color to make the icons (I think black is easiest to see).
 	
-	```  
+```  
 	$.getJSON("data/FILENAME.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
        iconColor: 'black',
     });
-    ```
+```
 
 5. Now add the marker to the map
 
@@ -388,14 +388,13 @@ L.geoJson(data,{
 	2. Call jQuery with the $, and pass it the location of the state data and add it to the map
 	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
 
-	```
+```
     $.getJSON("data/FILE_NAME2.geojson",function(stateData){
   L.geoJson(stateData).addTo(map);
 });
-	```
-
+```
 	4. Style the fill of each polygon based on the number of refugees in the area. Look to the data for natural breaks in the data. 
-
+	
 		1. For example, there are 404 individuals in Georgia, and 386 in North Carolina. Since the next closest number is 308 in Indiana, it makes more sense to group NC in with GA. It is important to get a feel for the data before assigning these breaks in order to accurately represent what the data can illustrate. 
 		
 	5. Pick your colors, we are going to use 5 different groups (plus a "no refugees" group). Color matters, lighter shades should be fewer people, darker should be more. Really, we should reserve chloropleths for density scales, but since we are focusing here on individuals rather than density, we will use the raw numbers [ColorBrewer](http://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=5) makes finding appropriate hex codes easier.
@@ -411,7 +410,7 @@ L.geoJson(data,{
 		1. Use the same format as we did for the font awesome files. 
 	
 ```
-		<head>
+<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/MarkerCluster.css">
@@ -436,9 +435,9 @@ L.geoJson(data,{
 		5. Remove the previous "add to map" function
 		
 ```
-	    ***NEW****
-	    var rfg = L.geoJson(data,{
-	    *** END NEW ***
+ ***NEW****
+var rfg = L.geoJson(data,{
+*** END NEW ***
 
     pointToLayer: function(feature,latlng){
     	var marker = L.marker(latlng,{icon: aMarker});
