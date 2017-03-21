@@ -380,13 +380,14 @@ L.geoJson(data,{
     }).addTo(map);
 
 });
-```
+		```
 
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
 	1. Add the state data in the exact same way you loaded the cities data. 
 	2. Call jQuery with the $, and pass it the location of the state data and add it to the map
 	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
+	
 ```
 $.getJSON("data/FILE_NAME2.geojson",function(stateData){
   L.geoJson(stateData).addTo(map);
