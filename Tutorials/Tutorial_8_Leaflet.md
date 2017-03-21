@@ -425,6 +425,7 @@ L.geoJson(data,{
   
   <style>
 	```
+	
 	6. Include the groups
 	
 		1. Change the command where we add the new data to be a variable.
