@@ -303,12 +303,12 @@ Congratulations on starting your webmap!
 	2. Tell jQuery where your file is located, and give the function a name (I'm going to use 'data'). 
 	3. Just like with the tiles, we want to add this element to the map.
 
-	```
+```
 	// load GeoJSON file
   $.getJSON("data/cll.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
- 	```
+```
 
 2. Inspect the map.
 3. We can do better than blue pins, we will change the icons
@@ -324,7 +324,8 @@ Congratulations on starting your webmap!
 	2. Call Leaflet with L and call the AwesomeMarkers.icon property. This syntax is from the Awesome Markers [documentation](https://github.com/lvoogdt/Leaflet.awesome-markers)
 	3. There are a few other icon sets, so we have to set the prefix as 'fa', find the icon you want (we're going to use 'home' to represent Refugee Homes), and tell it what color to make the icons (I think black is easiest to see).
 	
-	```  $.getJSON("data/cll.geojson",function(data){
+	```  
+	$.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
@@ -338,7 +339,8 @@ Congratulations on starting your webmap!
 	2. Give it the function of pointing to a layer feature at the lat/long. 
 	3. Tell it to return the marker we made at a given latitude and longitude. 
 	4. Add it to the map.
-	```  
+	
+```  
 $.getJSON("data/cll.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
        prefix: 'fa', //font awesome rather than bootstrap 
@@ -352,7 +354,7 @@ L.geoJson(data,{
      }
     }).addTo(map);
 });
-	```
+```
 
 6. Add Interaction!! This is the real power of web maps. Let's make each house icon a popup showing the city name and how many refugees were settled there in 2014.
 
