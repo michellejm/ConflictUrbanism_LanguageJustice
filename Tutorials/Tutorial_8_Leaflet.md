@@ -408,22 +408,21 @@ L.geoJson(data,{
 	
 		1. Use the same format as we did for the font awesome files. 
 	
-```
-<head>
+	```
+	<head>
 	<title>A Leaflet map!</title>
-  <link rel="stylesheet" href="css/leaflet.css"/>
-  <link rel="stylesheet" href="css/MarkerCluster.css">
-  <link rel="stylesheet" href="css/MarkerCluster.Default.css" IS SO>
-  <link rel="stylesheet" href="css/font-awesome.min.css >
-  <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
+  	<link rel="stylesheet" href="css/leaflet.css"/>
+  	<link rel="stylesheet" href="css/MarkerCluster.css">
+  	<link rel="stylesheet" href="css/MarkerCluster.Default.css" IS SO>
+  	<link rel="stylesheet" href="css/font-awesome.min.css >
+ 	 <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
   
-
-  <script src="js/leaflet.js"></script>
-  <script src="js/leaflet.markercluster.js"></script>
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/leaflet_awesome_markers.js"></script>
+  	<script src="js/leaflet.js"></script>
+  	<script src="js/leaflet.markercluster.js"></script>
+  	<script src="js/jquery-2.1.1.min.js"></script>
+  	<script src="js/leaflet_awesome_markers.js"></script>
   
-  <style>
+  	<style>
 	```
 	
 	6. Include the groups
@@ -434,12 +433,12 @@ L.geoJson(data,{
 		4. Add it to the map
 		5. Remove the previous "add to map" function
 		
-```
- ***NEW****
-var rfg = L.geoJson(data,{
-*** END NEW ***
+	```
+ 	***NEW****
+	var rfg = L.geoJson(data,{
+	*** END NEW ***
 
-    pointToLayer: function(feature,latlng){
+    	pointToLayer: function(feature,latlng){
     	var marker = L.marker(latlng,{icon: aMarker});
     	marker.bindPopup(feature.properties.City_state + '<br/>' + feature.properties.Individuals);
     	return marker;
