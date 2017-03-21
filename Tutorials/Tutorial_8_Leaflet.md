@@ -266,7 +266,8 @@ Type this into your document exactly (DO NOT copy/paste. [Click here](https://me
 	
 		1. Pass the .addTo property, and give it the map variable.
 	
-		```<body>
+```
+		<body>
 
   <div id="map"></div>
 
