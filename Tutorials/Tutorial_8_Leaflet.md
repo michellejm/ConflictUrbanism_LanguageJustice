@@ -443,14 +443,14 @@ L.geoJson(data,{
     	marker.bindPopup(feature.properties.City_state + '<br/>' + feature.properties.Individuals);
     	return marker;
     	}
-    }); 
-    ***NEW***
-    var clusters = L.markerClusterGroup();
-    clusters.addLayer(rfg);
-    map.addLayer(clusters);
-  });
-  *** END NEW***
-		```
+    	}); 
+    	***NEW***
+   	 var clusters = L.markerClusterGroup();
+    	clusters.addLayer(rfg);
+    	map.addLayer(clusters);
+  	});
+  	*** END NEW***
+	```
 
 9. Those groups are awfully large and the colors don't match our blue. We'd like to limit the area covered by each grouping and change the marker colors. 
 
