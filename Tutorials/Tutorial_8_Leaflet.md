@@ -388,10 +388,11 @@ L.geoJson(data,{
 	2. Call jQuery with the $, and pass it the location of the state data and add it to the map
 	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
 	
-```
-$.getJSON("data/FILE_NAME2.geojson",function(stateData){
-  L.geoJson(stateData).addTo(map);
-});
+	```
+	$.getJSON("data/FILE_NAME2.geojson",function(stateData){
+  		L.geoJson(stateData).addTo(map);
+	});
+
 	```
 	
 	4. Style the fill of each polygon based on the number of refugees in the area. Look to the data for natural breaks in the data. *For example, there are 404 individuals in Georgia, and 386 in North Carolina. Since the next closest number is 308 in Indiana, it makes more sense to group NC in with GA. It is important to get a feel for the data before assigning these breaks in order to accurately represent what the data can illustrate.* 
