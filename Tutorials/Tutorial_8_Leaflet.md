@@ -185,6 +185,7 @@ We will begin with the *Header*
 	1. Import the stylesheet with this language: 
 	
 	`<link rel="stylesheet" href="css/STYLESHEET.css">`
+	
 	2. We will use 3 stylesheets:
 	
 		1. leaflet.css
@@ -196,6 +197,7 @@ We will begin with the *Header*
 	1. Import the Javascript files with this language: 
 	
 	`<script src="js/NAME.js"></script>`
+	
 	2. We will use 3 javascript scripts:
 	
 		1. leaflet.js
@@ -210,7 +212,8 @@ We will begin with the *Header*
 
 Type this into your document exactly (DO NOT copy/paste. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
 
-```<html>
+```
+<html>
 <head>
   <title>A Leaflet map!</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
