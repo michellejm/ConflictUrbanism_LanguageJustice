@@ -305,7 +305,7 @@ Congratulations on starting your webmap!
 
 ```
 	// load GeoJSON file
-  $.getJSON("data/cll.geojson",function(data){
+  $.getJSON("data/FILENAME.geojson",function(data){
     L.geoJson(data).addTo(map);
     });  
 ```
@@ -325,7 +325,7 @@ Congratulations on starting your webmap!
 	3. There are a few other icon sets, so we have to set the prefix as 'fa', find the icon you want (we're going to use 'home' to represent Refugee Homes), and tell it what color to make the icons (I think black is easiest to see).
 	
 	```  
-	$.getJSON("data/cll.geojson",function(data){
+	$.getJSON("data/FILENAME.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
@@ -341,7 +341,7 @@ Congratulations on starting your webmap!
 	4. Add it to the map.
 	
 ```  
-$.getJSON("data/cll.geojson",function(data){
+$.getJSON("data/FILENAME.geojson",function(data){
     var aMarker = L.AwesomeMarkers.icon({
        prefix: 'fa', //font awesome rather than bootstrap 
        icon: 'home', 
@@ -366,20 +366,21 @@ L.geoJson(data,{
 		2. We want both City_state and Individuals the <br/> adds a line between the two rows.
 		3. This should be a functional map that you can click on houses and get a popup about that house. 
  
-		```
+```
     L.geoJson(data,{
     pointToLayer: function(feature,latlng){
     
     ***** NEW *****
     	var marker = L.marker(latlng,{icon: aMarker});
-    	marker.bindPopup(feature.properties.City_state + '<br/>' + feature.properties.Individuals);
+    	marker.bindPopup(feature.properties.City_state + '<br/>' + feature.properties.COLUMN_NAME);
     	return marker;
     	}
     ***** END NEW *****
     
     }).addTo(map);
-  });
-  		```
+
+});
+```
 
 7. Add polygons!! This works the same way that points do. In this example, we will use the tallied refugee data by state to make a chloropleth map. 
 
@@ -388,7 +389,7 @@ L.geoJson(data,{
 	3. It doesn't matter (for this example) what layer is added first. It would if we were layering multiple polygons, it would matter which one was on top, though.
 
 	```
-    $.getJSON("data/refugees_by_state.geojson",function(stateData){
+    $.getJSON("data/FILE_NAME2.geojson",function(stateData){
   L.geoJson(stateData).addTo(map);
 });
 	```
@@ -409,7 +410,7 @@ L.geoJson(data,{
 	
 		1. Use the same format as we did for the font awesome files. 
 	
-		```
+```
 		<head>
 	<title>A Leaflet map!</title>
   <link rel="stylesheet" href="css/leaflet.css"/>
@@ -425,8 +426,7 @@ L.geoJson(data,{
   <script src="js/leaflet_awesome_markers.js"></script>
   
   <style>
-		```
-
+```
 	6. Include the groups
 	
 		1. Change the command where we add the new data to be a variable.
@@ -435,7 +435,7 @@ L.geoJson(data,{
 		4. Add it to the map
 		5. Remove the previous "add to map" function
 		
-		```
+```
 	    ***NEW****
 	    var rfg = L.geoJson(data,{
 	    *** END NEW ***
