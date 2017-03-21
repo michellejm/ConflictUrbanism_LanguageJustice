@@ -182,7 +182,9 @@ We will begin with the *Header*
 
 1. Import the stylesheets
 
-	1. Import the stylesheet with this language: `<link rel="stylesheet" href="css/STYLESHEET.css">`
+	1. Import the stylesheet with this language: 
+	
+	`<link rel="stylesheet" href="css/STYLESHEET.css">`
 	2. We will use 3 stylesheets:
 	
 		1. leaflet.css
@@ -191,7 +193,9 @@ We will begin with the *Header*
 		
 2. Javascript
 
-	1. Import the Javascript files with this language: `<script src="js/NAME.js"></script>`
+	1. Import the Javascript files with this language: 
+	
+	`<script src="js/NAME.js"></script>`
 	2. We will use 3 javascript scripts:
 	
 		1. leaflet.js
@@ -201,6 +205,7 @@ We will begin with the *Header*
 3. Set the size of the map
 
 	1. This works by indicating the style of the map in a way the browser can interpret
+	
 	`<style> #map {width: SIZEpx; height: SIZEpx; } </style>`
 
 Type this into your document exactly (DO NOT copy/paste. [Click here](https://medium.freecodecamp.com/the-benefits-of-typing-instead-of-copying-54ed734ad849#.ksfgl7p86) for a short rationale for ALWAYS typing your code).
