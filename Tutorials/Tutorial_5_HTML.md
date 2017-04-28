@@ -17,7 +17,7 @@ By the end of this tutorial, you will be able to:
 For this tutorial, you will need:
 * [Sublime](http://www.sublimetext.com/)
 * [Chrome](https://www.google.com/chrome/)
-* Case_Study Files, Download [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/CaseStudy)
+* Case_Study Files, Download [here](https://drive.google.com/open?id=0B8IdSWLrkSd3WHNIN05fZlNJMk0) Or view the files [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/CaseStudy)
 
 
 ### Introduction to HTML/CSS
